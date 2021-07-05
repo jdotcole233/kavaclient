@@ -5,10 +5,13 @@ import Sidebar from "./components/Sidebar";
 import Details from "./components/Details";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
+import { useLocation } from "react-router-dom";
 
 function Admin() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedOffer, setSelectedOffer] = useState(undefined);
+
+  const { pathname } = useLocation();
 
   return (
     <LayoutProvider
@@ -28,7 +31,7 @@ function Admin() {
           <div className="flex-1 flex items-stretch overflow-hidden">
             <Content />
             {/* Details sidebar */}
-            {selectedOffer && <Details />}
+            {selectedOffer && pathname === "/offers" && <Details />}
           </div>
         </div>
       </div>
