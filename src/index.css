@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-::-webkit-scrollbar-button {
-    width: 0;
-}
-
-::-webkit-scrollbar-thumb {
-    width: 0;
-    display: none;
+::-webkit-scrollbar {
+  width: 0;
 }

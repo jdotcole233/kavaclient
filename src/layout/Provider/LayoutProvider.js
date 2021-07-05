@@ -3,7 +3,9 @@ import { createContext, useContext } from 'react';
 
 const LayoutContext = createContext({
     mobileMenuOpen: false,
-    setMobileMenuOpen: undefined
+    selectedOffer: undefined,
+    setMobileMenuOpen: undefined,
+    setSelectedOffer: undefined
 });
 
 export const useLayoutProps = () => useContext(LayoutContext);
