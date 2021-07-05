@@ -2,8 +2,6 @@
 import {  useState } from 'react'
 
 import {
-    PencilIcon,
-    PlusIcon as PlusIconSolid,
     ViewGridIcon as ViewGridIconSolid,
     ViewListIcon,
 } from '@heroicons/react/solid'
