@@ -112,15 +112,15 @@ const Sidebar = () => {
                                                 href={item.href}
                                                 className={classNames(
                                                     item.current
-                                                        ? 'bg-indigo-800 text-white'
-                                                        : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
+                                                        ? 'bg-green-800 text-white'
+                                                        : 'text-indigo-100 hover:bg-green-800 hover:text-white',
                                                     'group py-2 px-3 rounded-md flex items-center text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 <item.icon
                                                     className={classNames(
-                                                        item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                                                        item.current ? 'text-white' : 'text-green-300 group-hover:text-white',
                                                         'mr-3 h-6 w-6'
                                                     )}
                                                     aria-hidden="true"
