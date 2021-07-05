@@ -43,7 +43,7 @@ const Details = () => {
              <aside className="hidden w-96 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
                         <div className="pb-16 space-y-6">
                             <div className="flex justify-center items-center">
-                                <div className="block w-60 h-60 aspect-w-10 aspect-h-7 rounded-full  border-4 border-indigo-600 overflow-hidden">
+                                <div className="block w-60 h-60 aspect-w-10 aspect-h-7 rounded-full  border-4  overflow-hidden">
                                     <img src={logo} alt="" className="object-cover" />
                                 </div>
                             </div>
