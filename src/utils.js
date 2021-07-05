@@ -21,3 +21,8 @@ export const navigation = [
     { name: 'Albums', href: '#', icon: CollectionIcon, current: false },
     { name: 'Settings', href: '#', icon: CogIcon, current: false },
 ]
+
+export const userNavigation = [
+    { name: 'Your profile', href: '#' },
+    { name: 'Sign out', href: '#' },
+]

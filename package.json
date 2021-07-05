@@ -19,6 +19,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "postbuild":"firebase deploy",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
