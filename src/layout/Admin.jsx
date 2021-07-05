@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import {  useState } from 'react'
-import {
-    HeartIcon,
-} from '@heroicons/react/outline'
+
 import {
     PencilIcon,
     PlusIcon as PlusIconSolid,
@@ -12,6 +10,7 @@ import {
 import { classNames } from '../utils'
 import { LayoutProvider } from './Provider/LayoutProvider'
 import Sidebar from './components/Sidebar'
+import Details from './components/Details'
 
 
 const tabs = [
@@ -192,6 +191,7 @@ const currentFile = {
                     </main>
 
                     {/* Details sidebar */}
+                    <Details />
                    </div>
             </div>
         </div>
