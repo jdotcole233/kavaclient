@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import { Fragment, useState } from 'react'
-import { Dialog, Menu, Transition } from '@headlessui/react'
+import { Menu, Transition } from '@headlessui/react'
 import {
     HeartIcon,
     MenuAlt2Icon,

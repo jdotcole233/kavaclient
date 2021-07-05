@@ -1,14 +1,10 @@
 import {
     CogIcon,
     CollectionIcon,
-    HeartIcon,
     HomeIcon,
-    MenuAlt2Icon,
     PhotographIcon,
-    PlusIcon as PlusIconOutline,
     UserGroupIcon,
     ViewGridIcon as ViewGridIconOutline,
-    XIcon,
 } from '@heroicons/react/outline'
 
 

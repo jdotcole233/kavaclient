@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { classNames, navigation } from '../../utils'
-import { Dialog, Menu, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@headlessui/react'
 import { useLayoutProps } from '../Provider/LayoutProvider'
 import {
     XIcon,
