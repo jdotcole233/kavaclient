@@ -1,10 +1,6 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { useState } from "react";
-import { classNames, files, tabs } from "../../utils";
-import {
-  ViewGridIcon as ViewGridIconSolid,
-  ViewListIcon,
-} from "@heroicons/react/solid";
+import { classNames, files } from "../../utils";
 import Offer from "./Components/Offer";
 import { useLayoutProps } from "../../layout/Provider/LayoutProvider";
 import PageHeader from "../../Components/PageHeader";

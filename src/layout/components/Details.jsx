@@ -1,10 +1,4 @@
 import React, { Fragment, useState } from "react";
-import logo from "../../assets/visal.png";
-import {
-  DocumentReportIcon,
-  PencilIcon,
-  PlusIcon as PlusIconSolid,
-} from "@heroicons/react/solid";
 import { DocumentIcon, XIcon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import DocumentWrapper from "../../Components/DocumentWrapper";
