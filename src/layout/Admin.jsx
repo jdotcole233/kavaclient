@@ -11,6 +11,7 @@ import { classNames } from '../utils'
 import { LayoutProvider } from './Provider/LayoutProvider'
 import Sidebar from './components/Sidebar'
 import Details from './components/Details'
+import Navbar from './components/Navbar'
 
 
 const tabs = [
@@ -41,7 +42,7 @@ const files = [
             <Sidebar />
             {/* Content area */}
             <div className="flex-1 flex flex-col overflow-hidden">
-               
+                <Navbar />
                 {/* Main content */}
                 <div className="flex-1 flex items-stretch overflow-hidden">
                     <main className="flex-1 overflow-y-auto">
