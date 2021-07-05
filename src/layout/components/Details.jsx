@@ -42,13 +42,9 @@ const Details = () => {
         <Fragment>
              <aside className="hidden w-96 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
                         <div className="pb-16 space-y-6">
-                            <div>
-                                <div className="block w-full aspect-w-10 aspect-h-7 rounded-full  border-4 border-indigo-600 overflow-hidden">
+                            <div className="flex justify-center items-center">
+                                <div className="block w-60 h-60 aspect-w-10 aspect-h-7 rounded-full  border-4 border-indigo-600 overflow-hidden">
                                     <img src={logo} alt="" className="object-cover" />
-                                </div>
-                                <div className="mt-4 flex items-start justify-between">
-                                    
-                                    
                                 </div>
                             </div>
                             <div>
