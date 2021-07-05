@@ -169,8 +169,8 @@ const Details = () => {
       </aside>
 
       <DocumentWrapper
-        open={openCreditNote}
-        setOpen={setOpenCreditNote}
+        show={openCreditNote}
+        setShow={setOpenCreditNote}
       ></DocumentWrapper>
     </Fragment>
   );
