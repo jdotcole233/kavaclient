@@ -1,7 +1,4 @@
 import React, { Fragment } from 'react'
-import {
-    HeartIcon,
-} from '@heroicons/react/outline'
 import logo from '../../assets/visal.png'
 import {
     PencilIcon,
