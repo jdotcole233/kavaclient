@@ -12,7 +12,7 @@ const Sidebar = () => {
     return (
         <Fragment>
              {/* Narrow sidebar */}
-            <div className="hidden w-28 bg-indigo-700 overflow-y-auto md:block">
+            <div className="hidden w-28 bg-green-700 overflow-y-auto md:block">
                 <div className="w-full py-6 flex flex-col items-center">
                     <div className="flex-shrink-0 flex items-center">
                         <img
@@ -27,14 +27,14 @@ const Sidebar = () => {
                                 key={item.name}
                                 href={item.href}
                                 className={classNames(
-                                    item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
+                                    item.current ? 'bg-green-800 text-white' : 'text-indigo-100 hover:bg-green-800 hover:text-white',
                                     'group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium'
                                 )}
                                 aria-current={item.current ? 'page' : undefined}
                             >
                                 <item.icon
                                     className={classNames(
-                                        item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                                        item.current ? 'text-white' : 'text-green-300 group-hover:text-white',
                                         'h-6 w-6'
                                     )}
                                     aria-hidden="true"
@@ -75,7 +75,7 @@ const Sidebar = () => {
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="relative max-w-xs w-full bg-indigo-700 pt-5 pb-4 flex-1 flex flex-col">
+                        <div className="relative max-w-xs w-full bg-green-700 pt-5 pb-4 flex-1 flex flex-col">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-in-out duration-300"
