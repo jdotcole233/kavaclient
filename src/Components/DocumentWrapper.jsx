@@ -43,7 +43,7 @@ const DocumentWrapper = ({ show, setShow, children }) => {
             >
               <div
                 style={{ height: 3508 }}
-                className="inline-block align-bottom bg-white rounded-none px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-full sm:w-1/2 sm:p-6"
+                className="inline-block align-bottom bg-white mb-10 rounded-none px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-full sm:w-1/2 sm:p-6"
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="modal-headline"
