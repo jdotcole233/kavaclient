@@ -168,10 +168,10 @@ const Details = () => {
         </div>
       </aside>
 
-      <DocumentWrapper
+      {/* <DocumentWrapper
         show={openCreditNote}
         setShow={setOpenCreditNote}
-      ></DocumentWrapper>
+      ></DocumentWrapper> */}
     </Fragment>
   );
 };
