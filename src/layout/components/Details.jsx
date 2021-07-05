@@ -122,6 +122,7 @@ const Details = () => {
                 </div>
                 <button
                   type="button"
+                  onClick={() => setOpenCreditNote(true)}
                   className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   view<span className="sr-only"> Debit Note</span>
@@ -136,6 +137,7 @@ const Details = () => {
                 </div>
                 <button
                   type="button"
+                  onClick={() => setOpenCreditNote(true)}
                   className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   view<span className="sr-only"> Closing Slip</span>
@@ -168,10 +170,10 @@ const Details = () => {
         </div>
       </aside>
 
-      {/* <DocumentWrapper
+      <DocumentWrapper
         show={openCreditNote}
         setShow={setOpenCreditNote}
-      ></DocumentWrapper> */}
+      ></DocumentWrapper>
     </Fragment>
   );
 };
