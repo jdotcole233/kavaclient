@@ -43,24 +43,12 @@ const Details = () => {
              <aside className="hidden w-96 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
                         <div className="pb-16 space-y-6">
                             <div>
-                                <div className="block w-full aspect-w-10 aspect-h-7 rounded-lg overflow-hidden">
+                                <div className="block w-full aspect-w-10 aspect-h-7 rounded-full  border-4 border-indigo-600 overflow-hidden">
                                     <img src={logo} alt="" className="object-cover" />
                                 </div>
                                 <div className="mt-4 flex items-start justify-between">
-                                    <div>
-                                        <h2 className="text-lg font-medium text-gray-900">
-                                            <span className="sr-only">Details for </span>
-                                            {/* {currentFile.name} */}
-                                        </h2>
-                                        <p className="text-sm font-medium text-gray-500">{45}</p>
-                                    </div>
-                                    <button
-                                        type="button"
-                                        className="ml-4 bg-white rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                    >
-                                        <HeartIcon className="h-6 w-6" aria-hidden="true" />
-                                        <span className="sr-only">Favorite</span>
-                                    </button>
+                                    
+                                    
                                 </div>
                             </div>
                             <div>
