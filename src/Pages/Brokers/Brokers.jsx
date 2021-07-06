@@ -1,7 +1,7 @@
 import React from "react";
 import PageWrapper from "../../Components/PageWrapper";
 
-const Broker = () => {
+const Brokers = () => {
   return (
     <PageWrapper title="Brokers">
       <h1>Hello World</h1>
@@ -9,4 +9,4 @@ const Broker = () => {
   );
 };
 
-export default Broker;
+export default Brokers;
