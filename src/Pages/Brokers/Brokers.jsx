@@ -1,10 +1,11 @@
 import React from "react";
+import PageHeader from "../../Components/PageHeader";
 import PageWrapper from "../../Components/PageWrapper";
 
 const Brokers = () => {
   return (
     <PageWrapper title="Brokers">
-      <h1>Hello World</h1>
+      <PageHeader title="Brokers" />
     </PageWrapper>
   );
 };
