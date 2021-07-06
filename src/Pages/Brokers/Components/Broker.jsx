@@ -19,6 +19,11 @@ const Broker = () => {
           />
         </svg>
       </div>
+      <div className="w-auto flex-1">
+        <span>Broker name</span>
+        <span>Broker email</span>
+        <span>Broker address</span>
+      </div>
     </div>
   );
 };
