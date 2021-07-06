@@ -1,6 +1,7 @@
 import React from "react";
 import PageHeader from "../../Components/PageHeader";
 import PageWrapper from "../../Components/PageWrapper";
+import OffsetSelector from "./Components/OffsetSelector";
 import { BrokerProvider } from "./Providers/BrokerProvider";
 
 const Brokers = () => {
@@ -10,11 +11,7 @@ const Brokers = () => {
         <PageHeader title="Brokers" />
         <div className="flex  justify-between">
           <div>
-            <select name="" id="">
-              <option value="12">12</option>
-              <option value="24">24</option>
-              <option value="36">36</option>
-            </select>
+            <OffsetSelector />
           </div>
           <div className="flex shadow-md rounded-sm">
             <input
