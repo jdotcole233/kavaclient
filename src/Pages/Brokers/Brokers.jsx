@@ -8,9 +8,9 @@ const Brokers = () => {
     <BrokerProvider>
       <PageWrapper title="Brokers">
         <PageHeader title="Brokers" />
-        <div className="flex justify-between">
+        <div className="flex  justify-between">
           <div></div>
-          <div className="flex shadow-sm">
+          <div className="flex shadow-md rounded-sm">
             <input type="text" className="p-3" />
             <div className="bg-gray-400"></div>
           </div>
