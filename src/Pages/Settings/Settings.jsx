@@ -189,7 +189,7 @@ const Settings = () => {
                 <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                   <button
                     type="submit"
-                    className="bg-gray-800 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    className="bg-green-800 border border-transparent rounded-none shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -242,10 +242,10 @@ const Settings = () => {
                                 <span
                                   className={classNames(
                                     checked
-                                      ? "bg-orange-500 border-transparent"
-                                      : "bg-white border-gray-300",
+                                      ? "bg-green-500 border-transparent"
+                                      : "bg-white border-green-300",
                                     active
-                                      ? "ring-2 ring-offset-2 ring-gray-900"
+                                      ? "ring-2 ring-offset-2 ring-green-500"
                                       : "",
                                     "h-4 w-4 rounded-full border flex items-center justify-center"
                                   )}
@@ -255,7 +255,7 @@ const Settings = () => {
                                 </span>
                                 <RadioGroup.Label
                                   as="span"
-                                  className="ml-3 font-medium text-gray-900"
+                                  className="ml-3 font-medium text-green-900"
                                 >
                                   {plan.name}
                                 </RadioGroup.Label>
@@ -264,8 +264,8 @@ const Settings = () => {
                                 <span
                                   className={classNames(
                                     checked
-                                      ? "text-orange-900"
-                                      : "text-gray-900",
+                                      ? "text-green-900"
+                                      : "text-green-900",
                                     "font-medium"
                                   )}
                                 >
@@ -301,8 +301,8 @@ const Settings = () => {
                       checked={annualBillingEnabled}
                       onChange={setAnnualBillingEnabled}
                       className={classNames(
-                        annualBillingEnabled ? "bg-orange-500" : "bg-gray-200",
-                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors ease-in-out duration-200"
+                        annualBillingEnabled ? "bg-green-500" : "bg-gray-200",
+                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors ease-in-out duration-200"
                       )}
                     >
                       <span
@@ -326,7 +326,7 @@ const Settings = () => {
                 <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                   <button
                     type="submit"
-                    className="bg-gray-800 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    className="bg-green-800 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
