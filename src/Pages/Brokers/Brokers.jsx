@@ -12,7 +12,7 @@ const Brokers = () => {
           <div></div>
           <div className="flex shadow-md rounded-sm">
             <input type="text" className="p-3" />
-            <div className="bg-gray-400">
+            <div className="bg-gray-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
