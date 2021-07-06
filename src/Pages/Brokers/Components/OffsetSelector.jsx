@@ -32,7 +32,7 @@ function OffsetSelector() {
           >
             <Menu.Items
               static
-              className="origin-top-left absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+              className="origin-top-left absolute -right-100 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
             >
               <div className="py-1">
                 <Menu.Item>
@@ -50,15 +50,14 @@ function OffsetSelector() {
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
+                    <div
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
-                      Duplicate
-                    </a>
+                      10 rows
+                    </div>
                   )}
                 </Menu.Item>
               </div>
