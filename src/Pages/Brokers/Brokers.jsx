@@ -11,7 +11,10 @@ const Brokers = () => {
         <div className="flex  justify-between">
           <div></div>
           <div className="flex shadow-md rounded-sm">
-            <input type="text" className="p-3 bg-gray-200" />
+            <input
+              type="text"
+              className="p-3 ring-offset-green-900 bg-gray-200"
+            />
             <div className="bg-gray-200 w-11 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
