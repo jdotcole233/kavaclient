@@ -1,7 +1,9 @@
 import React from "react";
 import PageHeader from "../../Components/PageHeader";
 import PageWrapper from "../../Components/PageWrapper";
+import { files } from "../../utils";
 import OffsetSelector from "./Components/OffsetSelector";
+import Broker from "./Components/Broker";
 import { BrokerProvider } from "./Providers/BrokerProvider";
 
 const Brokers = () => {
@@ -38,7 +40,11 @@ const Brokers = () => {
         </div>
 
         <div>
-          <ul className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8"></ul>
+          <ul className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+            {files.map((_, key) => (
+              <Broker />
+            ))}
+          </ul>
         </div>
       </PageWrapper>
     </BrokerProvider>
