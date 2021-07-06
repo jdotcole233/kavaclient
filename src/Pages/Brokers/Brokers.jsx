@@ -9,14 +9,14 @@ const Brokers = () => {
     <BrokerProvider>
       <PageWrapper title="Brokers">
         <PageHeader title="Brokers" />
-        <div className="flex my-4  justify-between">
+        <div className="flex my-4 items-center justify-between">
           <div>
             <OffsetSelector />
           </div>
           <div className="flex border shadow-md rounded-sm">
             <input
               type="text"
-              className="p-3 focus:ring-offset-green-900 ring-offset-green-900 bg-white"
+              className="p-3 focus:ring-offset-green-900 focus:ring-green-500 ring-offset-green-900 bg-white"
             />
             <div className="bg-gray-200 w-11 flex items-center justify-center">
               <svg
