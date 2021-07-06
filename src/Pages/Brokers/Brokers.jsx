@@ -12,10 +12,10 @@ const Brokers = () => {
           <div></div>
           <div className="flex shadow-md rounded-sm">
             <input type="text" className="p-3" />
-            <div className="bg-gray-50">
+            <div className="bg-gray-50 w-11 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 text-gray-500 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
