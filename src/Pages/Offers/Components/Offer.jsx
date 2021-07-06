@@ -11,7 +11,7 @@ const Offer = ({ file = {} }) => {
       key={file.name}
       className="relative cursor-pointer"
     >
-      <div className="bg-white flex p-3">
+      <div className="bg-white shadow-md flex p-3">
         <div className="w-16">
           <DocumentTextIcon className="h-11 w-11 text-green-600" />
         </div>

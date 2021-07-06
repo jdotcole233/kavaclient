@@ -3,7 +3,7 @@ import {
     CollectionIcon,
     // HomeIcon,
     // PhotographIcon,
-    // UserGroupIcon,
+    UserGroupIcon,
     ViewGridIcon as ViewGridIconOutline,
 } from '@heroicons/react/outline'
 
@@ -25,7 +25,7 @@ export const navigation = [
     // { name: 'Home', href: '/', icon: HomeIcon, current: false },
     { name: 'All Offers', href: '/offers', icon: ViewGridIconOutline, current: false },
     { name: 'All Treaties', href: '/treaties', icon: CollectionIcon, current: false },
-    // { name: 'Shared', href: '#', icon: UserGroupIcon, current: false },
+    { name: 'Brokers', href: '#', icon: UserGroupIcon, current: false },
     // { name: 'Albums', href: '#', icon: PhotographIcon, current: false },
     { name: 'Settings', href: '/settings', icon: CogIcon, current: false },
 ]
