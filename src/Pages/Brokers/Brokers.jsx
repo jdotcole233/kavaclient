@@ -9,7 +9,13 @@ const Brokers = () => {
       <PageWrapper title="Brokers">
         <PageHeader title="Brokers" />
         <div className="flex  justify-between">
-          <div></div>
+          <div>
+            <select name="" id="">
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="36">36</option>
+            </select>
+          </div>
           <div className="flex shadow-md rounded-sm">
             <input
               type="text"
