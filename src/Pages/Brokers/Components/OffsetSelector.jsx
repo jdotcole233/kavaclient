@@ -37,15 +37,14 @@ function OffsetSelector() {
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
+                    <div
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
-                      Edit
-                    </a>
+                      12 rows
+                    </div>
                   )}
                 </Menu.Item>
                 <Menu.Item>
@@ -56,7 +55,7 @@ function OffsetSelector() {
                         "block px-4 py-2 text-sm"
                       )}
                     >
-                      10 rows
+                      24 rows
                     </div>
                   )}
                 </Menu.Item>
@@ -64,15 +63,14 @@ function OffsetSelector() {
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
+                    <div
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
-                      Archive
-                    </a>
+                      36 rows
+                    </div>
                   )}
                 </Menu.Item>
                 <Menu.Item>
