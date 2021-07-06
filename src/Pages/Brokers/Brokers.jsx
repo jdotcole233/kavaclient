@@ -9,7 +9,7 @@ const Brokers = () => {
     <BrokerProvider>
       <PageWrapper title="Brokers">
         <PageHeader title="Brokers" />
-        <div className="flex  justify-between">
+        <div className="flex my-4  justify-between">
           <div>
             <OffsetSelector />
           </div>
