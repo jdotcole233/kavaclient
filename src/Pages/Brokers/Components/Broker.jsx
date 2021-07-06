@@ -2,7 +2,7 @@ import React from "react";
 
 const Broker = () => {
   return (
-    <div className="bg-white flex shadow-md p-3">
+    <div className="bg-white cursor-pointer flex shadow-md p-3">
       <div className="w-20 flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
