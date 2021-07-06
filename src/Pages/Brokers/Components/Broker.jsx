@@ -22,7 +22,7 @@ const Broker = () => {
       <div className="w-auto flex flex-col flex-1">
         <span className="font-bold text-xl">Broker name</span>
         <span className="font-thin">Broker email</span>
-        <span>Broker address</span>
+        <span className="font-thin">Broker address</span>
       </div>
     </div>
   );
