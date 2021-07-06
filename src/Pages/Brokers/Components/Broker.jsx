@@ -3,10 +3,10 @@ import React from "react";
 const Broker = () => {
   return (
     <div className="bg-white flex shadow-md p-3">
-      <div className="w-20">
+      <div className="w-20 flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-green-400"
+          className="h-11 w-11 text-green-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -19,9 +19,9 @@ const Broker = () => {
           />
         </svg>
       </div>
-      <div className="w-auto flex-1">
-        <span>Broker name</span>
-        <span>Broker email</span>
+      <div className="w-auto flex flex-col flex-1">
+        <span className="font-bold text-xl">Broker name</span>
+        <span className="font-thin">Broker email</span>
         <span>Broker address</span>
       </div>
     </div>
