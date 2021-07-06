@@ -11,8 +11,8 @@ const Brokers = () => {
         <div className="flex  justify-between">
           <div></div>
           <div className="flex shadow-md rounded-sm">
-            <input type="text" className="p-3" />
-            <div className="bg-gray-50 w-11 flex items-center justify-center">
+            <input type="text" className="p-3 bg-gray-200" />
+            <div className="bg-gray-200 w-11 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 text-gray-500 w-6"
