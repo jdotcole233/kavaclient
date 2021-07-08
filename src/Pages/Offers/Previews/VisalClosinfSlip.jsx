@@ -27,7 +27,7 @@ const VisalClosingSlip = () => {
         <TwoColRow title="CURRENCY" value="USD" />
       </div>
 
-      <div className="w-full px-20 mt-6 grid grid-cols-3">
+      <div className="w-full px-10 mt-6 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
         <TableRow title="100% Premium" rightValue="Glico General Insurance" />
         <TableRow title="Facultative Premium" rightValue="Bonsu Kwaku Nana" />
@@ -36,6 +36,10 @@ const VisalClosingSlip = () => {
         <TableRow title="NIC Levy (0%)" midValue="NIL" />
         <TableRow title="Withholding Tax (0%)" midValue="NIL" />
         <TableRow title="Balance Due to Reinsurers" rightValue="460.66" />
+      </div>
+      <div>
+        <span>Facultative Premium payable in full at inception</span>
+        <span>Your reinsurance participation: 43% of 100%</span>
       </div>
     </div>
   );
