@@ -10,7 +10,7 @@ const VisalClosingSlip = () => {
         <img className="h-32 " src={iRiskLogo} alt="" />
       </div>
       <div className="mt-2 flex flex-col">
-        <span className="text-center underline">
+        <span className="text-center underline font-bold">
           VISAL RE: FACULTATIVE CLOSING SLIP
         </span>
       </div>
