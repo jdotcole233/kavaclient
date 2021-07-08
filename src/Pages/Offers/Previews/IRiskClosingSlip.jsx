@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import iRiskLogo from "../../../assets/iriskLogo.png";
 // import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 
-const ClosingSlip = () => {
+const IRiskClosingSlip = () => {
   //   const { activeTab } = useLayoutProps();
   return (
     <div className="w-full">
@@ -45,7 +45,7 @@ const ClosingSlip = () => {
   );
 };
 
-export default ClosingSlip;
+export default IRiskClosingSlip;
 
 const TableRow = ({ title, midValue, rightValue }) => (
   <Fragment>
