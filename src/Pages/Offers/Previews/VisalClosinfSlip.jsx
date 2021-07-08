@@ -29,21 +29,13 @@ const VisalClosingSlip = () => {
 
       <div className="w-full px-20 mt-6 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Insured" rightValue="Bonsu Kwaku Nana" />
-        <TableRow title="Policy Number" rightValue="GG-KSKS-1009-20-000444" />
-        <TableRow title="Class of Insurance" rightValue="Motor Comprehensive" />
-        <TableRow title="Registration" rightValue="AS 9478-20" />
-        <TableRow
-          title="Period of Insurance"
-          rightValue="10/07/2021 - 09/07/2022"
-        />
-        <TableRow title="Currency" rightValue="GHS" />
-        <TableRow title="Total Sum Insured" rightValue="885,000.00" />
-        <TableRow title="Total Premium" rightValue="62,624.00" />
-        <TableRow title="Your Share" midValue="20%" />
-        <TableRow title="Your Sum Insured" rightValue="177,000.00" />
-        <TableRow title="Your Premium" rightValue="12,524.80" />
+        <TableRow title="100% Premium" rightValue="Glico General Insurance" />
+        <TableRow title="Facultative Premium" rightValue="Bonsu Kwaku Nana" />
+        <TableRow title="Less Commission (21.5%)" midValue="134.75" />
+        <TableRow title="Brokerage (5%)" midValue="31.34" />
+        <TableRow title="NIC Levy (0%)" midValue="NIL" />
+        <TableRow title="Withholding Tax (0%)" midValue="NIL" />
+        <TableRow title="Balance Due to Reinsurers" rightValue="460.66" />
       </div>
     </div>
   );
