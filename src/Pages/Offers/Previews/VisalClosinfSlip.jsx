@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import iRiskLogo from "../../../assets/visal.png";
 import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
+import { classNames } from "../../../utils";
 
 const VisalClosingSlip = () => {
   const { activeTab } = useLayoutProps();
@@ -39,9 +40,9 @@ const VisalClosingSlip = () => {
 
 export default VisalClosingSlip;
 
-const TableRow = ({ title, midValue, rightValue }) => (
+const TableRow = ({ title, midValue, rightValue, header }) => (
   <Fragment>
-    <div className="p-1 text-gray-500">
+    <div className={classNames(header ? "font-bold" : "", "p-1 text-gray-500")}>
       <span className="font-medium">{title}</span>
     </div>
     <div className="p-1  text-gray-500 text-center">
