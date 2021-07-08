@@ -17,7 +17,9 @@ const VisalClosingSlip = () => {
       </div>
 
       <div className="px-20">
-        <div className="flex"></div>
+        <div className="grid grid-cols-2">
+          <span className="font-bold">Ref#</span>
+        </div>
       </div>
 
       <div className="w-full px-20 mt-3 grid grid-cols-3">
