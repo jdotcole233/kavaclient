@@ -39,11 +39,8 @@ const ClosingSlip = () => {
           rightValue="10/07/2021 - 09/07/2022"
         />
         <TableRow title="Currency" rightValue="GHS" />
-        <TableRow
-          title="Total Sum Insured"
-          rightValue="Glico General Insurance"
-        />
-        <TableRow title="Total Premium" rightValue="Glico General Insurance" />
+        <TableRow title="Total Sum Insured" rightValue="885,000.00" />
+        <TableRow title="Total Premium" rightValue="62,624.00" />
         <TableRow title="Your Share" midValue="20%" />
         <TableRow title="Your Sum Insured" rightValue="177,000.00" />
         <TableRow title="Your Premium" rightValue="12,524.80" />
