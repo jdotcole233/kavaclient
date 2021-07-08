@@ -90,7 +90,7 @@ const Details = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-medium text-gray-900">Your documents</h3>
+            <h3 className="font-medium text-gray-900">Your document</h3>
             <ul className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
               {/* <li className="py-3 flex justify-between items-center">
                 <div className="flex items-center">
@@ -139,10 +139,10 @@ const Details = () => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => setOpenCreditNote(true)}
+                    // onClick={() => setOpenCreditNote(true)}
                     className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
-                    view<span className="sr-only"> Closing Slip</span>
+                    download<span className="sr-only"> Closing Slip</span>
                   </button>
                 </div>
               </li>
