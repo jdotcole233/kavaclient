@@ -21,6 +21,7 @@ const KEKClosingSlip = () => {
         <TwoColRow title="To" value="GHANA REINSURANCE COMPANY" />
         <TwoColRow title="REGISTRATION" value="GN 5762-19" />
         <TwoColRow title="TYPE" value="MOTOR COMPREHENSIVE" />
+        <TwoColRow title="FORM" value="As Original and/ Slip Policy Reins" />
         <TwoColRow title="REINSURED" value="VANGUARD ASSURANCE COMPANY" />
         <TwoColRow title="INSURED" value="SETH FIAITI" />
         <TwoColRow title="PERIOD" value="01/01/2020 - 31/12/2020" />
@@ -91,10 +92,10 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
 const TwoColRow = ({ title, value }) => (
   <div className="grid mb-3 grid-cols-2">
     <div>
-      <span className="font-bold">{title}</span>
+      <span className="font-semibold">{title}</span>
     </div>
     <div>
-      <span className="font-medium">{value}</span>
+      <span className="font-thin">{value}</span>
     </div>
   </div>
 );
