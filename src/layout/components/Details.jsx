@@ -9,10 +9,10 @@ const currentFile = {
   source:
     "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
   information: {
+    "Policy Number": "KEK-56348983",
     Currency: "GHC",
     Created: "June 8, 2020",
-    "Policy Number": "KEK-56348983",
-    Insurer: "Kwame Owusu",
+    Reinsured: "Kwame Owusu",
     Brokerage: "12.3%",
     Commission: "6.3%",
     NIC: "2.5%",
@@ -148,7 +148,7 @@ const Details = () => {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="font-medium text-gray-900">Other participants</h3>
             <ul className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
               {currentFile.sharedWith.map((person) => (
@@ -169,7 +169,7 @@ const Details = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </aside>
 

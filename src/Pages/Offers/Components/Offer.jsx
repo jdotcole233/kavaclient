@@ -16,7 +16,7 @@ const Offer = ({ file = {} }) => {
           <DocumentTextIcon className="h-11 w-11 text-green-600" />
         </div>
         <div className="w-auto flex-1 items-start flex flex-col">
-          <span className="font-semibold">Insurer Name</span>
+          <span className="font-semibold">Reinsured</span>
           <span className="text-gray-600 font-thin">#KEK-56348983</span>
           <span className="bg-green-200 my-1 flex items-center justify-center text-green-500 rounded-full px-2 font-medium text-sm">
             status
