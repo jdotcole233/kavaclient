@@ -30,8 +30,8 @@ const ClosingSlip = () => {
 
       <div className="w-full border mt-3 grid grid-cols-3   divide-y divide-x divide-gray-300">
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Insured" rightValue="Glico General Insurance" />
+        <TableRow title="Policy Number" rightValue="Glico General Insurance" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
