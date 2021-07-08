@@ -36,9 +36,9 @@ export const userNavigation = [
 ]
 
 export const tabs = [
-    { name: 'Visal Brokers', href: '#', current: true },
-    { name: 'Recently Added', href: '#', current: false },
-    { name: 'Favorited', href: '#', current: false },
+    { name: 'Visal Reinsurance Brokers', href: '#', current: true },
+    { name: 'KEK Reinsurance Brokers', href: '#', current: false },
+    { name: 'iRisk Reinsurance Brokers', href: '#', current: false },
 ]
 export const files = [
     {
