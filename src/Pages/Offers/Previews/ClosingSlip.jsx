@@ -32,13 +32,22 @@ const ClosingSlip = () => {
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Insured" rightValue="Glico General Insurance" />
         <TableRow title="Policy Number" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow
+          title="Class of Insurance"
+          rightValue="Glico General Insurance"
+        />
+        <TableRow title="Registration" rightValue="Glico General Insurance" />
+        <TableRow
+          title="Period of Insurance"
+          rightValue="Glico General Insurance"
+        />
+        <TableRow title="Currency" rightValue="Glico General Insurance" />
+        <TableRow
+          title="Total Sum Insured"
+          rightValue="Glico General Insurance"
+        />
+        <TableRow title="Total Premium" rightValue="Glico General Insurance" />
+        <TableRow title="Your Share" midValue="20%" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
