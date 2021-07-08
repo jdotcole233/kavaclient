@@ -13,6 +13,9 @@ const ClosingSlip = () => {
           alt=""
         />
       </div>
+      <div>
+        <span>{new Date().toDateString()}</span>
+      </div>
     </div>
   );
 };
