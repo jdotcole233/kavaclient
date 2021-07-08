@@ -18,16 +18,16 @@ const VisalClosingSlip = () => {
 
       <div className="px-20 mt-3">
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="To" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="To" value="GHANA REINSURANCE COMPANY" />
+        <TwoColRow title="REGISTRATION" value="GN 5762-19" />
+        <TwoColRow title="TYPE" value="MOTOR COMPREHENSIVE" />
+        <TwoColRow title="REINSURED" value="VANGUARD ASSURANCE COMPANY" />
+        <TwoColRow title="INSURED" value="SETH FIAITI" />
+        <TwoColRow title="PERIOD" value="01/01/2020 - 31/12/2020" />
+        <TwoColRow title="CURRENCY" value="USD" />
       </div>
 
-      <div className="w-full px-20 mt-3 grid grid-cols-3">
+      <div className="w-full px-20 mt-6 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Insured" rightValue="Bonsu Kwaku Nana" />
