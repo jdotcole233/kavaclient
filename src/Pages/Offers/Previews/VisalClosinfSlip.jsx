@@ -17,30 +17,7 @@ const VisalClosingSlip = () => {
       </div>
 
       <div className="px-20">
-        <div className="grid grid-cols-2">
-          <div>
-            <span className="font-bold">Ref#</span>
-          </div>
-          <div>
-            <span className="font-medium">Ref#</span>
-          </div>
-        </div>
-        <div className="grid grid-cols-2">
-          <div>
-            <span className="font-bold">Ref#</span>
-          </div>
-          <div>
-            <span className="font-medium">Ref#</span>
-          </div>
-        </div>
-        <div className="grid grid-cols-2">
-          <div>
-            <span className="font-bold">Ref#</span>
-          </div>
-          <div>
-            <span className="font-medium">Ref#</span>
-          </div>
-        </div>
+        <TwoColRow title="Ref#" />
       </div>
 
       <div className="w-full px-20 mt-3 grid grid-cols-3">
@@ -94,4 +71,15 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
       <span className="">{rightValue}</span>
     </div>
   </Fragment>
+);
+
+const TwoColRow = ({ title, value }) => (
+  <div className="grid mb-3 grid-cols-2">
+    <div>
+      <span className="font-bold">{title}</span>
+    </div>
+    <div>
+      <span className="font-medium">{value}</span>
+    </div>
+  </div>
 );
