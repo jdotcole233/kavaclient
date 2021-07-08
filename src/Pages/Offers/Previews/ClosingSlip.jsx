@@ -6,7 +6,7 @@ const ClosingSlip = () => {
   return (
     <Fragment>
       <VisalClosingSlip />
-      <IRiskClosingSlip />
+      {/* <IRiskClosingSlip /> */}
     </Fragment>
   );
 };
