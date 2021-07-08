@@ -51,20 +51,21 @@ const Tabs = () => {
               ))}
             </nav>
             <div className="hidden ml-6 bg-gray-100 p-0.5 rounded-lg items-center sm:flex">
-              {/* <button
-                type="button"
-                className="p-1.5 rounded-md text-gray-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+              <select
+                id="tabs"
+                name="tabs"
+                className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md"
+                defaultValue="Recently Viewed"
+                onChange={(e) => setActiveTab(e.target.value)}
+                value={activeTab}
               >
-                <ViewListIcon className="h-5 w-5" aria-hidden="true" />
-                <span className="sr-only">Use list view</span>
-              </button>
-              <button
-                type="button"
-                className="ml-0.5 bg-white p-1.5 rounded-md shadow-sm text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
-              >
-                <ViewGridIconSolid className="h-5 w-5" aria-hidden="true" />
-                <span className="sr-only">Use grid view</span>
-              </button> */}
+                {tabs.map((el, key) => (
+                  <option value={key}>{el.name}</option>
+                ))}
+
+                {/* <option>Recently Added</option>
+            <option>Favorited</option> */}
+              </select>
             </div>
           </div>
         </div>
