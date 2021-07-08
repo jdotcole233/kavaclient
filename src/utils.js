@@ -42,69 +42,25 @@ export const tabs = [
 ]
 export const files = [
     {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
+        "Policy Number": "KEK-56348983",
+        Currency: "GHC",
+        Created: "June 8, 2020",
+        Reinsured: "Kwame Owusu",
+        Brokerage: "12.3%",
+        Commission: "6.3%",
+        NIC: "2.5%",
+        "WIthholding tax": "3.1%",
     },
     {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    },
-    {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    }, {
-        name: 'IMG_4985.HEIC',
-        size: '3.9 MB',
-        source:
-            'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-        current: true,
-    },
-    // More files...
+        "Policy Number": "KEK-76348983",
+        Currency: "USD",
+        Created: "June 8, 2020",
+        Reinsured: "Kwame Owusu",
+        Brokerage: "12.3%",
+        Commission: "6.3%",
+        NIC: "2.5%",
+        "WIthholding tax": "3.1%",
+    }
 ]
 
 export const plans = [

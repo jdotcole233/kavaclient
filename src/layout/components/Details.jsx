@@ -96,28 +96,6 @@ const Details = () => {
               </li>
             </ul>
           </div>
-          {/* <div>
-            <h3 className="font-medium text-gray-900">Other participants</h3>
-            <ul className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
-              {currentFile.sharedWith.map((person) => (
-                <li
-                  key={person.id}
-                  className="py-3 flex justify-between items-center"
-                >
-                  <div className="flex items-center">
-                    <img
-                      src={person.imageUrl}
-                      alt=""
-                      className="w-8 h-8 rounded-full"
-                    />
-                    <p className="ml-4 text-sm font-medium text-gray-900">
-                      {person.name}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       </aside>
 
