@@ -18,7 +18,7 @@ const VisalClosingSlip = () => {
 
       <div className="px-20 mt-3">
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="To" value="P-950-1051-2020-000005" />
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
