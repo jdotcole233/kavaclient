@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import iRiskLogo from "../../../assets/iriskLogo.png";
 import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 
@@ -28,10 +28,32 @@ const ClosingSlip = () => {
         </span>
       </div>
 
-      <div className="w-full mt-3 grid grid-cols-3 divide-y divide-x divide-gray-300">
-        <div>Helllo</div>
-        <div>Hello</div>
-        <div>Hello</div>
+      <div className="w-full mt-3 grid grid-cols-3 border divide-y divide-x divide-gray-300">
+        <Fragment>
+          <div>Helllo</div>
+          <div>Hello</div>
+          <div>Hello</div>
+        </Fragment>
+        <Fragment>
+          <div>Helllo</div>
+          <div>Hello</div>
+          <div>Hello</div>
+        </Fragment>
+        <Fragment>
+          <div>Helllo</div>
+          <div>Hello</div>
+          <div>Hello</div>
+        </Fragment>
+        <Fragment>
+          <div>Helllo</div>
+          <div>Hello</div>
+          <div>Hello</div>
+        </Fragment>
+        <Fragment>
+          <div>Helllo</div>
+          <div>Hello</div>
+          <div>Hello</div>
+        </Fragment>
       </div>
     </div>
   );
