@@ -70,36 +70,6 @@ const Details = () => {
           <div>
             <h3 className="font-medium text-gray-900">Your document</h3>
             <ul className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
-              {/* <li className="py-3 flex justify-between items-center">
-                <div className="flex items-center">
-                  <DocumentIcon className="h-6 w-6" />
-                  <p className="ml-4 text-sm font-medium text-gray-900">
-                    Credit Note
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setOpenCreditNote(true)}
-                  className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  view<span className="sr-only"> Credit Note</span>
-                </button>
-              </li>
-              <li className="py-3 flex justify-between items-center">
-                <div className="flex items-center">
-                  <DocumentIcon className="h-6 w-6" />
-                  <p className="ml-4 text-sm font-medium text-gray-900">
-                    Debit Note
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setOpenCreditNote(true)}
-                  className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  view<span className="sr-only"> Debit Note</span>
-                </button>
-              </li> */}
               <li className="py-3 flex justify-between items-center">
                 <div className="flex items-center">
                   <DocumentIcon className="h-6 w-6" />
