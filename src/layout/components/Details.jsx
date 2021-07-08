@@ -15,7 +15,7 @@ const currentFile = {
 };
 
 const Details = () => {
-  const { setSelectedOffer } = useLayoutProps();
+  const { selectedOffer, setSelectedOffer } = useLayoutProps();
   const [openCreditNote, setOpenCreditNote] = useState(false);
   return (
     <Fragment>
@@ -48,13 +48,13 @@ const Details = () => {
           <div>
             <h3 className="font-medium text-gray-900">Information</h3>
             <dl className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
-              {Object.keys(currentFile).map((key) => (
+              {Object.keys(selectedOffer).map((key) => (
                 <div
                   key={key}
                   className="py-3 flex justify-between text-sm font-medium"
                 >
                   <dt className="text-gray-500">{key}</dt>
-                  <dd className="text-gray-900">{currentFile[key]}</dd>
+                  <dd className="text-gray-900">{selectedOffer[key]}</dd>
                 </div>
               ))}
             </dl>
