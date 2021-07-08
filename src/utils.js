@@ -36,7 +36,7 @@ export const userNavigation = [
 ]
 
 export const tabs = [
-    { name: 'Recently Viewed', href: '#', current: true },
+    { name: 'Visal Brokers', href: '#', current: true },
     { name: 'Recently Added', href: '#', current: false },
     { name: 'Favorited', href: '#', current: false },
 ]

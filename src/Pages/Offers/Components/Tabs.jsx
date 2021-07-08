@@ -59,8 +59,8 @@ const Tabs = () => {
                 onChange={(e) => setActiveTab(e.target.value)}
                 value={activeTab}
               >
-                {tabs.map((el, key) => (
-                  <option value={key}>{el.name}</option>
+                {["2021", "2020", "2019"].map((el, key) => (
+                  <option value={el}>{el}</option>
                 ))}
 
                 {/* <option>Recently Added</option>
