@@ -17,7 +17,7 @@ const VisalClosingSlip = () => {
       </div>
 
       <div className="w-full mt-3 grid grid-cols-3">
-        <TableRow midValue="Debit" rightValue="Credit" />
+        <TableRow header midValue="Debit" rightValue="Credit" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Insured" rightValue="Bonsu Kwaku Nana" />
         <TableRow title="Policy Number" rightValue="GG-KSKS-1009-20-000444" />
@@ -45,11 +45,21 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
     <div className={classNames(header ? "font-bold" : "", "p-1 text-gray-500")}>
       <span className="font-medium">{title}</span>
     </div>
-    <div className="p-1  text-gray-500 text-center">
-      <span className="font-medium">{midValue}</span>
+    <div
+      className={classNames(
+        header ? "font-bold" : "font-medium",
+        "p-1  text-gray-500 text-center"
+      )}
+    >
+      <span className="">{midValue}</span>
     </div>
-    <div className="p-1 text-gray-500 text-right">
-      <span className="font-medium">{rightValue}</span>
+    <div
+      className={classNames(
+        header ? "font-bold" : "font-medium",
+        "p-1 text-gray-500 text-right"
+      )}
+    >
+      <span className="">{rightValue}</span>
     </div>
   </Fragment>
 );
