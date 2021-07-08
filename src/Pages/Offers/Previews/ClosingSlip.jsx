@@ -8,7 +8,7 @@ const ClosingSlip = () => {
     <div className="w-full">
       <div className="w-full flex items-center justify-center">
         <img
-          className="h-32 w-32"
+          className="h-32 "
           src={activeTab === 2 ? iRiskLogo : null}
           alt=""
         />
