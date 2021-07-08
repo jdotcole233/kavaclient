@@ -42,12 +42,17 @@ export default VisalClosingSlip;
 
 const TableRow = ({ title, midValue, rightValue, header }) => (
   <Fragment>
-    <div className={classNames(header ? "font-bold" : "", "p-1 text-gray-500")}>
-      <span className="font-medium">{title}</span>
+    <div
+      className={classNames(
+        header ? "font-bold text-gray-700" : "font-medium",
+        "p-1 text-gray-500"
+      )}
+    >
+      <span className="">{title}</span>
     </div>
     <div
       className={classNames(
-        header ? "font-bold" : "font-medium",
+        header ? "font-bold text-gray-700" : "font-medium",
         "p-1  text-gray-500 text-center"
       )}
     >
@@ -55,7 +60,7 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
     </div>
     <div
       className={classNames(
-        header ? "font-bold" : "font-medium",
+        header ? "font-bold text-gray-700" : "font-medium",
         "p-1 text-gray-500 text-right"
       )}
     >
