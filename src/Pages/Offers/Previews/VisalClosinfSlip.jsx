@@ -10,17 +10,8 @@ const VisalClosingSlip = () => {
         <img className="h-32 " src={iRiskLogo} alt="" />
       </div>
       <div className="mt-2 flex flex-col">
-        <span className="mb-2">{new Date().toDateString()}</span>
-        <span>The Managing Director</span>
-        <span>{`Ghana Reinsurance Company Limited`}</span>
-        <span>{`Accra`}</span>
-        <span>{`Greater Accra - Ghana`}</span>
-        <span className="my-3">Dear Sir/Madam</span>
-        <span className="font-bold">Facultative Reinsurance Application</span>
-        <span>
-          We refer to the risk below and your subsequent acceptance of a share
-          of the same risk. Kindly issue your guarantee in accordance with the
-          information below.
+        <span className="text-center underline">
+          VISAL RE: FACULTATIVE CLOSING SLIP
         </span>
       </div>
 
