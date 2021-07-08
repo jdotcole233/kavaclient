@@ -34,26 +34,6 @@ const ClosingSlip = () => {
           <div>Hello</div>
           <div>Hello</div>
         </Fragment>
-        <Fragment>
-          <div>Helllo</div>
-          <div>Hello</div>
-          <div>Hello</div>
-        </Fragment>
-        <Fragment>
-          <div>Helllo</div>
-          <div>Hello</div>
-          <div>Hello</div>
-        </Fragment>
-        <Fragment>
-          <div>Helllo</div>
-          <div>Hello</div>
-          <div>Hello</div>
-        </Fragment>
-        <Fragment>
-          <div>Helllo</div>
-          <div>Hello</div>
-          <div>Hello</div>
-        </Fragment>
       </div>
     </div>
   );
