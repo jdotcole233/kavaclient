@@ -6,12 +6,8 @@ const VisalClosingSlip = () => {
   const { activeTab } = useLayoutProps();
   return (
     <div className="w-full">
-      <div className="w-full flex items-center justify-center">
-        <img
-          className="h-32 "
-          src={activeTab === 2 ? iRiskLogo : null}
-          alt=""
-        />
+      <div className="w-full flex items-center justify-end">
+        <img className="h-32 " src={iRiskLogo} alt="" />
       </div>
       <div className="mt-2 flex flex-col">
         <span className="mb-2">{new Date().toDateString()}</span>
