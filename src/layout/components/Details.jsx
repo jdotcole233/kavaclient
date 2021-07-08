@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { DocumentIcon, XIcon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import DocumentWrapper from "../../Components/DocumentWrapper";
+import ClosingSlip from "../../Pages/Offers/Previews/ClosingSlip";
 
 const currentFile = {
   "Policy Number": "KEK-56348983",
@@ -99,10 +100,9 @@ const Details = () => {
         </div>
       </aside>
 
-      <DocumentWrapper
-        show={openCreditNote}
-        setShow={setOpenCreditNote}
-      ></DocumentWrapper>
+      <DocumentWrapper show={openCreditNote} setShow={setOpenCreditNote}>
+        <ClosingSlip />
+      </DocumentWrapper>
     </Fragment>
   );
 };
