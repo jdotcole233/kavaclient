@@ -19,7 +19,7 @@ const Offer = ({ file = {} }) => {
           <span className="font-semibold">Reinsured</span>
           <span className="text-gray-600 font-thin">#KEK-56348983</span>
           <span className="bg-green-200 my-1 flex items-center justify-center text-green-500 rounded-full px-2 font-medium text-sm">
-            status
+            11.3%
           </span>
         </div>
         {/* <div className="w-20 flex"></div> */}
