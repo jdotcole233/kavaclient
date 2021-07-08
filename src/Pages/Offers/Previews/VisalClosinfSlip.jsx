@@ -15,7 +15,8 @@ const VisalClosingSlip = () => {
         </span>
       </div>
 
-      <div className="w-full border mt-3 grid grid-cols-3   divide-y divide-x divide-gray-300">
+      <div className="w-full mt-3 grid grid-cols-3">
+        <TableRow midValue="Debit" rightValue="Credit" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Insured" rightValue="Bonsu Kwaku Nana" />
         <TableRow title="Policy Number" rightValue="GG-KSKS-1009-20-000444" />
