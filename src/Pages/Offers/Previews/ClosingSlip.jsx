@@ -13,7 +13,7 @@ const ClosingSlip = () => {
           alt=""
         />
       </div>
-      <div>
+      <div className="mt-2">
         <span>{new Date().toDateString()}</span>
       </div>
     </div>
