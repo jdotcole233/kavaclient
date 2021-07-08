@@ -13,8 +13,12 @@ const ClosingSlip = () => {
           alt=""
         />
       </div>
-      <div className="mt-2">
+      <div className="mt-2 flex flex-col">
         <span>{new Date().toDateString()}</span>
+        <span>The Managing Director</span>
+        <span>{`Ghana Reinsurance Company Limited`}</span>
+        <span>{`Accra`}</span>
+        <span>{`Greater Accra - Ghana`}</span>
       </div>
     </div>
   );
