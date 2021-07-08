@@ -40,17 +40,7 @@ const ClosingSlip = () => {
             <span className="font-medium">Glico General Insurance</span>
           </div>
         </Fragment>
-        <Fragment>
-          <div className="px-2">
-            <span className="font-medium">Insured</span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium"></span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium">Glico General Insurance</span>
-          </div>
-        </Fragment>
+
         <Fragment>
           <div className="px-2">
             <span className="font-medium">Policy Number</span>
@@ -68,3 +58,17 @@ const ClosingSlip = () => {
 };
 
 export default ClosingSlip;
+
+const TableRow = ({ title, midValue, rightValue }) => (
+  <Fragment>
+    <div className="px-2">
+      <span className="font-medium">{title}</span>
+    </div>
+    <div className="px-2">
+      <span className="font-medium">{midValue}</span>
+    </div>
+    <div className="px-2">
+      <span className="font-medium">{rightValue}</span>
+    </div>
+  </Fragment>
+);
