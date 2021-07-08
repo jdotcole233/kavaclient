@@ -29,29 +29,26 @@ const ClosingSlip = () => {
       </div>
 
       <div className="w-full border mt-3 grid grid-cols-3   divide-y divide-x divide-gray-300">
-        <Fragment>
-          <div className="px-2 border">
-            <span className="font-medium">Reinsured</span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium"></span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium">Glico General Insurance</span>
-          </div>
-        </Fragment>
-
-        <Fragment>
-          <div className="px-2">
-            <span className="font-medium">Policy Number</span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium"></span>
-          </div>
-          <div className="px-2">
-            <span className="font-medium">Glico General Insurance</span>
-          </div>
-        </Fragment>
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
       </div>
     </div>
   );
@@ -61,13 +58,13 @@ export default ClosingSlip;
 
 const TableRow = ({ title, midValue, rightValue }) => (
   <Fragment>
-    <div className="px-2">
+    <div className="p-1">
       <span className="font-medium">{title}</span>
     </div>
-    <div className="px-2">
+    <div className="p-1">
       <span className="font-medium">{midValue}</span>
     </div>
-    <div className="px-2">
+    <div className="p-1">
       <span className="font-medium">{rightValue}</span>
     </div>
   </Fragment>
