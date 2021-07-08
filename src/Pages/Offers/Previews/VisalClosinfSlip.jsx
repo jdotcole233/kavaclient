@@ -16,7 +16,11 @@ const VisalClosingSlip = () => {
         </span>
       </div>
 
-      <div className="w-full mt-3 grid grid-cols-3">
+      <div className="px-20">
+        <div className="flex"></div>
+      </div>
+
+      <div className="w-full px-20 mt-3 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
         <TableRow title="Reinsured" rightValue="Glico General Insurance" />
         <TableRow title="Insured" rightValue="Bonsu Kwaku Nana" />
