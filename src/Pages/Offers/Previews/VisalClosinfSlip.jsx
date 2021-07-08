@@ -29,13 +29,17 @@ const VisalClosingSlip = () => {
 
       <div className="w-full px-10 mt-6 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
-        <TableRow title="100% Premium" rightValue="Glico General Insurance" />
-        <TableRow title="Facultative Premium" rightValue="Bonsu Kwaku Nana" />
+        <TableRow title="100% Premium" rightValue="1,457.56" />
+        <TableRow title="Facultative Premium" rightValue="626.75" />
         <TableRow title="Less Commission (21.5%)" midValue="134.75" />
         <TableRow title="Brokerage (5%)" midValue="31.34" />
         <TableRow title="NIC Levy (0%)" midValue="NIL" />
         <TableRow title="Withholding Tax (0%)" midValue="NIL" />
-        <TableRow title="Balance Due to Reinsurers" rightValue="460.66" />
+        <TableRow
+          header
+          title="Balance Due to Reinsurers"
+          rightValue="460.66"
+        />
       </div>
       <div className="flex flex-col px-10">
         <span className="my-2 ml-1">
