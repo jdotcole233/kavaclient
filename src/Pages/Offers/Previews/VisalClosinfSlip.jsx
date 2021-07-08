@@ -16,8 +16,15 @@ const VisalClosingSlip = () => {
         </span>
       </div>
 
-      <div className="px-20">
-        <TwoColRow title="Ref#" />
+      <div className="px-20 mt-3">
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
+        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
       </div>
 
       <div className="w-full px-20 mt-3 grid grid-cols-3">
