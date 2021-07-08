@@ -5,8 +5,10 @@ import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 const ClosingSlip = () => {
   const { activeTab } = useLayoutProps();
   return (
-    <div>
-      <img src={activeTab === 2 ? iRiskLogo : null} alt="" />
+    <div className="w-full">
+      <div>
+        <img src={activeTab === 2 ? iRiskLogo : null} alt="" />
+      </div>
     </div>
   );
 };
