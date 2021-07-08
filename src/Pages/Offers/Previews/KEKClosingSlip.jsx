@@ -1,18 +1,18 @@
 import React, { Fragment } from "react";
 import iRiskLogo from "../../../assets/kek.png";
-import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
+// import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 import { classNames } from "../../../utils";
 
 const KEKClosingSlip = () => {
-  const { activeTab } = useLayoutProps();
+  //   const { activeTab } = useLayoutProps();
   return (
     <div className="w-full">
       <div className="w-full flex items-center justify-end">
         <img className="h-20 " src={iRiskLogo} alt="" />
       </div>
       <div className="mt-2 flex flex-col">
-        <span className="text-center underline font-bold">
-          VISAL RE: FACULTATIVE CLOSING SLIP
+        <span className="text-center underline font-semibold">
+          FACULTATIVE CLOSING
         </span>
       </div>
 
