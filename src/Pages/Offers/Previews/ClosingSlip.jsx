@@ -28,10 +28,10 @@ const ClosingSlip = () => {
         </span>
       </div>
 
-      <div className="grid grid-cols-3 divide-y divide-x divide-gray-300">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="w-full mt-3 grid grid-cols-3 divide-y divide-x divide-gray-300">
+        <div>Helllo</div>
+        <div>Hello</div>
+        <div>Hello</div>
       </div>
     </div>
   );
