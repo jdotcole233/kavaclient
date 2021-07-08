@@ -25,7 +25,7 @@ export const navigation = [
     // { name: 'Home', href: '/', icon: HomeIcon, current: false },
     { name: 'All Offers', href: '/offers', icon: ViewGridIconOutline, current: false },
     { name: 'All Treaties', href: '/treaties', icon: CollectionIcon, current: false },
-    { name: 'Brokers', href: '/brokers', icon: UserGroupIcon, current: false },
+    // { name: 'Brokers', href: '/brokers', icon: UserGroupIcon, current: false },
     // { name: 'Albums', href: '#', icon: PhotographIcon, current: false },
     { name: 'Settings', href: '/settings', icon: CogIcon, current: false },
 ]
