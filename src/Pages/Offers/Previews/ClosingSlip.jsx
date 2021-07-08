@@ -53,7 +53,7 @@ const ClosingSlip = () => {
         </Fragment>
         <Fragment>
           <div className="px-2">
-            <span className="font-medium">Reinsured</span>
+            <span className="font-medium">Policy Number</span>
           </div>
           <div className="px-2">
             <span className="font-medium"></span>
