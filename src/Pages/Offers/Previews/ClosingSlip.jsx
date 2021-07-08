@@ -53,13 +53,13 @@ export default ClosingSlip;
 
 const TableRow = ({ title, midValue, rightValue }) => (
   <Fragment>
-    <div className="p-1">
+    <div className="p-1 text-gray-500">
       <span className="font-medium">{title}</span>
     </div>
-    <div className="p-1 text-center">
+    <div className="p-1  text-gray-500 text-center">
       <span className="font-medium">{midValue}</span>
     </div>
-    <div className="p-1 text-right">
+    <div className="p-1 text-gray-500 text-right">
       <span className="font-medium">{rightValue}</span>
     </div>
   </Fragment>
