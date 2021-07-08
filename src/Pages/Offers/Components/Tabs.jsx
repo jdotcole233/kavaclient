@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
+import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 import { classNames, tabs } from "../../../utils";
-import { useOfferProps } from "../Providers/OfferProvider";
+// import { useOfferProps } from "../Providers/OfferProvider";
 
 const Tabs = () => {
-  const { activeTab, setActiveTab } = useOfferProps();
+  const { activeTab, setActiveTab } = useLayoutProps();
   return (
     <Fragment>
       <div className="mt-3 sm:mt-2">

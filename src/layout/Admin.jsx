@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom";
 function Admin() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedOffer, setSelectedOffer] = useState(undefined);
+  const [activeTab, setActiveTab] = useState(0);
 
   const { pathname } = useLocation();
 
@@ -20,6 +21,8 @@ function Admin() {
         setMobileMenuOpen,
         setSelectedOffer,
         selectedOffer,
+        activeTab,
+        setActiveTab,
       }}
     >
       <div className="h-screen bg-gray-50 flex overflow-hidden">
