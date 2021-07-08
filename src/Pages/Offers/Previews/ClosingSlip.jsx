@@ -48,16 +48,8 @@ const ClosingSlip = () => {
         />
         <TableRow title="Total Premium" rightValue="Glico General Insurance" />
         <TableRow title="Your Share" midValue="20%" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
-        <TableRow title="Reinsured" rightValue="Glico General Insurance" />
+        <TableRow title="Your Sum Insured" rightValue="177,000.00" />
+        <TableRow title="Your Premium" rightValue="12,524.80" />
       </div>
     </div>
   );
@@ -70,10 +62,10 @@ const TableRow = ({ title, midValue, rightValue }) => (
     <div className="p-1">
       <span className="font-medium">{title}</span>
     </div>
-    <div className="p-1">
+    <div className="p-1 text-center">
       <span className="font-medium">{midValue}</span>
     </div>
-    <div className="p-1">
+    <div className="p-1 text-right">
       <span className="font-medium">{rightValue}</span>
     </div>
   </Fragment>
