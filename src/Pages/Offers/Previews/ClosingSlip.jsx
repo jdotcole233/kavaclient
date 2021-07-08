@@ -21,6 +21,11 @@ const ClosingSlip = () => {
         <span>{`Greater Accra - Ghana`}</span>
         <span className="my-3">Dear Sir/Madam</span>
         <span className="font-bold">Facultative Reinsurance Application</span>
+        <span>
+          We refer to the risk below and your subsequent acceptance of a share
+          of the same risk. Kindly issue your guarantee in accordance with the
+          information below.
+        </span>
       </div>
     </div>
   );
