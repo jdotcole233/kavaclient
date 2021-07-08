@@ -54,11 +54,11 @@ export const files = [
     {
         "Policy Number": "KEK-76348983",
         Currency: "USD",
-        Created: "June 8, 2020",
-        Reinsured: "Kwame Owusu",
-        Brokerage: "12.3%",
+        Created: "May 2, 2020",
+        Reinsured: "Vanguard Life",
+        Brokerage: "25.2%",
         Commission: "6.3%",
-        NIC: "2.5%",
+        NIC: "4.2%",
         "WIthholding tax": "3.1%",
     }
 ]
