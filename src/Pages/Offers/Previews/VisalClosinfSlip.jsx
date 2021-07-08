@@ -37,9 +37,13 @@ const VisalClosingSlip = () => {
         <TableRow title="Withholding Tax (0%)" midValue="NIL" />
         <TableRow title="Balance Due to Reinsurers" rightValue="460.66" />
       </div>
-      <div>
-        <span>Facultative Premium payable in full at inception</span>
-        <span>Your reinsurance participation: 43% of 100%</span>
+      <div className="flex flex-col px-10">
+        <span className="my-2 ml-1">
+          Facultative Premium payable in full at inception
+        </span>
+        <span className="ml-1">
+          Your reinsurance participation: 43% of 100%
+        </span>
       </div>
     </div>
   );
