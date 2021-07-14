@@ -8,7 +8,7 @@ function Auth() {
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
         /> */}
-        <div className="flex h-full justify-self-end">
+        <div className="flex h-full items-end bg-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#09f"
