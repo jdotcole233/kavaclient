@@ -2,7 +2,7 @@
 function Auth() {
   return (
     <div className="min-h-screen bg-white flex">
-      <div className="hidden lg:block bg-green-400 relative w-0 flex-1">
+      <div className="hidden lg:block bg-green-400 flex relative w-0 flex-1">
         {/* <img
           className="absolute inset-0 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
@@ -10,8 +10,8 @@ function Auth() {
         /> */}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#FFF"
-            d="M0 256l21.8 5.3C43.6 267 87 277 131 277.3c43.5-.3 87-10.3 131-42.6C305.5 203 349 149 393 144c43.4-5 87 37 131 32 43.3-5 87-59 131-58.7 43.2-.3 87 53.7 130 69.4 44.1 16.3 88-5.7 131-21.4 44-16.3 88-26.3 131-32 43.9-5.3 88-5.3 131-21.3 43.8-16 87-48 131-26.7 43.7 21.7 87 95.7 109 133.4l22 37.3V0H0z"
+            fill="#09f"
+            d="M0 128l14.1 16C28.2 160 56 192 85 218.7c27.9 26.3 56 48.3 84 21.3 28.6-27 57-101 85-133.3C282.4 75 311 85 339 96c28.1 11 56 21 85 21.3 27.8-.3 56-10.3 84 0 28.5 10.7 57 42.7 85 37.4 28.2-5.7 56-47.7 85-42.7 27.9 5 56 59 84 74.7 28.6 16.3 57-5.7 85-26.7 28.3-21 57-43 85-53.3 28-10.7 56-10.7 84 0 28.7 10.3 57 32.3 85 32 28.4.3 57-21.7 85-42.7 28.1-21 56-43 85-37.3 27.8 5.3 56 37.3 84 85.3 28.5 48 57 112 71 144l14 32H0z"
           ></path>
         </svg>
       </div>
