@@ -2,16 +2,16 @@
 function Auth() {
   return (
     <div className="min-h-screen bg-white flex">
-      <div className="hidden lg:block bg-green-400  relative w-0 flex-1">
+      <div className="hidden lg:block bg-green-500  relative w-0 flex-1">
         {/* <img
           className="absolute inset-0 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
         /> */}
-        <div className="flex h-full items-end bg-gray-900">
+        <div className="flex h-full items-end">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#09f"
+              fill="#fff"
               d="M0 64v64h68.6v64h68.5v96h68.6V96h137.2v32h68.5v128H480V96h137.1V64h68.6v96h137.2v32h68.5v32H960V0h68.6v224h68.5v-32h68.6V64h68.6v128h68.6V96h68.5V32h68.6v288H0z"
             ></path>
           </svg>
