@@ -8,6 +8,12 @@ function Auth() {
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
         /> */}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#FFF"
+            d="M0 256l21.8 5.3C43.6 267 87 277 131 277.3c43.5-.3 87-10.3 131-42.6C305.5 203 349 149 393 144c43.4-5 87 37 131 32 43.3-5 87-59 131-58.7 43.2-.3 87 53.7 130 69.4 44.1 16.3 88-5.7 131-21.4 44-16.3 88-26.3 131-32 43.9-5.3 88-5.3 131-21.3 43.8-16 87-48 131-26.7 43.7 21.7 87 95.7 109 133.4l22 37.3V0H0z"
+          ></path>
+        </svg>
       </div>
       <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-96">
