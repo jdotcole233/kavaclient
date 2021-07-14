@@ -16,16 +16,13 @@ const Tabs = () => {
             id="tabs"
             name="tabs"
             className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md"
-            defaultValue="Recently Viewed"
+            defaultValue={0}
             onChange={(e) => setActiveTab(e.target.value)}
             value={activeTab}
           >
             {tabs.map((el, key) => (
               <option value={key}>{el.name}</option>
             ))}
-
-            {/* <option>Recently Added</option>
-            <option>Favorited</option> */}
           </select>
         </div>
         <div className="hidden sm:block">
@@ -63,9 +60,6 @@ const Tabs = () => {
                 {["2021", "2020", "2019"].map((el, key) => (
                   <option value={el}>{el}</option>
                 ))}
-
-                {/* <option>Recently Added</option>
-            <option>Favorited</option> */}
               </select>
             </div>
           </div>

@@ -16,7 +16,7 @@ const VisalClosingSlip = () => {
         </span>
       </div>
 
-      <div className="px-20 mt-3">
+      <div className="px-10 mt-3">
         <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
         <TwoColRow title="To" value="GHANA REINSURANCE COMPANY" />
         <TwoColRow title="REGISTRATION" value="GN 5762-19" />
@@ -60,7 +60,7 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
     <div
       className={classNames(
         header ? "font-bold text-gray-700" : "font-medium",
-        "p-1 text-gray-500"
+        "p-1 text-gray-700"
       )}
     >
       <span className="">{title}</span>
@@ -68,7 +68,7 @@ const TableRow = ({ title, midValue, rightValue, header }) => (
     <div
       className={classNames(
         header ? "font-bold text-gray-700" : "font-medium",
-        "p-1  text-gray-500 text-center"
+        "p-1  text-gray-700 text-center"
       )}
     >
       <span className="">{midValue}</span>
