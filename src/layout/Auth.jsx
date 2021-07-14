@@ -11,10 +11,11 @@ function Auth() {
         <div className="flex absolute inset-0 h-full items-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="900"
-            height="600"
+            // width="900"
+            // height="600"
             version="1.1"
             viewBox="0 0 900 600"
+            className="h-full"
           >
             <path fill="#023" d="M0 0H900V600H0z"></path>
             <path
