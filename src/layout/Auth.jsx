@@ -1,5 +1,15 @@
+import { useForm } from "react-hook-form";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const submitForm = (values) => {};
+
   return (
     <div className="min-h-screen bg-white flex">
       <div className="hidden lg:block bg-white  relative w-0 flex-1">
@@ -14,7 +24,7 @@ function Auth() {
           <div>
             <img
               className="h-12 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+              src="https://tailwindui.com/img/logos/workflow-mark.svg?color=green&shade=600"
               alt="Workflow"
             />
             <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
@@ -25,22 +35,7 @@ function Auth() {
 
           <div className="mt-8">
             <div className="mt-6">
-              <form action="#" method="POST" className="space-y-6">
-                {/* <div>
-                  <label htmlFor="email" className="block text-sm text-white">
-                    Email address
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
-                    />
-                  </div>
-                </div> */}
+              <form onSubmit={handleSubmit(submitForm)} className="space-y-6">
                 <div className="border border-gray-400 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-green-600 focus-within:border-green-600">
                   <label
                     htmlFor="name"
@@ -56,51 +51,6 @@ function Auth() {
                     placeholder="Email here ... eg johndpe@gmail.com"
                   />
                 </div>
-
-                {/* <div className="space-y-1">
-                  <label
-                    htmlFor="password"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Password
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="current-password"
-                      required
-                      className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
-                    />
-                  </div>
-                </div> */}
-
-                {/* <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <input
-                      id="remember-me"
-                      name="remember-me"
-                      type="checkbox"
-                      className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
-                    />
-                    <label
-                      htmlFor="remember-me"
-                      className="ml-2 block text-sm text-gray-900"
-                    >
-                      Remember me
-                    </label>
-                  </div>
-
-                  <div className="text-sm">
-                    <a
-                      href="#"
-                      className="font-medium text-green-600 hover:text-green-500"
-                    >
-                      Forgot your password?
-                    </a>
-                  </div>
-                </div> */}
 
                 <div>
                   <button

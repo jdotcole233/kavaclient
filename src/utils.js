@@ -1,7 +1,7 @@
 import {
     CogIcon,
     CollectionIcon,
-    // HomeIcon,
+    HomeIcon,
     // PhotographIcon,
     UserGroupIcon,
     ViewGridIcon as ViewGridIconOutline,
@@ -22,7 +22,7 @@ export function classNames(...classes) {
 
 
 export const navigation = [
-    // { name: 'Home', href: '/', icon: HomeIcon, current: false },
+    { name: 'Home', href: '/app', icon: HomeIcon, current: false },
     { name: 'All Offers', href: '/app/offers', icon: ViewGridIconOutline, current: false },
     { name: 'All Treaties', href: '/app/treaties', icon: CollectionIcon, current: false },
     // { name: 'Brokers', href: '/brokers', icon: UserGroupIcon, current: false },
