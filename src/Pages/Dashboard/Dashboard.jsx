@@ -8,6 +8,10 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
+      <div className="flex">
+        <div className="w-2/3"></div>
+        <div className="w-96"></div>
+      </div>
       <DashboardStats />
       <DashboardStatsLayer2 />
     </PageWrapper>
