@@ -3,12 +3,12 @@ function Auth() {
   return (
     <div className="min-h-screen bg-white flex">
       <div className="hidden lg:block bg-white  relative w-0 flex-1">
-        <img
+        {/* <img
           className="absolute inset-0 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
-        />
-        <div className="flex absolute inset-0 h-full justify-items-end items-start">
+        /> */}
+        <div className="flex justify-self-end  h-full bg-green-700 justify-items-end items-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="540"
