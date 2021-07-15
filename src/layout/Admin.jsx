@@ -34,7 +34,7 @@ function Admin() {
           <div className="flex-1 flex items-stretch overflow-hidden">
             <Content />
             {/* Details sidebar */}
-            {selectedOffer && pathname === "/offers" && <Details />}
+            {selectedOffer && pathname === "/app/offers" && <Details />}
           </div>
         </div>
       </div>
