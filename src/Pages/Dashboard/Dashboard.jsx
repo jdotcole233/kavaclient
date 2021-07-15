@@ -9,8 +9,8 @@ const Dashboard = () => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <div className="flex w-full mt-4">
-        <div className="w-full py-3 bg-white shadow-md p-4 rounded">Hello</div>
-        <div className="w-96"></div>
+        <div className="w-full bg-white shadow-md p-4 rounded">Hello</div>
+        <div className="w-1/2 bg-green-700 shadow-sm rounded ml-3"></div>
       </div>
       <DashboardStats />
       <DashboardStatsLayer2 />
