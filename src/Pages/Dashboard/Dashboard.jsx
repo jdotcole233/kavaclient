@@ -8,8 +8,8 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <div className="flex flex-1 w-full">
-        <div className="w-auto py-3 bg-white shadow-sm">Hello</div>
+      <div className="flex w-full mt-4">
+        <div className="w-full py-3 bg-white shadow-md p-4 rounded">Hello</div>
         <div className="w-96"></div>
       </div>
       <DashboardStats />
