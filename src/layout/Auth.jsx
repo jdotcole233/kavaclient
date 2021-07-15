@@ -52,7 +52,7 @@ function Auth() {
                     type="text"
                     name="name"
                     id="name"
-                    className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-green-600 focus:ring-0"
+                    className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-gray-600 focus:ring-0"
                     placeholder="Email here ... eg johndpe@gmail.com"
                   />
                 </div>
