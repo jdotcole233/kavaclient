@@ -54,7 +54,11 @@ function Auth() {
           <div className="mt-8">
             <div className="mt-6">
               <form onSubmit={handleSubmit(submitForm)} className="space-y-6">
-                <div className="border border-gray-400 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-green-600 focus-within:border-green-600">
+                <div
+                  className={`border border-${
+                    errors.email ? "red" : "gray"
+                  }-400 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-green-600 focus-within:border-green-600`}
+                >
                   <label
                     htmlFor="name"
                     className="block text-lg font-bold text-gray-700"
