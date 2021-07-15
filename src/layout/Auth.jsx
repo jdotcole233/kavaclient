@@ -20,7 +20,7 @@ function Auth() {
             <h2 className="mt-6 text-3xl font-extrabold text-white">
               Sign in to your account
             </h2>
-            <span>Get some text for here..</span>
+            <span className={"text-gray-300"}>Get some text for here..</span>
           </div>
 
           <div className="mt-8">
@@ -29,7 +29,7 @@ function Auth() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-white"
+                    className="block text-sm font-light text-white"
                   >
                     Email address
                   </label>
