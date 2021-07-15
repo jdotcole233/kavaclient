@@ -10,11 +10,11 @@ const Dashboard = () => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <div className="flex lg:flex-row  flex-col w-full mt-4">
-        <div className="lg:w-full w-full flex items-center lg:flex-row flex-col bg-gray-100 shadow-md p-4 rounded">
+        <div className="lg:w-full w-full flex lg:items-center lg:flex-row flex-col bg-gray-100 shadow-md p-4 rounded">
           <div className=" w-1/5 ">
             <div className="bg-gray-300 h-32 w-32 rounded-full"></div>
           </div>
-          <div className="lg:mx-11 flex items-center w-full justify-between">
+          <div className="lg:mx-11 flex lg:items-center w-full justify-between">
             <div>
               <span className="text-gray-700 font-medium text-3xl">
                 Vanguard Assurance
@@ -26,7 +26,7 @@ const Dashboard = () => {
                 <span>0506339153,0274488676</span>
               </div>
             </div>
-            <div>
+            <div className="hidden">
               <DashboardSvg />
             </div>
           </div>
