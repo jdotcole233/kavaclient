@@ -17,7 +17,7 @@ function Auth() {
               src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
               alt="Workflow"
             />
-            <h2 className="mt-6 text-3xl font-extrabold text-white">
+            <h2 className="mt-6 text-3xl font-black text-white">
               Sign in to your account
             </h2>
             <span className={"text-gray-300"}>Get some text for here..</span>
@@ -27,10 +27,7 @@ function Auth() {
             <div className="mt-6">
               <form action="#" method="POST" className="space-y-6">
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-light text-white"
-                  >
+                  <label htmlFor="email" className="block text-sm text-white">
                     Email address
                   </label>
                   <div className="mt-1">
