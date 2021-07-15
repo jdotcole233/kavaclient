@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
@@ -8,8 +9,11 @@ function Auth() {
     formState: { errors },
   } = useForm();
 
+  const history = useHistory();
+
   const submitForm = (values) => {
-    alert("Hello");
+    // alert("Hello");
+    history.push("/app");
   };
 
   return (
