@@ -10,7 +10,7 @@ const Dashboard = () => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <div className="flex lg:flex-row  flex-col w-full mt-4">
-        <div className="lg:w-full w-full flex items-center lg:flex-row flex-col bg-white shadow-md p-4 rounded">
+        <div className="lg:w-full w-full flex items-center lg:flex-row flex-col bg-gray-100 shadow-md p-4 rounded">
           <div className=" w-1/5 ">
             <div className="bg-gray-300 h-32 w-32 rounded-full"></div>
           </div>
@@ -31,7 +31,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full bg-green-700 shadow-md rounded ml-5"></div>
+        <div className="lg:w-1/2 w-full bg-green-500 shadow-md rounded ml-5"></div>
       </div>
       <DashboardStats />
       <DashboardStatsLayer2 />
