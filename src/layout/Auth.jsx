@@ -68,14 +68,15 @@ function Auth() {
                     Email
                   </label>
                   <input
-                    type="text"
-                    name="email"
+                    type="email"
+                    // name="email"
                     ref={register("email", { required: "Required" })}
                     id="name"
                     className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-gray-600 focus:ring-0 focus:outline-none"
                     placeholder="Email here ... eg johndpe@gmail.com"
                   />
                 </div>
+                <span>{errors && errors.email && errors.email.message}</span>
 
                 <div>
                   <button
