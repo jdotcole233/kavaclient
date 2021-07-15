@@ -10,7 +10,7 @@ const Dashboard = () => {
       <PageHeader title="Dashboard" />
       <div className="flex w-full mt-4">
         <div className="w-full flex bg-white shadow-md p-4 rounded">
-          <div className="lg:w-32 w-full h-32 bg-gray-500 rounded-full"></div>
+          <div className="w-32 h-32 bg-gray-500 rounded-full"></div>
           <div className="mx-11">
             <span className="text-gray-700 font-medium text-3xl">
               Vanguard Assurance
@@ -23,7 +23,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 bg-green-700 shadow-md rounded ml-5"></div>
+        <div className="lg:w-1/2 w-full bg-green-700 shadow-md rounded ml-5"></div>
       </div>
       <DashboardStats />
       <DashboardStatsLayer2 />
