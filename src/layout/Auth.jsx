@@ -17,7 +17,7 @@ function Auth() {
               src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
               alt="Workflow"
             />
-            <h2 className="mt-6 text-3xl font-black text-white">
+            <h2 className="mt-6 text-3xl font-extrabold text-white">
               Sign in to your account
             </h2>
             <span className={"text-gray-300"}>Get some text for here..</span>
