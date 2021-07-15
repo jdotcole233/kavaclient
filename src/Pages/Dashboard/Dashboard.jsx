@@ -11,8 +11,8 @@ const Dashboard = () => {
       <PageHeader title="Dashboard" />
       <div className="flex lg:flex-row flex-col w-full mt-4">
         <div className="lg:w-full w-full flex lg:flex-row flex-col bg-white shadow-md p-4 rounded">
-          <div className="w-32 h-32 bg-gray-300 rounded-full"></div>
-          <div className="lg:mx-11 flex">
+          <div className=" h-32 w-1/5 bg-gray-300 rounded-full"></div>
+          <div className="lg:mx-11 flex w-full justify-between">
             <div>
               <span className="text-gray-700 font-medium text-3xl">
                 Vanguard Assurance
