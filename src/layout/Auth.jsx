@@ -9,7 +9,7 @@ function Auth() {
           alt=""
         />
       </div>
-      <div className="flex-1 bg-green-700  flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div className="flex-1 bg-gray-50  flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <div>
             <img
@@ -17,10 +17,10 @@ function Auth() {
               src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
               alt="Workflow"
             />
-            <h2 className="mt-6 text-3xl font-extrabold text-white">
+            <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
-            <span className={"text-gray-300"}>Get some text for here..</span>
+            <span className={"text-gray-800"}>Get some text for here..</span>
           </div>
 
           <div className="mt-8">
@@ -41,7 +41,7 @@ function Auth() {
                     />
                   </div>
                 </div> */}
-                <div className="border border-gren-900 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+                <div className="border border-green-700 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
                   <label
                     htmlFor="name"
                     className="block text-lg font-bold text-gray-700"
