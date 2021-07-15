@@ -9,8 +9,8 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <div className="flex lg:flex-row flex-col w-full mt-4">
-        <div className="lg:w-full w-full flex lg:flex-row flex-col bg-white shadow-md p-4 rounded">
+      <div className="flex lg:flex-row  flex-col w-full mt-4">
+        <div className="lg:w-full w-full flex items-center lg:flex-row flex-col bg-white shadow-md p-4 rounded">
           <div className=" w-1/5 ">
             <div className="bg-gray-300 h-32 w-32 rounded-full"></div>
           </div>
