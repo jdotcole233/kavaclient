@@ -10,7 +10,7 @@ const Dashboard = () => {
       <PageHeader title="Dashboard" />
       <div className="flex w-full mt-4">
         <div className="w-full bg-white shadow-md p-4 rounded">Hello</div>
-        <div className="w-1/2 bg-green-700 shadow-sm rounded ml-3"></div>
+        <div className="w-1/2 bg-green-700 shadow-md rounded ml-5"></div>
       </div>
       <DashboardStats />
       <DashboardStatsLayer2 />
