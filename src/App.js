@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Admin} />
+        <Route path="/" component={Admin} />
         <Route path="/auth" component={Auth} />
       </Switch>
     </BrowserRouter>
