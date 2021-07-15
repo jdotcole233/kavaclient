@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import SSL from "../assets/ssl-big.png";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
