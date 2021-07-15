@@ -8,7 +8,9 @@ function Auth() {
     formState: { errors },
   } = useForm();
 
-  const submitForm = (values) => {};
+  const submitForm = (values) => {
+    alert("Hello");
+  };
 
   return (
     <div className="min-h-screen bg-white flex">
@@ -68,7 +70,7 @@ function Auth() {
                   <input
                     type="text"
                     name="email"
-                    ref={register("email", { required: true })}
+                    ref={register("email", { required: "Required" })}
                     id="name"
                     className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-gray-600 focus:ring-0 focus:outline-none"
                     placeholder="Email here ... eg johndpe@gmail.com"
