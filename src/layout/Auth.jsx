@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
-
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
   const {
