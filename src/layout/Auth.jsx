@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
   const {
@@ -64,7 +63,8 @@ function Auth() {
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="email"
+                    ref={register("email", { required: true })}
                     id="name"
                     className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-gray-600 focus:ring-0 focus:outline-none"
                     placeholder="Email here ... eg johndpe@gmail.com"
