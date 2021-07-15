@@ -26,7 +26,7 @@ const Dashboard = () => {
                 <span>0506339153,0274488676</span>
               </div>
             </div>
-            <div className="hidden">
+            <div className="hidden lg:block">
               <DashboardSvg />
             </div>
           </div>
