@@ -15,7 +15,12 @@ const Dashboard = () => {
             <span className="text-gray-700 font-medium text-3xl">
               Vanguard Assurance
             </span>
-            <div className="grid grid-cols-2"></div>
+            <div className="grid grid-cols-2">
+              <span>Accra</span>
+              <span>Ghana</span>
+              <span></span>
+              <span>0506339153,0274488676</span>
+            </div>
           </div>
         </div>
         <div className="w-1/2 bg-green-700 shadow-md rounded ml-5"></div>
