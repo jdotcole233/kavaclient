@@ -3,26 +3,11 @@ function Auth() {
   return (
     <div className="min-h-screen bg-white flex">
       <div className="hidden lg:block bg-white  relative w-0 flex-1">
-        {/* <img
+        <img
           className="absolute inset-0 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
-        /> */}
-        <div className="flex justify-self-end  h-full bg-green-700 justify-items-end items-start">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="540"
-            height="960"
-            version="1.1"
-            viewBox="0 0 540 960"
-          >
-            <path
-              fill="#06F"
-              strokeLinecap="round"
-              d="M406 960l-9.7-20c-9.6-20-29-60-33.1-100-4.2-40 6.8-80-10.9-120-17.6-40-64-80-69.1-120-5.2-40 30.8-80 52-120 21.1-40 27.5-80 28.1-120 .7-40-4.3-80-12.8-120s-20.5-80-14.2-120c6.4-40 31-80 43.4-100L392 0h148v960z"
-            ></path>
-          </svg>
-        </div>
+        />
       </div>
       <div className="flex-1  flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-96">
