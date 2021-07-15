@@ -8,20 +8,18 @@ function Auth() {
           src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
           alt=""
         />
-        <div className="flex absolute inset-0 h-full items-start">
+        <div className="flex absolute inset-0 h-full justify-items-end items-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="900"
-            height="900"
+            width="540"
+            height="960"
             version="1.1"
-            viewBox="0 0 900 600"
-            className="h-full w-full flex-1"
+            viewBox="0 0 540 960"
           >
-            <path fill="#023" d="M0 0H900V600H0z"></path>
             <path
               fill="#06F"
               strokeLinecap="round"
-              d="M675 600l-16-12.5C643 575 611 550 604.3 525c-6.6-25 12-50-17.3-75s-106.7-50-115.5-75c-8.8-25 50.8-50 86.2-75 35.3-25 46.3-50 47.5-75 1.1-25-7.5-50-21.9-75-14.3-25-34.3-50-23.8-75 10.5-25 51.5-50 72-62.5L652 0h248v600z"
+              d="M406 960l-9.7-20c-9.6-20-29-60-33.1-100-4.2-40 6.8-80-10.9-120-17.6-40-64-80-69.1-120-5.2-40 30.8-80 52-120 21.1-40 27.5-80 28.1-120 .7-40-4.3-80-12.8-120s-20.5-80-14.2-120c6.4-40 31-80 43.4-100L392 0h148v960z"
             ></path>
           </svg>
         </div>
