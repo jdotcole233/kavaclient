@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
+import PageHeader from "../../Components/PageHeader";
+import PageWrapper from "../../Components/PageWrapper";
 
 const Dashboard = () => {
-  return <div></div>;
+  return (
+    <PageWrapper>
+      <PageHeader title="Dashboard" />
+    </PageWrapper>
+  );
 };
 
 export default Dashboard;
