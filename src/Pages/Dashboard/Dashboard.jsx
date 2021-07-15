@@ -10,15 +10,15 @@ const Dashboard = () => {
       <PageHeader title="Dashboard" />
       <div className="flex w-full mt-4">
         <div className="w-full flex bg-white shadow-md p-4 rounded">
-          <div className="w-32 h-32 bg-gray-500 rounded-full"></div>
+          <div className="lg:w-32 w-full h-32 bg-gray-500 rounded-full"></div>
           <div className="mx-11">
             <span className="text-gray-700 font-medium text-3xl">
               Vanguard Assurance
             </span>
-            <div className="grid grid-cols-2">
+            <div className="grid mt-3 grid-cols-2">
               <span>Accra</span>
+              <span>vanguardassurance@mail.com</span>
               <span>Ghana</span>
-              <span></span>
               <span>0506339153,0274488676</span>
             </div>
           </div>
