@@ -16,7 +16,7 @@ const KEKClosingSlip = () => {
         </span>
       </div>
 
-      <div className="px-20 mt-3">
+      <div className="px-10 mt-3">
         {/* <TwoColRow title="Ref#" value="P-950-1051-2020-000005" /> */}
         <TwoColRow title="To" value="GHANA REINSURANCE COMPANY" />
         <TwoColRow title="REGISTRATION" value="GN 5762-19" />
