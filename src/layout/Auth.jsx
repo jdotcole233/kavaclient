@@ -15,7 +15,7 @@ function Auth() {
             // height="600"
             version="1.1"
             // viewBox="0 0 900 600"
-            className="h-full flex-1"
+            className="h-full w-full flex-1"
           >
             <path fill="#023" d="M0 0H900V600H0z"></path>
             <path
