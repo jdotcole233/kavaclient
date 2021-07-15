@@ -4,6 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
+import SSL from "../../assets/ssl-sm.png";
 
 const Sidebar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useLayoutProps();
@@ -145,7 +146,9 @@ const Sidebar = () => {
           </div>
         </Dialog>
       </Transition.Root>
-      <div className="absolute bottom-0">Hello</div>
+      <div className="absolute bottom-0">
+        <img src={SSL} alt="" />
+      </div>
     </Fragment>
   );
 };
