@@ -8,7 +8,7 @@ const KEKClosingSlip = () => {
   return (
     <div className="w-full">
       <div className="w-full flex items-center justify-end">
-        <img className="h-20 " src={iRiskLogo} alt="" />
+        <img className="h-20 " src={iRiskLogo} alt="" />F
       </div>
       <div className="mt-2 flex flex-col">
         <span className="text-center underline font-semibold">
