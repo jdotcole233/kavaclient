@@ -45,6 +45,9 @@ function Auth() {
         />
       </div>
       <div className="flex-1 bg-gray-50  flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div className="absolute top-10 right-10">
+          <img src={SSL} alt="" />
+        </div>
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <div>
             <img
