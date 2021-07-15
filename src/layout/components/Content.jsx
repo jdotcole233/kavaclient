@@ -10,10 +10,11 @@ const Content = () => {
     <Fragment>
       <main className="flex-1 overflow-y-auto">
         <Switch>
-          <Route path="/offers" exact component={Offers} />
-          <Route path="/treaties" exact component={Treaties} />
-          <Route path="/settings" exact component={Settings} />
-          <Route path="/brokers" exact component={Brokers} />
+          <Route paath="/" exact component={Offers} />
+          <Route path="/offers" component={Offers} />
+          <Route path="/treaties" component={Treaties} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/brokers" component={Brokers} />
         </Switch>
       </main>
     </Fragment>
