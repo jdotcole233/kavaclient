@@ -14,7 +14,7 @@ const Dashboard = () => {
           <div className=" w-1/5 ">
             <div className="bg-gray-300 h-32 w-32 rounded-full"></div>
           </div>
-          <div className="lg:mx-11 flex w-full justify-between">
+          <div className="lg:mx-11 flex items-center w-full justify-between">
             <div>
               <span className="text-gray-700 font-medium text-3xl">
                 Vanguard Assurance
