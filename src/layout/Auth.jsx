@@ -41,10 +41,10 @@ function Auth() {
                     />
                   </div>
                 </div> */}
-                <div className="border border-green-600 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+                <div className="border border-gren-900 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
                   <label
                     htmlFor="name"
-                    className="block text-lg font-bold text-gray-900"
+                    className="block text-lg font-bold text-green-700"
                   >
                     Name
                   </label>
@@ -52,7 +52,7 @@ function Auth() {
                     type="text"
                     name="name"
                     id="name"
-                    className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
+                    className="block w-full border-0 p-0 mt-2 text-gray-900 placeholder-green-600 focus:ring-0"
                     placeholder="Email here ... eg johndpe@gmail.com"
                   />
                 </div>
