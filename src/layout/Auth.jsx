@@ -44,7 +44,7 @@ function Auth() {
                 <div className="border border-gren-900 bg-white rounded-md px-3 py-3 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
                   <label
                     htmlFor="name"
-                    className="block text-lg font-bold text-green-700"
+                    className="block text-lg font-bold text-gray-700"
                   >
                     Name
                   </label>
