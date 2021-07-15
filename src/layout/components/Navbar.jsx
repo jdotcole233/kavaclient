@@ -9,9 +9,11 @@ import {
   PlusIcon as PlusIconOutline,
 } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
+import { useHistory } from "react-router-dom";
 
 const Navbar = () => {
   const { setMobileMenuOpen } = useLayoutProps();
+  const history = useHistory();
   return (
     <Fragment>
       <header className="w-full">
@@ -88,6 +90,11 @@ const Navbar = () => {
                             {({ active }) => (
                               <a
                                 href={item.href}
+                                onClick={
+                                  item.name === "Sign out"
+                                    ? () => history.push("/auth")
+                                    : () => {}
+                                }
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
