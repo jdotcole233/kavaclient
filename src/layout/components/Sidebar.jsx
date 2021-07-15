@@ -145,6 +145,7 @@ const Sidebar = () => {
           </div>
         </Dialog>
       </Transition.Root>
+      <div className="absolute bottom-0">Hello</div>
     </Fragment>
   );
 };
