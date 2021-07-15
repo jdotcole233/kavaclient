@@ -24,7 +24,7 @@ function Auth() {
           <div>
             <img
               className="h-12 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark.svg?color=green&shade=600"
+              src="https://tailwindui.com/img/logos/workflow-mark.svg?color=green&shade=700"
               alt="Workflow"
             />
             <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
@@ -41,7 +41,7 @@ function Auth() {
                     htmlFor="name"
                     className="block text-lg font-bold text-gray-700"
                   >
-                    Name
+                    Email
                   </label>
                   <input
                     type="text"
