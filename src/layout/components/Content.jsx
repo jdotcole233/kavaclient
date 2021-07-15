@@ -11,7 +11,7 @@ const Content = () => {
     <Fragment>
       <main className="flex-1 overflow-y-auto">
         <Switch>
-          <Route path="/auth" exact component={Dashboard} />
+          {/* <Route path="/auth" exact component={Dashboard} /> */}
           <Route path="/app/" exact component={Dashboard} />
           <Route path="/app/offers" exact component={Offers} />
           <Route path="/app/treaties" exact component={Treaties} />
