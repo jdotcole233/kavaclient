@@ -10,8 +10,8 @@ function App() {
       <Switch>
         <Route path="/app" render={props => <Admin {...props} />} />
         <Route path="/auth" render={props => <Auth {...props} />} />
-        <Route render={ErrorPage} />
         <Redirect from="/" to="/auth" />
+        <Route render={ErrorPage} />
       </Switch>
     </BrowserRouter>
   );

@@ -67,7 +67,9 @@ function Auth() {
                 >
                   <label
                     htmlFor="name"
-                    className="block text-lg font-bold text-gray-700"
+                    className={`block text-lg font-bold text-${
+                      errors && errors.email ? "red" : "gray"
+                    }-700`}
                   >
                     Email
                   </label>
@@ -80,7 +82,6 @@ function Auth() {
                     placeholder="Email here ... eg johndpe@gmail.com"
                   />
                 </div>
-                <span>{errors && errors.email && errors.email.message}</span>
 
                 <div>
                   <button
