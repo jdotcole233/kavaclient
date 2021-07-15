@@ -12,9 +12,10 @@ const Dashboard = () => {
         <div className="w-full flex bg-white shadow-md p-4 rounded">
           <div className="w-32 h-32 bg-gray-500 rounded-full"></div>
           <div className="mx-11">
-            <span className="text-gray-700 font-medium">
-              Full name of Reinsurer
+            <span className="text-gray-700 font-medium text-3xl">
+              Vanguard Assurance
             </span>
+            <div className="grid grid-cols-2"></div>
           </div>
         </div>
         <div className="w-1/2 bg-green-700 shadow-md rounded ml-5"></div>
