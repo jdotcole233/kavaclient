@@ -1,10 +1,16 @@
 import React, { Fragment } from "react";
 import iRiskLogo from "../../../assets/visal.png";
 import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
-import { classNames } from "../../../utils";
+import { classNames, showOfferDate, toMoney } from "../../../utils";
+
+const extractRegNumber = (details) => {
+  const _ = details.find((el) => el.keydetail === "Vehicle Reg No");
+  return _.value;
+};
 
 const VisalClosingSlip = () => {
-  const { activeTab } = useLayoutProps();
+  const { selectedOffer } = useLayoutProps();
+  const details = JSON.parse(selectedOffer?.offer_details ?? "{}");
   return (
     <div className="w-full">
       <div className="w-full flex items-center justify-end">
@@ -17,28 +23,54 @@ const VisalClosingSlip = () => {
       </div>
 
       <div className="px-10 mt-3">
-        <TwoColRow title="Ref#" value="P-950-1051-2020-000005" />
-        <TwoColRow title="To" value="GHANA REINSURANCE COMPANY" />
-        <TwoColRow title="REGISTRATION" value="GN 5762-19" />
-        <TwoColRow title="TYPE" value="MOTOR COMPREHENSIVE" />
-        <TwoColRow title="REINSURED" value="VANGUARD ASSURANCE COMPANY" />
-        <TwoColRow title="INSURED" value="SETH FIAITI" />
-        <TwoColRow title="PERIOD" value="01/01/2020 - 31/12/2020" />
-        <TwoColRow title="CURRENCY" value="USD" />
+        <TwoColRow title="Ref#" value={selectedOffer?.policy_number} />
+        <TwoColRow title="To" value={selectedOffer?.re_company_name} />
+
+        {selectedOffer?.business_name?.includes("Motor") && (
+          <TwoColRow title="REGISTRATION" value={extractRegNumber(details)} />
+        )}
+        <TwoColRow title="TYPE" value={selectedOffer?.business_name} />
+        <TwoColRow
+          title="REINSURED"
+          value={selectedOffer?.insurer_company_name}
+        />
+        <TwoColRow title="INSURED" value={selectedOffer?.insured_by} />
+        <TwoColRow title="PERIOD" value={showOfferDate(selectedOffer)} />
+        <TwoColRow title="CURRENCY" value={selectedOffer?.currency} />
       </div>
 
       <div className="w-full px-10 mt-6 grid grid-cols-3">
         <TableRow header midValue="Debit" rightValue="Credit" />
-        <TableRow title="100% Premium" rightValue="1,457.56" />
-        <TableRow title="Facultative Premium" rightValue="626.75" />
-        <TableRow title="Less Commission (21.5%)" midValue="134.75" />
-        <TableRow title="Brokerage (5%)" midValue="31.34" />
-        <TableRow title="NIC Levy (0%)" midValue="NIL" />
-        <TableRow title="Withholding Tax (0%)" midValue="NIL" />
+        <TableRow
+          title="100% Premium"
+          rightValue={toMoney(selectedOffer?.premium)}
+        />
+        <TableRow
+          title="Facultative Premium"
+          rightValue={toMoney(selectedOffer?.fac_premium)}
+        />
+        <TableRow
+          title={`Less Commission (${selectedOffer?.agreed_commission}%)`}
+          midValue={toMoney(selectedOffer?.commission_amount)}
+        />
+        <TableRow
+          title={`Brokerage (${selectedOffer?.agreed_brokerage_percentage}%)`}
+          midValue={toMoney(selectedOffer?.brokerage_amount) ?? "NIL"}
+        />
+        <TableRow
+          // title=" (0%)"
+          title={`NIC Levy (${selectedOffer?.nic_levy}%)`}
+          midValue={toMoney(selectedOffer?.nic_levy_amount) ?? "NIL"}
+        />
+        <TableRow
+          // title=" (0%)"
+          title={`Withholding Tax (${selectedOffer?.withholding_tax}%)`}
+          midValue={toMoney(selectedOffer?.withholding_tax_amount) ?? "NIL"}
+        />
         <TableRow
           header
           title="Balance Due to Reinsurers"
-          rightValue="460.66"
+          rightValue={toMoney(selectedOffer?.offer_amount)}
         />
       </div>
       <div className="flex flex-col px-10">
@@ -46,7 +78,8 @@ const VisalClosingSlip = () => {
           Facultative Premium payable in full at inception
         </span>
         <span className="ml-1">
-          Your reinsurance participation: 43% of 100%
+          Your reinsurance participation:{" "}
+          {selectedOffer?.offer_participant_percentage}% of 100%
         </span>
       </div>
     </div>

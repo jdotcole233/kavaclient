@@ -4,13 +4,13 @@ import IRiskClosingSlip from "./IRiskClosingSlip";
 import KEKClosingSlip from "./KEKClosingSlip";
 import VisalClosingSlip from "./VisalClosinfSlip";
 
-const ClosingSlip = () => {
+const ClosingSlip = ({ details }) => {
   const { activeTab } = useLayoutProps();
   return (
     <Fragment>
-      {activeTab === 1 && <KEKClosingSlip />}
-      {activeTab === 0 && <VisalClosingSlip />}
-      {activeTab === 2 && <IRiskClosingSlip />}
+      {activeTab === "kekre" && <KEKClosingSlip />}
+      {activeTab === "visalre" && <VisalClosingSlip />}
+      {activeTab === "iriskre" && <IRiskClosingSlip />}
     </Fragment>
   );
 };

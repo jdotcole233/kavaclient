@@ -1,18 +1,27 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { LayoutProvider } from "./Provider/LayoutProvider";
 import Sidebar from "./components/Sidebar";
 import Details from "./components/Details";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
 import { useLocation } from "react-router-dom";
+import AdminProvider from "./Provider/AdminProvider";
 
 function Admin() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedOffer, setSelectedOffer] = useState(undefined);
-  const [activeTab, setActiveTab] = useState(0);
 
   const { pathname } = useLocation();
+
+  const { company, user, accessToken, linked_to } = useMemo(() => {
+    const data = localStorage.getItem("___tken");
+    if (data) {
+      return JSON.parse(data);
+    }
+    return { company: null, user: null, linked_to: [], accessToken: "" };
+  }, []);
+  const [activeTab, setActiveTab] = useState(linked_to[0] ?? "");
 
   return (
     <LayoutProvider
@@ -25,19 +34,23 @@ function Admin() {
         setActiveTab,
       }}
     >
-      <div className="h-screen bg-gray-50 flex overflow-hidden">
-        <Sidebar />
-        {/* Content area */}
-        <div className="flex-1 flex flex-col overflow-hidden">
-          <Navbar />
-          {/* Main content */}
-          <div className="flex-1 flex items-stretch overflow-hidden">
-            <Content />
-            {/* Details sidebar */}
-            {selectedOffer && pathname === "/app/offers" && <Details />}
+      <AdminProvider value={{ company, user, accessToken, linked_to }}>
+        <div className="h-screen bg-gray-50 flex overflow-hidden">
+          <Sidebar />
+          {/* Content area */}
+          <div className="flex-1 flex flex-col overflow-hidden">
+            <Navbar />
+            {/* Main content */}
+            <div className="flex-1 flex items-stretch overflow-hidden">
+              <Content />
+              {/* Details sidebar */}
+              {selectedOffer && pathname === "/app/offers" && <Details />}
+            </div>
+
+            {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
           </div>
         </div>
-      </div>
+      </AdminProvider>
     </LayoutProvider>
   );
 }

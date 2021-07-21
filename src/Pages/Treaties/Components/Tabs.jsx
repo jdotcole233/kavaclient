@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
+import { useAdminProps } from "../../../layout/Provider/AdminProvider";
 import { classNames, tabs } from "../../../utils";
 // import { useOfferProps } from "../Providers/OfferProvider";
 import { useTreatyProps } from "../Providers/TreatyProvider";
 
 const Tabs = () => {
   const { activeTab, setActiveTab } = useTreatyProps();
+  const { linked_to } = useAdminProps();
   return (
     <Fragment>
       <div className="mt-3 sm:mt-2">
@@ -20,9 +22,11 @@ const Tabs = () => {
             onChange={(e) => setActiveTab(e.target.value)}
             value={activeTab}
           >
-            {tabs.map((el, key) => (
-              <option value={key}>{el.name}</option>
-            ))}
+            {tabs
+              .filter((el) => linked_to?.includes(el.href))
+              .map((el, key) => (
+                <option value={key}>{el.name}</option>
+              ))}
 
             {/* <option>Recently Added</option>
             <option>Favorited</option> */}
@@ -34,22 +38,24 @@ const Tabs = () => {
               className="flex-1 -mb-px flex space-x-6 xl:space-x-8"
               aria-label="Tabs"
             >
-              {tabs.map((tab, key) => (
-                <a
-                  key={tab.name}
-                  href={tab.href}
-                  aria-current={key === activeTab ? "page" : undefined}
-                  onClick={() => setActiveTab(key)}
-                  className={classNames(
-                    key === activeTab
-                      ? "border-green-500 text-green-600"
-                      : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300",
-                    "whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                  )}
-                >
-                  {tab.name}
-                </a>
-              ))}
+              {tabs
+                .filter((el) => linked_to?.includes(el.href))
+                .map((tab, key) => (
+                  <span
+                    key={tab.name}
+                    // href={tab.href}
+                    aria-current={key === activeTab ? "page" : undefined}
+                    onClick={() => setActiveTab(key)}
+                    className={classNames(
+                      key === activeTab
+                        ? "border-green-500 text-green-600"
+                        : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300",
+                      "whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                    )}
+                  >
+                    {tab.name}
+                  </span>
+                ))}
             </nav>
             <div className="hidden ml-6 bg-gray-100 p-0.5 rounded-lg items-center sm:flex">
               {/* <button

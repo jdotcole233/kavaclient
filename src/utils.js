@@ -36,9 +36,9 @@ export const userNavigation = [
 ]
 
 export const tabs = [
-    { name: 'Visal Reinsurance Brokers', href: '#', current: true },
-    { name: 'KEK Reinsurance Brokers', href: '#', current: false },
-    { name: 'iRisk Reinsurance Brokers', href: '#', current: false },
+    { name: 'Visal Reinsurance Brokers', href: 'visalre', current: true },
+    { name: 'KEK Reinsurance Brokers', href: 'kekre', current: false },
+    { name: 'iRisk Reinsurance Brokers', href: 'iriskre', current: false },
 ]
 export const files = [
     {
@@ -88,3 +88,13 @@ export const subNavigation = [
     { name: 'Plan & Billing', href: '#', icon: CreditCardIcon, current: true },
     { name: 'Integrations', href: '#', icon: ViewGridAddIcon, current: false },
 ]
+
+export const toMoney = (value) => {
+    return parseFloat(value ?? "0.0").toLocaleString(undefined, { maximumFractionDigits: 2 })
+}
+
+export const showOfferDate = (offer) => {
+    const from = new Date(offer?.period_of_insurance_from)
+    const to = new Date(offer?.period_of_insurance_to)
+    return `${from.getDate()}/${from.getMonth() + 1}/${from.getFullYear()} ${to.getDate()}/${to.getMonth() + 1}/${to.getFullYear()}`
+}

@@ -146,7 +146,7 @@ const Sidebar = () => {
           </div>
         </Dialog>
       </Transition.Root>
-      <div className="absolute bottom-10">
+      <div className="absolute hidden lg:block bottom-10">
         <img className="transform  rotate-45" src={SSL} alt="" />
       </div>
     </Fragment>
