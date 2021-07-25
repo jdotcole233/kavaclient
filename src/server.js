@@ -1,3 +1,3 @@
 import axios from 'axios';
-export const baseURL = `http://192.168.100.2:8001/api`
+export const baseURL = `http://brokerextension.comfybroker.com/api`
 export default axios.create({ baseURL });
