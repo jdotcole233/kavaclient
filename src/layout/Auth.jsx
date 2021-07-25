@@ -29,10 +29,12 @@ function Auth() {
                 src="https://tailwindui.com/img/logos/workflow-mark.svg?color=green&shade=700"
                 alt="Workflow"
               />
-              <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
+              <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
                 Sign in to your account
               </h2>
-              <span className={"text-gray-800"}>Get some text for here..</span>
+              <span className={"text-gray-800 font-poppins"}>
+                Get some text for here..
+              </span>
             </div>
             {/* Routes go here */}
             <Switch>

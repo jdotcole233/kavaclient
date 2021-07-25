@@ -17,7 +17,7 @@ const Login = () => {
 
   const history = useHistory();
   const { setCompany } = useAuthProcessProps();
-  const { mutate, isLoading, error, isError } = useMutation(
+  const { mutate, isLoading, isError } = useMutation(
     (data) => server.post("/verification", data),
     {
       onError: (er, con) => {

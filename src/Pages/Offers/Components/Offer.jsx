@@ -16,7 +16,7 @@ const Offer = ({ file = {} }) => {
       <div
         className={classNames(
           active ? "bg-gray-200" : "bg-white",
-          " focus:border-indigo-600 border shadow-md flex items-center p-3"
+          " focus:border-indigo-600 font-poppins border shadow-md flex items-center p-3"
         )}
       >
         <div className="w-22">
