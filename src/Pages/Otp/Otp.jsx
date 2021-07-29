@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { notification } from "antd";
 import React from "react";
 import { useForm } from "react-hook-form";
