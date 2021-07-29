@@ -44,7 +44,7 @@ const Otp = () => {
       <div className="mt-8">
         <div className="mt-6">
           <form onSubmit={handleSubmit(submitForm)} className="space-y-6">
-            {JSON.stringify(company)}
+            {/* {JSON.stringify(company)} */}
             {isError && (
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
                 <div className="flex">
