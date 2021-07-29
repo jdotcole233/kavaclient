@@ -8,13 +8,14 @@ import server from "../../server";
 import Loader from "react-loader-spinner";
 
 const Otp = () => {
+  const { company } = useAuthProcessProps();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const { company } = useAuthProcessProps();
+  // const { company } = useAuthProcessProps();
 
   const history = useHistory();
   const { mutate, isLoading, isError } = useMutation(
@@ -43,6 +44,7 @@ const Otp = () => {
       <div className="mt-8">
         <div className="mt-6">
           <form onSubmit={handleSubmit(submitForm)} className="space-y-6">
+            {JSON.stringify(company)}
             {isError && (
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
                 <div className="flex">
