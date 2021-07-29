@@ -1,4 +1,3 @@
-import { DocumentTextIcon } from "@heroicons/react/outline";
 import React from "react";
 import { useLayoutProps } from "../../../layout/Provider/LayoutProvider";
 import { classNames, showOfferDate, toMoney } from "../../../utils";
