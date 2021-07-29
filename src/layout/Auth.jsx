@@ -4,7 +4,7 @@ import SSL from "../assets/ssl-big.png";
 import Login from "../Pages/Login/Login";
 import Otp from "../Pages/Otp/Otp";
 import AuthProcessProvider from "./Provider/AuthProcessProvider";
-import Comfi from "../assets/comfi 15.svg";
+import Comfi from "../assets/comfi 2.svg";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
