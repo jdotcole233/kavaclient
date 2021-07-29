@@ -4,6 +4,7 @@ import SSL from "../assets/ssl-big.png";
 import Login from "../Pages/Login/Login";
 import Otp from "../Pages/Otp/Otp";
 import AuthProcessProvider from "./Provider/AuthProcessProvider";
+import Comfi from "../assets/comfi 13.svg";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
@@ -24,11 +25,7 @@ function Auth() {
           </div>
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <img
-                className="h-12 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark.svg?color=green&shade=700"
-                alt="Workflow"
-              />
+              <img className="h-12 w-auto" src={Comfi} alt="Workflow" />
               <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
                 Sign in to your account
               </h2>
