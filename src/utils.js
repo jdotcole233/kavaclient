@@ -3,7 +3,7 @@ import {
     CollectionIcon,
     HomeIcon,
     // PhotographIcon,
-    UserGroupIcon,
+    // UserGroupIcon,
     ViewGridIcon as ViewGridIconOutline,
 } from '@heroicons/react/outline'
 
@@ -90,7 +90,7 @@ export const subNavigation = [
 ]
 
 export const toMoney = (value) => {
-    return parseFloat(value ?? "0.0").toLocaleString(undefined, { maximumFractionDigits: 2 })
+    return value ? parseFloat(value ?? "0.0").toLocaleString(undefined, { maximumFractionDigits: 2 }) : "0.00"
 }
 
 export const showOfferDate = (offer) => {
