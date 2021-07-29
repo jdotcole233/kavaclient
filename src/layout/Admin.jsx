@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { LayoutProvider } from "./Provider/LayoutProvider";
 import Sidebar from "./components/Sidebar";
 import Details from "./components/Details";

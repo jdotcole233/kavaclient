@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Fragment, useState } from "react";
-import { DocumentIcon, XIcon } from "@heroicons/react/outline";
+import { XIcon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import DocumentWrapper from "../../Components/DocumentWrapper";
 import ClosingSlip from "../../Pages/Offers/Previews/ClosingSlip";
