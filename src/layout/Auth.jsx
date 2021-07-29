@@ -31,8 +31,9 @@ function Auth() {
                   <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
                     Welcome, {company?.company_name}
                   </h2>
-                  <span className={"text-gray-800 font-poppins"}>
-                    Get some text for here..
+                  <span className={"text-gray-800 bg-green-500 font-poppins"}>
+                    Please check your mail for a provided passcode to enable you
+                    login to your account
                   </span>
                 </Fragment>
               ) : (
