@@ -26,31 +26,6 @@ function Auth() {
             <img src={SSL} alt="" />
           </div>
           <div className="mx-auto w-full max-w-sm lg:w-96">
-            <div>
-              <img className="h-24 w-auto" src={Comfi} alt="Workflow" />
-              {company ? (
-                <Fragment>
-                  <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
-                    Welcome, {company?.company_name} {path}
-                  </h2>
-                  <div className="bg-green-300 text-green-800 p-4">
-                    <span className={"text-gray-800 font-poppins"}>
-                      Please check your mail for a provided passcode to enable
-                      you login to your account
-                    </span>
-                  </div>
-                </Fragment>
-              ) : (
-                <Fragment>
-                  <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
-                    Sign in to your account
-                  </h2>
-                  <span className={"text-gray-800 font-poppins"}>
-                    Get some text for here..
-                  </span>
-                </Fragment>
-              )}
-            </div>
             {/* Routes go here */}
             <Switch>
               <Route path="/auth" exact component={Login} />
