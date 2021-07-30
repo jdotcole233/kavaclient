@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from "react";
+import { classNames } from "../utils";
 
 const Pagination = ({ data, RenderComponent, title, pageLimit, dataLimit }) => {
   const [pages] = useState(Math.round(data.length / dataLimit));
@@ -64,8 +65,8 @@ const Pagination = ({ data, RenderComponent, title, pageLimit, dataLimit }) => {
               class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
               aria-label="Pagination"
             >
-              <a
-                href="#"
+              <button
+                onClick={goToPreviousPage}
                 class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
               >
                 <span class="sr-only">Previous</span>
@@ -83,15 +84,20 @@ const Pagination = ({ data, RenderComponent, title, pageLimit, dataLimit }) => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </button>
               {/* <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" --> */}
-              <a
-                href="#"
-                aria-current="page"
-                class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
-              >
-                1
-              </a>
+              {getPaginationGroup().map((item, index) => (
+                <button
+                  key={index}
+                  className={classNames(
+                    currentPage === item
+                      ? "z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                      : "bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                  )}
+                >
+                  1
+                </button>
+              ))}
               <a
                 href="#"
                 class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
