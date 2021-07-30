@@ -2,8 +2,8 @@
 import React, { Fragment, useState } from "react";
 import { classNames } from "../utils";
 
-const Pagination = ({ data, RenderComponent, title, pageLimit, dataLimit }) => {
-  const [pages] = useState(Math.round(data.length / dataLimit));
+const Pagination = ({ size, pageLimit, dataLimit }) => {
+  const [pages] = useState(Math.round(size / dataLimit));
   const [currentPage, setCurrentPage] = useState(1);
 
   function goToNextPage() {
@@ -19,11 +19,11 @@ const Pagination = ({ data, RenderComponent, title, pageLimit, dataLimit }) => {
     setCurrentPage(pageNumber);
   }
 
-  const getPaginatedData = () => {
-    const startIndex = currentPage * dataLimit - dataLimit;
-    const endIndex = startIndex + dataLimit;
-    return data.slice(startIndex, endIndex);
-  };
+  //   const getPaginatedData = () => {
+  //     const startIndex = currentPage * dataLimit - dataLimit;
+  //     const endIndex = startIndex + dataLimit;
+  //     return data.slice(startIndex, endIndex);
+  //   };
 
   const getPaginationGroup = () => {
     let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
