@@ -16,8 +16,10 @@ const ConfirmAuth = () => {
           </h2>
           <div className="bg-red-200 text-red-800 p-4">
             <span className={"text-yellow-800 font-poppins"}>
-              Please check your mail for a provided passcode to enable you login
-              to your account
+              Thanks for using our {company?.company_name} – we hope we were
+              able to meet your expectations. Just to let you know that your
+              subscription expired yesterday and you won’t be able to use our
+              service any more
             </span>
           </div>
         </Fragment>
