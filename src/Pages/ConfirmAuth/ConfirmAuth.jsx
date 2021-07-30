@@ -14,7 +14,7 @@ const ConfirmAuth = () => {
           <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
             Welcome, {company?.company_name} {}
           </h2>
-          <div className="bg-yellow-200 text-red-800 p-4">
+          <div className="bg-red-200 text-red-800 p-4">
             <span className={"text-yellow-800 font-poppins"}>
               Please check your mail for a provided passcode to enable you login
               to your account
