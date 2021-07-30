@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 import SSL from "../assets/ssl-big.png";
 import Login from "../Pages/Login/Login";
 import Otp from "../Pages/Otp/Otp";
@@ -10,6 +10,7 @@ import ConfirmAuth from "../Pages/ConfirmAuth";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
   const [company, setCompany] = useState(undefined);
+  const { path } = useRouteMatch();
   return (
     <AuthProcessProvider value={{ company, setCompany }}>
       <div className="min-h-screen bg-white flex">
@@ -30,7 +31,7 @@ function Auth() {
               {company ? (
                 <Fragment>
                   <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
-                    Welcome, {company?.company_name}
+                    Welcome, {company?.company_name} {path}
                   </h2>
                   <div className="bg-green-300 text-green-800 p-4">
                     <span className={"text-gray-800 font-poppins"}>
