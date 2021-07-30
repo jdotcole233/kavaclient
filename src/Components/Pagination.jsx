@@ -19,12 +19,6 @@ const Pagination = ({ size, pageLimit, dataLimit }) => {
     setCurrentPage(pageNumber);
   }
 
-  //   const getPaginatedData = () => {
-  //     const startIndex = currentPage * dataLimit - dataLimit;
-  //     const endIndex = startIndex + dataLimit;
-  //     return data.slice(startIndex, endIndex);
-  //   };
-
   const getPaginationGroup = () => {
     let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
     return new Array(pageLimit).fill().map((_, idx) => start + idx + 1);
