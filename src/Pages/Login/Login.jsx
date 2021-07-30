@@ -20,11 +20,11 @@ const Login = () => {
   const { mutate, isLoading, isError } = useMutation(
     (data) => server.post("/verification", data),
     {
-      onError: (er, con) => {
-        // console.log(er);
+      onError: (er) => {
+        console.log(er);
         notification.warning({
           message: "Whoops!",
-          description: "Invalid input",
+          description: "Something went wrong",
         });
       },
       onSuccess: (data) => {
@@ -35,11 +35,8 @@ const Login = () => {
     }
   );
 
-  const submitForm = (values) => {
-    console.log(values);
+  const submitForm = (values) => mutate({ ...values });
 
-    mutate({ ...values });
-  };
   return (
     <div className="mt-8">
       <div className="mt-6">
@@ -70,7 +67,7 @@ const Login = () => {
                       href="#"
                       className="font-medium underline text-yellow-700 hover:text-yellow-600"
                     >
-                      {errors?.message}
+                      {"Something went wrong"}
                     </a>
                   </p>
                 </div>

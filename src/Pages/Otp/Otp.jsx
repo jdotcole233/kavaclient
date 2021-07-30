@@ -3,7 +3,7 @@ import { notification } from "antd";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useMutation } from "react-query";
-import { useHistory } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import { useAuthProcessProps } from "../../layout/Provider/AuthProcessProvider";
 import server from "../../server";
 import Loader from "react-loader-spinner";
@@ -39,6 +39,8 @@ const Otp = () => {
   const submitForm = (values) => {
     mutate({ key: btoa(values.key), ...company });
   };
+
+  if (!company) return <Redirect to="/auth" />;
 
   return (
     <>
