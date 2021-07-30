@@ -6,6 +6,7 @@ import Otp from "../Pages/Otp/Otp";
 import AuthProcessProvider from "./Provider/AuthProcessProvider";
 import Comfi from "../assets/comfi 4.svg";
 import ConfirmAuth from "../Pages/ConfirmAuth";
+import SubscriptionExpiry from "../Pages/SubscriptionExpiry";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
@@ -31,6 +32,11 @@ function Auth() {
               <Route path="/auth" exact component={Login} />
               <Route path="/auth/verify" exact component={Otp} />
               <Route path="/auth/confirm" exact component={ConfirmAuth} />
+              <Route
+                path="/auth/expired"
+                exact
+                component={SubscriptionExpiry}
+              />
             </Switch>
           </div>
         </div>
