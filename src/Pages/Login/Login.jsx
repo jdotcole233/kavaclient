@@ -30,7 +30,7 @@ const Login = () => {
       },
       onSuccess: (data) => {
         setCompany(data.data);
-        history.push("/auth/confirm");
+        history.replace("/auth/verify");
       },
     }
   );
