@@ -15,11 +15,11 @@ const ConfirmAuth = () => {
             Welcome, {company?.company_name} {}
           </h2>
         </Fragment>
-        <div className="flex">
+        <div className="flex bg-indigo-400 py-4 px-3 text-indigo-600">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-11 w-11 text-gray-500"
+              className="h-14 w-14 text-indigo-500"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -34,7 +34,7 @@ const ConfirmAuth = () => {
           </div>
           <div className="flex flex-col mx-4">
             <span className="text-lg">{company?.company_name}</span>
-            <span>{company?.email}</span>
+            <span className="text-lg">{company?.email}</span>
           </div>
         </div>
       </div>
