@@ -43,6 +43,7 @@ function Admin() {
       }}
     >
       <AdminProvider value={{ company, user, accessToken, linked_to }}>
+        {locked ? "" : "Hello"}
         <div className="h-screen bg-gray-50 flex overflow-hidden">
           <Sidebar />
           {/* Content area */}
