@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Details from "./components/Details";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
-import { useLocation } from "react-router-dom";
+import { Redirect, useLocation } from "react-router-dom";
 import AdminProvider from "./Provider/AdminProvider";
 
 function Admin() {
@@ -14,7 +14,7 @@ function Admin() {
 
   const { pathname } = useLocation();
 
-  const { company, user, accessToken, linked_to } = useMemo(() => {
+  const { company, user, accessToken, linked_to, locked } = useMemo(() => {
     const data = localStorage.getItem("___tken");
     if (data) {
       return JSON.parse(data);
@@ -28,6 +28,8 @@ function Admin() {
     };
   }, []);
   const [activeTab, setActiveTab] = useState(linked_to[0] ?? "");
+
+  if (locked) return <Redirect to="/auth" />;
 
   return (
     <LayoutProvider
