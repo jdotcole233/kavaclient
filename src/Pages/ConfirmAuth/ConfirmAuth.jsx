@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { useAuthProcessProps } from "../../layout/Provider/AuthProcessProvider";
 import Comfi from "../../assets/comfi 4.svg";
 
@@ -38,12 +38,9 @@ const ConfirmAuth = () => {
           </div>
         </div>
 
-        <Link
-          to="/app"
-          className="my-4 w-auto text-white font-poppins text-xl bg-green-800 p-4"
-        >
+        <button className="my-4 w-full text-white font-poppins text-xl bg-green-800 p-2">
           Get Started
-        </Link>
+        </button>
       </div>
     </Fragment>
   );
