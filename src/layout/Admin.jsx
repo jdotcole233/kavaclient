@@ -19,7 +19,13 @@ function Admin() {
     if (data) {
       return JSON.parse(data);
     }
-    return { company: null, user: null, linked_to: [], accessToken: "" };
+    return {
+      company: null,
+      user: null,
+      linked_to: [],
+      accessToken: "",
+      locked: true,
+    };
   }, []);
   const [activeTab, setActiveTab] = useState(linked_to[0] ?? "");
 

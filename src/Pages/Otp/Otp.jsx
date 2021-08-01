@@ -31,7 +31,10 @@ const Otp = () => {
       },
       onSuccess: (data) => {
         console.log(data.data);
-        localStorage.setItem("___tken", JSON.stringify(data.data));
+        localStorage.setItem(
+          "___tken",
+          JSON.stringify({ ...data.data, locked: true })
+        );
         history.replace("/auth/confirm");
       },
     }
