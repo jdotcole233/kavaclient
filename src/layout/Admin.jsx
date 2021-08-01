@@ -29,7 +29,7 @@ function Admin() {
   }, []);
   const [activeTab, setActiveTab] = useState(linked_to[0] ?? "");
 
-  if (locked) return <Redirect to="/auth" />;
+  if (!locked) return <Redirect to="/auth" />;
 
   return (
     <LayoutProvider
