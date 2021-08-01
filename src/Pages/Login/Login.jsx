@@ -115,7 +115,7 @@ const Login = () => {
                 <div className="flex justify-center w-full">
                   <Loader
                     type="Puff"
-                    color="#00BFFF"
+                    color="#3DED97"
                     height={30}
                     width={30}
                     //   timeout={3000} //3 secs
