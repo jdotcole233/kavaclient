@@ -32,8 +32,8 @@ const ConfirmAuth = () => {
               />
             </svg>
           </div>
-          <div>
-            <span>{company?.company_name}</span>
+          <div className="flex flex-col mx-4">
+            <span className="text-lg">{company?.company_name}</span>
             <span>{company?.email}</span>
           </div>
         </div>
