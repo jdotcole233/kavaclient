@@ -92,7 +92,7 @@ const Navbar = () => {
                                 href={item.href}
                                 onClick={
                                   item.name === "Sign out"
-                                    ? () => history.push("/auth")
+                                    ? () => history.replace("/auth")
                                     : () => {}
                                 }
                                 className={classNames(

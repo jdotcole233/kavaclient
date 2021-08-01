@@ -32,7 +32,7 @@ const Otp = () => {
       onSuccess: (data) => {
         console.log(data.data);
         localStorage.setItem("___tken", JSON.stringify(data.data));
-        history.push("/app");
+        history.replace("/auth/confirm");
       },
     }
   );
