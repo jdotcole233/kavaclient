@@ -38,7 +38,7 @@ const ConfirmAuth = () => {
           </div>
         </div>
 
-        <button className="h-7"></button>
+        <button className="my-4 w-full bg-green-800 p-4">Get Started</button>
       </div>
     </Fragment>
   );
