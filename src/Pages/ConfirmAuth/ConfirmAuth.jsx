@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import { useAuthProcessProps } from "../../layout/Provider/AuthProcessProvider";
 import Comfi from "../../assets/comfi 4.svg";
 
 const ConfirmAuth = () => {
   const { company } = useAuthProcessProps();
+  const history = useHistory();
   if (!company) return <Redirect to="/auth" />;
   return (
     <Fragment>
@@ -38,7 +39,10 @@ const ConfirmAuth = () => {
           </div>
         </div>
 
-        <button className="my-4 w-full text-white font-poppins text-xl bg-green-800 p-2">
+        <button
+          onClick={() => history.push("/app")}
+          className="my-4 w-full text-white font-poppins text-xl bg-green-800 p-2"
+        >
           Get Started
         </button>
       </div>
