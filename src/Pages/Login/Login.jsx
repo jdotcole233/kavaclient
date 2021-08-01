@@ -29,7 +29,7 @@ const Login = () => {
         });
       },
       onSuccess: (data) => {
-        setCompany(data.data);
+        setCompany({ ...data.data, locked: true });
         history.replace("/auth/verify");
       },
     }
