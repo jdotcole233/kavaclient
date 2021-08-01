@@ -40,7 +40,7 @@ const ConfirmAuth = () => {
         </div>
 
         <button
-          onClick={() => history.push("/app")}
+          onClick={() => history.replace("/app")}
           className="my-4 w-full text-white font-poppins text-xl bg-green-800 p-2"
         >
           Get Started
