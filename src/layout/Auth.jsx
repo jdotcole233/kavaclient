@@ -11,7 +11,7 @@ import SubscriptionExpiry from "../Pages/SubscriptionExpiry";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
   const [company, setCompany] = useState(undefined);
-  const { path } = useRouteMatch();
+  // const { path } = useRouteMatch();
   return (
     <AuthProcessProvider value={{ company, setCompany }}>
       <div className="min-h-screen bg-white flex">

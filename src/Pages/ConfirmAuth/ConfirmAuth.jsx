@@ -15,7 +15,12 @@ const ConfirmAuth = () => {
             Welcome, {company?.company_name} {}
           </h2>
         </Fragment>
-        <div className="flex"></div>
+        <div className="flex">
+            <div></div>
+            <div>
+                <span>{}</span>
+            </div>
+        </div>
       </div>
     </Fragment>
   );
