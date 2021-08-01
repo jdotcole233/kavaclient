@@ -26,7 +26,7 @@ const Otp = () => {
       onError: (er) => {
         notification.warning({
           message: "Whoops!",
-          description: "The given data was invalid.",
+          description: "Invalid credentials",
         });
       },
       onSuccess: (data) => {
@@ -92,7 +92,7 @@ const Otp = () => {
                         href="#"
                         className="font-medium underline text-yellow-700 hover:text-yellow-600"
                       >
-                        {"The given data was invalid."}
+                        {"Invalid credentials"}
                       </a>
                     </p>
                   </div>
