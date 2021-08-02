@@ -8,6 +8,7 @@ import { useAuthProcessProps } from "../../layout/Provider/AuthProcessProvider";
 import server from "../../server";
 import Loader from "react-loader-spinner";
 import Comfi from "../../assets/comfi 4.svg";
+import { TIP } from "../../utils";
 
 const Otp = () => {
   const { company } = useAuthProcessProps();
@@ -16,8 +17,6 @@ const Otp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
-  // const { company } = useAuthProcessProps();
 
   const history = useHistory();
   const { mutate, isLoading, isError } = useMutation(
@@ -32,7 +31,7 @@ const Otp = () => {
       onSuccess: (data) => {
         console.log(data.data);
         localStorage.setItem(
-          "___tken",
+          TIP,
           JSON.stringify({ ...data.data, locked: false })
         );
         history.replace("/auth/confirm");

@@ -98,3 +98,5 @@ export const showOfferDate = (offer) => {
     const to = new Date(offer?.period_of_insurance_to)
     return `${from.getDate()}/${from.getMonth() + 1}/${from.getFullYear()} ${to.getDate()}/${to.getMonth() + 1}/${to.getFullYear()}`
 }
+
+export const TIP = "___tken"
