@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { classNames, userNavigation } from "../../utils";
+import { classNames, TIP, userNavigation } from "../../utils";
 import { Menu, Transition } from "@headlessui/react";
 
 import { SearchIcon } from "@heroicons/react/solid";
@@ -92,7 +92,10 @@ const Navbar = () => {
                                 href={item.href}
                                 onClick={
                                   item.name === "Sign out"
-                                    ? () => history.replace("/auth")
+                                    ? () => {
+                                        localStorage.removeItem(TIP);
+                                        history.replace("/auth");
+                                      }
                                     : () => {}
                                 }
                                 className={classNames(
