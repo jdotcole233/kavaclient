@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, PureComponent, useState } from "react";
 import {
   BarChart,
@@ -15,7 +16,7 @@ import { classNames, months, years } from "../../../../utils";
 const TotalRevenue = () => {
   const [tab, setTab] = useState("month");
   return (
-    <div>
+    <div className="mt-4">
       <div className="h-auto py-5 bg-white shadow-md">
         <div className="p-3 flex flex-col">
           <div className="flex justify-between">
