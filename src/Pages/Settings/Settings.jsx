@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { classNames, payments, plans, subNavigation } from "../../utils";
 import { Fragment, useState } from "react";
 import {
@@ -8,7 +8,9 @@ import {
   Switch,
   //   Transition,
 } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+
+const Profile = React.lazy(() => import("./pages/Profile"));
 
 const Settings = () => {
   const [selectedPlan, setSelectedPlan] = useState(plans[1]);
@@ -46,7 +48,11 @@ const Settings = () => {
         </aside>
 
         {/* Payment details */}
+
         <div className="space-y-6 sm:px-6 lg:px-0 lg:col-span-9">
+          <Suspense>
+            <Route path="/app/settings/" exact component={Profile} />
+          </Suspense>
           {/* Plan */}
           <section aria-labelledby="plan-heading">
             <form action="#" method="POST">
