@@ -127,13 +127,13 @@ const TotalRevenue = () => {
             <Bar
               dataKey="visalre"
               name="Visal Reinsurance Broker"
-              fill="#73AB84"
+              fill="#4F000B"
             />
-            <Bar dataKey="kekre" name="KEK Reinsurance Broker" fill="#ADE1E5" />
+            <Bar dataKey="kekre" name="KEK Reinsurance Broker" fill="#720026" />
             <Bar
               dataKey="iriskre"
               name="KEK Reinsurance Broker"
-              fill="#99D19C"
+              fill="#CE4257"
             />
           </BarChart>
         </ResponsiveContainer>
