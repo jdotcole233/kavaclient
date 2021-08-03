@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../../Components/PageHeader";
 import PageWrapper from "../../Components/PageWrapper";
 import { useAdminProps } from "../../layout/Provider/AdminProvider";
+import { getUserInitials } from "../../utils";
 import DashboardStats from "./components/DashboardStats";
 import DashboardStatsLayer2 from "./components/DashboardStatsLayer2";
 import DashboardSvg from "./components/DashboardSvg";
@@ -15,8 +16,7 @@ const Dashboard = () => {
         <div className="lg:w-full w-full flex lg:items-center lg:flex-row flex-col bg-gray-100 shadow-md p-4 rounded">
           <div className=" w-1/5 ">
             <div className="bg-green-200 h-32 flex text-4xl text-green-600 items-center justify-center w-32 rounded-full">
-              {user?.rep_first_name?.charAt(0)}
-              {user?.rep_last_name?.charAt(0)}
+              {getUserInitials(user)}
             </div>
           </div>
           <div className="lg:mx-11 flex lg:items-center w-full justify-between">

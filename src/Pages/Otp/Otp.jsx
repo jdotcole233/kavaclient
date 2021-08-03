@@ -51,11 +51,11 @@ const Otp = () => {
         <img className="h-24 w-auto" src={Comfi} alt="Workflow" />
 
         <Fragment>
-          <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
+          <h2 className="mt-6 text-3xl font-medium text-gray-900">
             Welcome, {company?.company_name}
           </h2>
-          <div className="bg-green-300 text-green-800 p-4">
-            <span className={"text-gray-800 font-poppins"}>
+          <div className="bg-green-200 text-green-800 p-4">
+            <span className={"text-green-800 font-medium"}>
               Please check your mail for a provided passcode to enable you login
               to your account
             </span>

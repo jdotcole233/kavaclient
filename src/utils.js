@@ -96,7 +96,11 @@ export const toMoney = (value) => {
 export const showOfferDate = (offer) => {
     const from = new Date(offer?.period_of_insurance_from)
     const to = new Date(offer?.period_of_insurance_to)
-    return `${from.getDate()}/${from.getMonth() + 1}/${from.getFullYear()} ${to.getDate()}/${to.getMonth() + 1}/${to.getFullYear()}`
+    return `${from.getDate()}/${from.getMonth() + 1}/${from.getFullYear()} to ${to.getDate()}/${to.getMonth() + 1}/${to.getFullYear()}`
 }
 
 export const TIP = "___tken"
+
+
+export const getUserInitials = user => `${user?.rep_first_name?.charAt(0)}
+              ${user?.rep_last_name?.charAt(0)}`

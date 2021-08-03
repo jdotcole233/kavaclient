@@ -42,12 +42,12 @@ const Login = () => {
       <div>
         <img className="h-24 w-auto" src={Comfi} alt="Workflow" />
         <Fragment>
-          <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
+          <h2 className="mt-6 text-3xl font-medium text-gray-900">
             Sign in to your account
           </h2>
-          <span className={"text-gray-800 font-poppins"}>
+          {/* <span className={"text-gray-800 font-poppins"}>
             Get some text for here..
-          </span>
+          </span> */}
         </Fragment>
       </div>
       <div className="mt-8">

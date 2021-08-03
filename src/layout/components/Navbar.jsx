@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { classNames, TIP, userNavigation } from "../../utils";
+import { classNames, getUserInitials, TIP, userNavigation } from "../../utils";
 import { Menu, Transition } from "@headlessui/react";
 
 import { SearchIcon } from "@heroicons/react/solid";
@@ -10,9 +10,11 @@ import {
 } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { useHistory } from "react-router-dom";
+import { useAdminProps } from "../Provider/AdminProvider";
 
 const Navbar = () => {
   const { setMobileMenuOpen } = useLayoutProps();
+  const { user } = useAdminProps();
   const history = useHistory();
   return (
     <Fragment>
@@ -32,28 +34,7 @@ const Navbar = () => {
                 <label htmlFor="search-field" className="sr-only">
                   Search all files
                 </label>
-                <div className="relative w-full text-gray-400 focus-within:text-gray-600">
-                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center">
-                    <SearchIcon
-                      className="flex-shrink-0 h-5 w-5"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <input
-                    name="search-field"
-                    id="search-field"
-                    className="h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent focus:placeholder-gray-400 sm:hidden"
-                    placeholder="Search"
-                    type="search"
-                  />
-                  <input
-                    name="search-field"
-                    id="search-field"
-                    className="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent focus:placeholder-gray-400 sm:block"
-                    placeholder="Search all files"
-                    type="search"
-                  />
-                </div>
+                <div className="relative w-full text-gray-400 focus-within:text-gray-600"></div>
               </form>
             </div>
             <div className="ml-2 flex items-center space-x-4 sm:ml-6 sm:space-x-6">
@@ -62,13 +43,16 @@ const Navbar = () => {
                 {({ open }) => (
                   <>
                     <div>
-                      <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                      <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         <span className="sr-only">Open user menu</span>
-                        <img
+                        <div className="h-8 w-8 font-bold text-green-800 flex items-center justify-center bg-green-200 rounded-full">
+                          {getUserInitials(user)}
+                        </div>
+                        {/* <img
                           className="h-8 w-8 rounded-full"
                           src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
                           alt=""
-                        />
+                        /> */}
                       </Menu.Button>
                     </div>
                     <Transition
@@ -114,13 +98,13 @@ const Navbar = () => {
                 )}
               </Menu>
 
-              <button
+              {/* <button
                 type="button"
                 className="flex bg-green-600 p-1 rounded-full items-center justify-center text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 <PlusIconOutline className="h-6 w-6" aria-hidden="true" />
                 <span className="sr-only">Add file</span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

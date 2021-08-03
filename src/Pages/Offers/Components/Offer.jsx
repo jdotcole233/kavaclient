@@ -15,7 +15,7 @@ const Offer = ({ file = {} }) => {
       <div
         className={classNames(
           active ? "bg-gray-200" : "bg-white",
-          " focus:border-indigo-600 font-poppins border shadow-md flex items-center p-3"
+          " focus:border-indigo-600  border shadow-md flex items-center p-3"
         )}
       >
         <div className="w-22">
@@ -27,14 +27,15 @@ const Offer = ({ file = {} }) => {
             Cedant: {file?.insurer_company_name}
           </span>
           <span>Period: {showOfferDate(file)}</span>
-          <span>Insured: {file?.insured_by}</span>
+          <span>
+            Insured: <span className="font-semibold">{file?.insured_by}</span>
+          </span>
 
           <span className="text-gray-600 font-thin">
             Policy Number : {file?.policy_number}
           </span>
           <span className="flex items-center">
-            %:{" "}
-            <span className="bg-green-200 my-1 mx-2 flex items-center justify-center text-green-500 rounded-full px-2 font-medium text-sm">
+            <span className="bg-green-200 my-1 mr-2 flex items-center justify-center text-green-500 rounded-full px-2 font-medium text-sm">
               {file?.offer_participant_percentage}%
             </span>
             <span>Share: {toMoney(file?.offer_amount)}</span>
