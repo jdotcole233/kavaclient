@@ -7,7 +7,13 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <div className="bg-white p-3"></div>
+      <div className="bg-white p-3 flex flex-col">
+        <div className="flex">
+          <div className="">
+            <span>Total Parrticipations</span>
+          </div>
+        </div>
+      </div>
     </PageWrapper>
   );
 };
