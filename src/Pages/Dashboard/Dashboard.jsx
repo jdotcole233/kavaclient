@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <div>
+      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5">
         <div className="bg-white overflow-hidden shadow rounded-none">
           <div className="p-5">
             <div className="flex items-center">
