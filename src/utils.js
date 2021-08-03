@@ -81,10 +81,10 @@ export const payments = [
 ]
 
 export const subNavigation = [
-    { name: 'Profile', href: '#', icon: UserCircleIcon, current: false },
-    { name: 'Account', href: '#', icon: CogIcon, current: false },
+    { name: 'Profile', href: '/app/settings/', icon: UserCircleIcon, current: false },
+    { name: 'Account', href: '/app/settings/account', icon: CogIcon, current: false },
     // { name: 'Password', href: '#', icon: KeyIcon, current: false },
-    { name: 'Notifications', href: '#', icon: BellIcon, current: false },
+    { name: 'Notifications', href: '/app/settings/notifications', icon: BellIcon, current: false },
 ]
 
 export const toMoney = (value) => {
