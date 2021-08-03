@@ -15,7 +15,7 @@ import { classNames, months } from "../../../../utils";
 const TotalParticipations = () => {
   const [tab, setTab] = useState("month");
   return (
-    <div className="h-96 py-5 bg-white shadow-md">
+    <div className="h-auto py-5 bg-white shadow-md">
       <div className="p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="">
@@ -26,6 +26,7 @@ const TotalParticipations = () => {
           <div className="flex">
             <div className="grid grid-cols-2">
               <div
+                onClick={() => setTab("month")}
                 className={classNames(
                   tab === "month"
                     ? "bg-green-400 cursor-pointer px-4 flex items-center text-white justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
@@ -34,7 +35,14 @@ const TotalParticipations = () => {
               >
                 <span>Month</span>
               </div>
-              <div className="bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
+              <div
+                onClick={() => setTab("year")}
+                className={classNames(
+                  tab === "month"
+                    ? "bg-green-400 cursor-pointer px-4 flex items-center text-white justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
+                    : "bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
+                )}
+              >
                 <span>Year</span>
               </div>
             </div>
