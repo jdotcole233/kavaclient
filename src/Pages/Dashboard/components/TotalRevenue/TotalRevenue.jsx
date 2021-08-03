@@ -128,6 +128,7 @@ const TotalRevenue = () => {
               dataKey="visalre"
               name="Visal Reinsurance Broker"
               fill="#4F000B"
+              type="monotone"
             />
             <Area
               dataKey="kekre"
