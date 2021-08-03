@@ -38,7 +38,7 @@ const TotalParticipations = () => {
               <div
                 onClick={() => setTab("year")}
                 className={classNames(
-                  tab === "month"
+                  tab === "year"
                     ? "bg-green-400 cursor-pointer px-4 flex items-center text-white justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
                     : "bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
                 )}
@@ -49,10 +49,10 @@ const TotalParticipations = () => {
           </div>
         </div>
       </div>
-      <ResponsiveContainer>
+      <ResponsiveContainer height={350}>
         <BarChart
           width={500}
-          height={150}
+          height={350}
           data={months}
           margin={{
             top: 5,
