@@ -12,6 +12,13 @@ const Dashboard = () => {
           <div className="">
             <span>Total Parrticipations</span>
           </div>
+          <div className="flex">
+            <div className="grid">
+              <div className="bg-gray-300">
+                <span>Month</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </PageWrapper>
