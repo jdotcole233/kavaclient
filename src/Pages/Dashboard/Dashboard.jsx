@@ -9,7 +9,12 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <TotalParticipations />
+      <div className="flex">
+        <div className="w-auto">
+          <TotalParticipations />
+        </div>
+        <div className="w-1/3"></div>
+      </div>
       <TotalRevenue />
     </PageWrapper>
   );
