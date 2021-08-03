@@ -134,11 +134,13 @@ const TotalRevenue = () => {
               dataKey="kekre"
               name="KEK Reinsurance Broker"
               fill="#720026"
+              type="monotone"
             />
             <Area
               dataKey="iriskre"
               name="KEK Reinsurance Broker"
               fill="#CE4257"
+              type="monotone"
             />
           </AreaChart>
         </ResponsiveContainer>
