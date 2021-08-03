@@ -18,13 +18,17 @@ const TotalParticipations = () => {
     <div className="h-auto py-5 bg-white shadow-md">
       <div className="p-3 flex flex-col">
         <div className="flex justify-between">
-          <div className="">
+          <div className="flex flex-col">
             <span className="text-2xl font-semibold">
               Total Parrticipations
             </span>
+            <span>
+              Detailed description of your participations with various broker
+              firms
+            </span>
           </div>
           <div className="flex">
-            <div className="grid grid-cols-2">
+            <div className="grid h-7 grid-cols-2">
               <div
                 onClick={() => setTab("month")}
                 className={classNames(
