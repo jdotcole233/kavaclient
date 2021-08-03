@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, PureComponent, useState } from "react";
 import {
-  BarChart,
-  Bar,
+  AreaChart,
+  Area,
   Cell,
   XAxis,
   YAxis,
@@ -108,7 +108,7 @@ const TotalRevenue = () => {
           </div>
         </div>
         <ResponsiveContainer height={350}>
-          <BarChart
+          <AreaChart
             width={500}
             height={350}
             data={tab === "month" ? months : years}
@@ -124,18 +124,22 @@ const TotalRevenue = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar
+            <Area
               dataKey="visalre"
               name="Visal Reinsurance Broker"
               fill="#4F000B"
             />
-            <Bar dataKey="kekre" name="KEK Reinsurance Broker" fill="#720026" />
-            <Bar
+            <Area
+              dataKey="kekre"
+              name="KEK Reinsurance Broker"
+              fill="#720026"
+            />
+            <Area
               dataKey="iriskre"
               name="KEK Reinsurance Broker"
               fill="#CE4257"
             />
-          </BarChart>
+          </AreaChart>
         </ResponsiveContainer>
       </div>
     </div>
