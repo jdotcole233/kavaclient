@@ -14,7 +14,7 @@ const Account = () => {
   const [annualBillingEnabled, setAnnualBillingEnabled] = useState(true);
   return (
     <Fragment>
-      <section aria-labelledby="plan-heading">
+      <section aria-labelledby="plan-heading w-full">
         <form action="#" method="POST">
           <div className="shadow sm:rounded-md sm:overflow-hidden">
             <div className="bg-white py-6 px-4 space-y-6 sm:p-6">
