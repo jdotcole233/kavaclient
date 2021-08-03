@@ -150,3 +150,27 @@ export const months = [
         amt: 2100,
     },
 ];
+
+
+export const years = [
+
+    {
+        name: '2019',
+        uv: 3000,
+        pv: 1398,
+        amt: 2210,
+    },
+    {
+        name: '2020',
+        uv: 2000,
+        pv: 9800,
+        amt: 2290,
+    },
+    {
+        name: '2021',
+        uv: 2780,
+        pv: 3908,
+        amt: 2000,
+    },
+
+];
