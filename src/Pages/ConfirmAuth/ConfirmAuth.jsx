@@ -12,7 +12,7 @@ const ConfirmAuth = () => {
       <div>
         <img className="h-24 w-auto" src={Comfi} alt="Workflow" />
         <Fragment>
-          <h2 className="mt-6 text-3xl font-poppins font-extrabold text-gray-900">
+          <h2 className="mt-6 text-3xl  font-medium text-gray-900">
             Welcome, {company?.company_name} {}
           </h2>
         </Fragment>
