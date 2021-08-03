@@ -10,13 +10,13 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { months } from "../../../../utils";
+import { classNames, months } from "../../../../utils";
 
 const TotalParticipations = () => {
   const [tab, setTab] = useState("month");
   return (
-    <div className="h-96 bg-white shadow-md">
-      <div className=" p-3 flex flex-col">
+    <div className="h-96 py-5 bg-white shadow-md">
+      <div className="p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="">
             <span className="text-2xl font-semibold">
@@ -25,7 +25,13 @@ const TotalParticipations = () => {
           </div>
           <div className="flex">
             <div className="grid grid-cols-2">
-              <div className="bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
+              <div
+                className={classNames(
+                  tab === "month"
+                    ? "bg-green-400 cursor-pointer px-4 flex items-center text-white justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
+                    : "bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600"
+                )}
+              >
                 <span>Month</span>
               </div>
               <div className="bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
@@ -35,7 +41,7 @@ const TotalParticipations = () => {
           </div>
         </div>
       </div>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer>
         <BarChart
           width={500}
           height={150}
