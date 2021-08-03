@@ -10,10 +10,12 @@ const Dashboard = () => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <div className="flex">
-        <div className="w-auto">
+        <div className="w-2/3">
           <TotalParticipations />
         </div>
-        <div className="w-1/3"></div>
+        <div className="w-1/3 ml-3">
+          <div className="bg-white shadow-md"></div>
+        </div>
       </div>
       <TotalRevenue />
     </PageWrapper>
