@@ -106,7 +106,7 @@ export const getUserInitials = user => `${user?.rep_first_name?.charAt(0)}
               ${user?.rep_last_name?.charAt(0)}`
 
 
-export const data = [
+export const months = [
     {
         name: 'Jan',
         uv: 4000,
