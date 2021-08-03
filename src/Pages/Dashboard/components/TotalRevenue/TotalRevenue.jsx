@@ -94,14 +94,7 @@ const TotalRevenue = () => {
                   class="bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md"
                   aria-current="page"
                 >
-                  Team Members
-                </a>
-
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
-                >
-                  Billing
+                  Outstanding
                 </a>
               </nav>
             </div>
