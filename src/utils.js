@@ -156,20 +156,23 @@ export const years = [
 
     {
         name: '2019',
-        uv: 3000,
-        pv: 1398,
+        visalre: 3000,
+        kekre: 1398,
+        iriskre: 2451,
         amt: 2210,
     },
     {
         name: '2020',
-        uv: 2000,
-        pv: 9800,
+        visalre: 2000,
+        kekre: 9800,
+        iriskre: 6532,
         amt: 2290,
     },
     {
         name: '2021',
-        uv: 2780,
-        pv: 3908,
+        visalre: 2780,
+        kekre: 3908,
+        iriskre: 2544,
         amt: 2000,
     },
 
