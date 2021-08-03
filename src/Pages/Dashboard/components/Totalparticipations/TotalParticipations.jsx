@@ -1,4 +1,4 @@
-import React, { Fragment, PureComponent } from "react";
+import React, { Fragment, PureComponent, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -13,6 +13,7 @@ import {
 import { months } from "../../../../utils";
 
 const TotalParticipations = () => {
+  const [tab, setTab] = useState("month");
   return (
     <div className="h-96 bg-white shadow-md">
       <div className=" p-3 flex flex-col">
