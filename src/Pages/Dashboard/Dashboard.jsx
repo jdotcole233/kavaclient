@@ -10,12 +10,17 @@ const Dashboard = () => {
       <div className="bg-white p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="">
-            <span>Total Parrticipations</span>
+            <span className="text-2xl font-semibold">
+              Total Parrticipations
+            </span>
           </div>
           <div className="flex">
-            <div className="grid">
+            <div className="grid grid-cols-2">
               <div className="bg-gray-50 px-4 border border-green-600">
                 <span>Month</span>
+              </div>
+              <div className="bg-gray-50 px-4 border border-green-600">
+                <span>Year</span>
               </div>
             </div>
           </div>
