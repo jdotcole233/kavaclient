@@ -43,8 +43,8 @@ const Settings = () => {
 
         <div className="space-y-6 sm:px-6 lg:px-0 lg:col-span-9">
           <Suspense fallback={<h1>Loading</h1>}>
-            <Route path="/app/settings/" exact component={Profile} />
-            <Route path="/app/settings/account" exact component={Account} />
+            <Route path="/app/settings/" component={Profile} />
+            <Route path="/app/settings/account" component={Account} />
           </Suspense>
           {/* Plan */}
         </div>
