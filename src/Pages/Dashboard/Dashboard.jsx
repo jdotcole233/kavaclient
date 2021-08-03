@@ -7,6 +7,7 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
+      <div className="bg-white p-3"></div>
     </PageWrapper>
   );
 };
