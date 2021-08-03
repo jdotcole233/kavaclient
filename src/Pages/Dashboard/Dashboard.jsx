@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <PageWrapper>
       <PageHeader title="Dashboard" />
-      <div className="bg-white p-3 flex flex-col">
+      <div className="bg-white shadow-md p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="">
             <span className="text-2xl font-semibold">
@@ -16,7 +16,7 @@ const Dashboard = () => {
           </div>
           <div className="flex">
             <div className="grid grid-cols-2">
-              <div className="bg-gray-50 px-4 border border-green-600">
+              <div className="bg-gray-50 px-4 flex items-center justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
                 <span>Month</span>
               </div>
               <div className="bg-gray-50 px-4 border border-green-600">
