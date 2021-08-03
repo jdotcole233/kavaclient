@@ -16,7 +16,7 @@ const Content = () => {
           <Route path="/app/" exact component={Dashboard} />
           <Route path="/app/offers" exact component={Offers} />
           <Route path="/app/treaties" exact component={Treaties} />
-          <Route path="/app/settings" exact component={Settings} />
+          <Route path="/app/settings" component={Settings} />
           <Route path="/app/brokers" exact component={Brokers} />
         </Switch>
         <Footer />
