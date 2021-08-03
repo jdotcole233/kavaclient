@@ -72,6 +72,7 @@ const TotalParticipations = () => {
             fill="#8884d8"
           />
           <Bar dataKey="kekre" name="KEK Reinsurance Broker" fill="#82ca9d" />
+          <Bar dataKey="iriskre" name="KEK Reinsurance Broker" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
     </div>
