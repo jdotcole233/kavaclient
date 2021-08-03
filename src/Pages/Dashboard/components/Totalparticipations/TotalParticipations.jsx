@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { classNames, months } from "../../../../utils";
+import { classNames, months, years } from "../../../../utils";
 
 const TotalParticipations = () => {
   const [tab, setTab] = useState("month");
@@ -53,7 +53,7 @@ const TotalParticipations = () => {
         <BarChart
           width={500}
           height={350}
-          data={months}
+          data={tab === "month" ? months : years}
           margin={{
             top: 5,
             right: 30,
