@@ -14,8 +14,8 @@ import { months } from "../../../../utils";
 
 const TotalParticipations = () => {
   return (
-    <Fragment>
-      <div className="bg-white shadow-md p-3 flex flex-col">
+    <div className="h-96 bg-white shadow-md">
+      <div className=" p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="">
             <span className="text-2xl font-semibold">
@@ -55,7 +55,7 @@ const TotalParticipations = () => {
           <Bar dataKey="uv" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
-    </Fragment>
+    </div>
   );
 };
 
