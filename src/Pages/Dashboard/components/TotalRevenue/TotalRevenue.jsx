@@ -77,6 +77,7 @@ const TotalRevenue = () => {
               <nav class="flex my-4 space-x-4" aria-label="Tabs">
                 {/* <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700" --> */}
                 <span
+                  onClick={() => setTypes("all")}
                   className={classNames(
                     types === "all"
                       ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md cursor-pointer"
@@ -87,6 +88,7 @@ const TotalRevenue = () => {
                 </span>
 
                 <span
+                  onClick={() => setTypes("paid")}
                   className={classNames(
                     types === "paid"
                       ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md cursor-pointer"
@@ -96,6 +98,7 @@ const TotalRevenue = () => {
                   Paid
                 </span>
                 <span
+                  onClick={() => setTypes("outstanding")}
                   className={classNames(
                     types === "outstanding"
                       ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md cursor-pointer"
