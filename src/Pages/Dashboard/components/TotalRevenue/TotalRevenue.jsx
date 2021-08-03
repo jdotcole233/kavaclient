@@ -15,6 +15,7 @@ import { classNames, months, years } from "../../../../utils";
 
 const TotalRevenue = () => {
   const [tab, setTab] = useState("month");
+  const [types, setTypes] = useState("all");
   return (
     <div className="mt-4">
       <div className="h-auto py-5 bg-white shadow-md">
@@ -75,27 +76,40 @@ const TotalRevenue = () => {
             <div class="hidden sm:block">
               <nav class="flex my-4 space-x-4" aria-label="Tabs">
                 {/* <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700" --> */}
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
+                <span
+                  //   href="#"
+                  class=""
+                  className={classNames(
+                    types === "all"
+                      ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md"
+                      : "text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
+                  )}
                 >
                   All
-                </a>
+                </span>
 
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
+                <span
+                  //   href="#"
+                  class=""
+                  className={classNames(
+                    types === "paid"
+                      ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md"
+                      : "text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
+                  )}
                 >
                   Paid
-                </a>
-
-                <a
-                  href="#"
-                  class="bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md"
-                  aria-current="page"
+                </span>
+                <span
+                  //   href="#"
+                  class=""
+                  className={classNames(
+                    types === "all"
+                      ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md"
+                      : "text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
+                  )}
                 >
-                  Outstanding
-                </a>
+                  All
+                </span>
               </nav>
             </div>
           </div>
