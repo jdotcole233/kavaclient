@@ -16,10 +16,10 @@ const Dashboard = () => {
           </div>
           <div className="flex">
             <div className="grid grid-cols-2">
-              <div className="bg-gray-50 px-4 flex items-center justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
+              <div className="bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
                 <span>Month</span>
               </div>
-              <div className="bg-gray-50 px-4 border border-green-600">
+              <div className="bg-gray-50 cursor-pointer px-4 flex items-center text-green-600 justify-center hover:bg-green-400 focus:bg-green-400 hover:text-white border border-green-600">
                 <span>Year</span>
               </div>
             </div>
