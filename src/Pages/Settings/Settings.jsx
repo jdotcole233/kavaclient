@@ -9,6 +9,7 @@ import {
   //   Transition,
 } from "@headlessui/react";
 import { QuestionMarkCircleIcon } from "@heroicons/react/solid";
+import { Link } from "react-router-dom";
 
 const Settings = () => {
   const [selectedPlan, setSelectedPlan] = useState(plans[1]);
@@ -19,9 +20,9 @@ const Settings = () => {
         <aside className="py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3">
           <nav className="space-y-1">
             {subNavigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className={classNames(
                   item.current
                     ? "bg-gray-50 text-orange-600 hover:bg-white"
@@ -40,7 +41,7 @@ const Settings = () => {
                   aria-hidden="true"
                 />
                 <span className="truncate">{item.name}</span>
-              </a>
+              </Link>
             ))}
           </nav>
         </aside>
