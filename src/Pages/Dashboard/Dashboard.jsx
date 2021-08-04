@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../../Components/PageHeader";
 import PageWrapper from "../../Components/PageWrapper";
-import { useAdminProps } from "../../layout/Provider/AdminProvider";
+// import { useAdminProps } from "../../layout/Provider/AdminProvider";
 import Overview from "./components/Overview/Overview";
 import TotalParticipations from "./components/Totalparticipations/TotalParticipations";
 import TotalRevenue from "./components/TotalRevenue/TotalRevenue";
