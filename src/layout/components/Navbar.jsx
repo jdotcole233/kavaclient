@@ -2,12 +2,7 @@ import React, { Fragment } from "react";
 import { classNames, getUserInitials, TIP, userNavigation } from "../../utils";
 import { Menu, Transition } from "@headlessui/react";
 
-import { SearchIcon } from "@heroicons/react/solid";
-
-import {
-  MenuAlt2Icon,
-  PlusIcon as PlusIconOutline,
-} from "@heroicons/react/outline";
+import { MenuAlt2Icon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { useHistory } from "react-router-dom";
 import { useAdminProps } from "../Provider/AdminProvider";

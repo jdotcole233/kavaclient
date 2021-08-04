@@ -1,8 +1,8 @@
-import React, { Fragment, PureComponent, useState } from "react";
+import React, { useState } from "react";
 import {
   BarChart,
   Bar,
-  Cell,
+  // Cell,
   XAxis,
   YAxis,
   CartesianGrid,

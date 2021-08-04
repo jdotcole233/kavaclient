@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment, PureComponent, useState } from "react";
+import React, { useState } from "react";
 import {
   AreaChart,
   Area,
-  Cell,
+  // Cell,
   XAxis,
   YAxis,
   CartesianGrid,
