@@ -2,10 +2,10 @@ import React, { PureComponent, useState } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 
 const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
+  { name: "Group A", value: 400, fill: "#FF7F51" },
+  { name: "Group B", value: 300, fill: "#4F000B" },
+  { name: "Group C", value: 300, fill: "#FF9B54" },
+  { name: "Group D", value: 200, fill: "#CE4257" },
 ];
 
 const renderActiveShape = (props) => {
@@ -58,7 +58,7 @@ const renderActiveShape = (props) => {
       />
       <path
         d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
-        stroke={fill}
+        stroke={payload.fill}
         fill="none"
       />
       <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
