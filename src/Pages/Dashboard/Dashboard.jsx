@@ -5,6 +5,7 @@ import { useAdminProps } from "../../layout/Provider/AdminProvider";
 import Overview from "./components/Overview/Overview";
 import TotalParticipations from "./components/Totalparticipations/TotalParticipations";
 import TotalRevenue from "./components/TotalRevenue/TotalRevenue";
+import TotalRevenuePie from "./components/TotalRevenuePie/TotalRevenuePie";
 
 const Dashboard = () => {
   return (
@@ -16,7 +17,9 @@ const Dashboard = () => {
           <TotalRevenue />
         </div>
         <div className="w-1/3 ml-3">
-          <div className="bg-white h-auto mt-4 shadow-md p-3"></div>
+          <div className="bg-white h-auto mt-4 shadow-md p-3">
+            <TotalRevenuePie />
+          </div>
         </div>
       </div>
       <TotalParticipations />

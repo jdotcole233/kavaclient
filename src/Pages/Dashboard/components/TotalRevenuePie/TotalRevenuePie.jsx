@@ -84,22 +84,24 @@ const renderActiveShape = (props) => {
 const TotalRevenuePie = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <PieChart width={400} height={400}>
-        <Pie
-          activeIndex={activeIndex}
-          activeShape={renderActiveShape}
-          data={data}
-          cx="50%"
-          cy="50%"
-          innerRadius={60}
-          outerRadius={80}
-          fill="#8884d8"
-          dataKey="value"
-          onMouseEnter={(_, index) => setActiveIndex(index)}
-        />
-      </PieChart>
-    </ResponsiveContainer>
+    <div className="bg-white h-auto mt-4 shadow-md p-3">
+      <ResponsiveContainer width="100%" height="100%">
+        <PieChart width={400} height={400}>
+          <Pie
+            activeIndex={activeIndex}
+            activeShape={renderActiveShape}
+            data={data}
+            cx="50%"
+            cy="50%"
+            innerRadius={60}
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
+            onMouseEnter={(_, index) => setActiveIndex(index)}
+          />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 
