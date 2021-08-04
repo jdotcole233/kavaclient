@@ -91,7 +91,7 @@ const TotalRevenuePie = () => {
           Breakdown of the the total revenue into various brokers by percentage
         </span>
       </div>
-      <ResponsiveContainer width="100%" height={350}>
+      <ResponsiveContainer width="100%" height={420}>
         <PieChart width={400} height={400}>
           <Pie
             activeIndex={activeIndex}
