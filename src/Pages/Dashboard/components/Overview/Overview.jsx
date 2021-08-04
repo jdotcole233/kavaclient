@@ -26,7 +26,7 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total Sales
+                    Title
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
@@ -67,7 +67,7 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total Profit
+                    Title
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
@@ -108,7 +108,7 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total granted as acct.
+                    Title
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
@@ -149,7 +149,7 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total no. of users
+                    Title
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
@@ -190,7 +190,7 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total credit balance
+                    Title
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
