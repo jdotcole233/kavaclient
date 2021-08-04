@@ -137,13 +137,13 @@ const TotalRevenue = () => {
             <Area
               dataKey="kekre"
               name="KEK Reinsurance Broker"
-              fill="#720026"
+              fill="#9DA9A0"
               type="monotone"
             />
             <Area
-              dataKey="iriskre"
+              dataKey="amt"
               name="KEK Reinsurance Broker"
-              fill="#CE4257"
+              fill="#CEC075"
               type="monotone"
             />
           </AreaChart>
