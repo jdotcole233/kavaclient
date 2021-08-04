@@ -12,7 +12,7 @@ const Dashboard = () => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <Overview />
-      <div className="flex mb-2 items-stretch">
+      <div className="flex mb-2 ">
         <div className="w-2/3 h-auto">
           <TotalRevenue />
         </div>

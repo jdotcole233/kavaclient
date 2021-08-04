@@ -85,8 +85,11 @@ const TotalRevenuePie = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className="bg-white h-auto mt-4 shadow-md p-3">
-      <div className="p-3">
+      <div className="p-3 flex flex-col">
         <span className="text-2xl font-medium">Total Revenue overall</span>
+        <span>
+          Breakdown of the the total revenue into various brokers by percentage
+        </span>
       </div>
       <ResponsiveContainer width="100%" height={350}>
         <PieChart width={400} height={400}>
