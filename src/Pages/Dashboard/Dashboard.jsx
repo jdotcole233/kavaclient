@@ -17,9 +17,7 @@ const Dashboard = () => {
           <TotalRevenue />
         </div>
         <div className="w-1/3 ml-3">
-          <div className="bg-white h-auto mt-4 shadow-md p-3">
-            <TotalRevenuePie />
-          </div>
+          <TotalRevenuePie />
         </div>
       </div>
       <TotalParticipations />
