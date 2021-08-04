@@ -160,8 +160,8 @@ export const years = [
     },
     {
         name: '2020',
-        visalre: 2000,
-        kekre: 9800,
+        visalre: 250,
+        kekre: 1463,
         iriskre: 6532,
         amt: 2290,
     },
