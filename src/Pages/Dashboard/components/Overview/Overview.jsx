@@ -143,8 +143,9 @@ const Overview = () => {
       <SideSheet
         isShown={showExposureDrawer}
         onCloseComplete={() => setShowExposureDrawer(false)}
+        width="70%"
       >
-        <Paragraph margin={40}>Basic Example</Paragraph>
+        {/* <Paragraph margin={40}>Basic Example</Paragraph> */}
       </SideSheet>
     </Fragment>
   );
