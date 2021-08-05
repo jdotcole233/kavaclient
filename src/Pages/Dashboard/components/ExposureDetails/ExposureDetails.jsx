@@ -7,7 +7,11 @@ const ExposureDetails = () => {
         <div className="flex justify-between p-4">
           <div className=""></div>
           <div className="">
-            <select name="" className="bg-transparent border w-24 p-2" id="">
+            <select
+              name=""
+              className="bg-transparent border w-24 p-2 border-gray-600"
+              id=""
+            >
               <option value="USD">USD</option>
               <option value="GHC">GHC</option>
               <option value="EUR">EUR</option>
