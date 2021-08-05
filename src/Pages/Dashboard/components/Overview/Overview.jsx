@@ -1,6 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import { SideSheet, Paragraph } from "evergreen-ui";
 
 const Overview = () => {
+  const [showExposureDrawer, setShowExposureDrawer] = useState(false);
   return (
     <Fragment>
       <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -42,7 +44,10 @@ const Overview = () => {
           </div>
           <div className="bg-cool-gray-50 px-5 py-3">
             <div className="text-sm leading-5">
-              <button className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150">
+              <button
+                onClick={() => setShowExposureDrawer(true)}
+                className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150"
+              >
                 View all
               </button>
             </div>
@@ -134,6 +139,13 @@ const Overview = () => {
           </div>
         </div>
       </div>
+
+      <SideSheet
+        isShown={showExposureDrawer}
+        onCloseComplete={() => setShowExposureDrawer(false)}
+      >
+        <Paragraph margin={40}>Basic Example</Paragraph>
+      </SideSheet>
     </Fragment>
   );
 };
