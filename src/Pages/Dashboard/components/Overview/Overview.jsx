@@ -144,9 +144,7 @@ const Overview = () => {
         isShown={showExposureDrawer}
         onCloseComplete={() => setShowExposureDrawer(false)}
         width={1200}
-      >
-        {/* <Paragraph margin={40}>Basic Example</Paragraph> */}
-      </SideSheet>
+      ></SideSheet>
     </Fragment>
   );
 };
