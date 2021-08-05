@@ -65,7 +65,7 @@ const TotalParticipations = () => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
-          <YAxis angle={90} label="Offers" />
+          <YAxis label="Offers" />
           <Tooltip />
           <Legend />
           <Bar
