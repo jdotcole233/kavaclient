@@ -2,7 +2,7 @@
 import React, { Fragment, useState } from "react";
 import { classNames } from "../utils";
 
-const Pagination = ({ size, pageLimit, dataLimit }) => {
+const Pagination = ({ size = 1, pageLimit = 5, dataLimit = 9 }) => {
   const [pages] = useState(Math.round(size / dataLimit));
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -21,13 +21,13 @@ const Pagination = ({ size, pageLimit, dataLimit }) => {
 
   const getPaginationGroup = () => {
     let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
-    return new Array(pageLimit).fill().map((_, idx) => start + idx + 1);
+    return new Array(pages).fill().map((_, idx) => start + idx + 1);
   };
 
   return (
     <Fragment>
       {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
-      <div className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+      <div className="px-4 py-3 flex items-center justify-between   sm:px-6">
         <div className="flex-1 flex justify-between sm:hidden">
           <a
             // href="#"
@@ -46,11 +46,17 @@ const Pagination = ({ size, pageLimit, dataLimit }) => {
           <div>
             <p className="text-sm text-gray-700">
               Showing
-              <span className="font-medium">1</span>
+              <span className="font-medium mx-1">
+                {currentPage === 1 ? 1 : (currentPage - 1) * pageLimit + 1}
+              </span>
               to
-              <span className="font-medium">10</span>
+              <span className="font-medium mx-1">
+                {currentPage === 1
+                  ? pageLimit
+                  : currentPage * pageLimit + pageLimit}
+              </span>
               of
-              <span className="font-medium">97</span>
+              <span className="font-medium mx-1">{size}</span>
               results
             </p>
           </div>

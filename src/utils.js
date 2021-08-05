@@ -9,10 +9,7 @@ import {
 
 import {
     BellIcon,
-    CreditCardIcon,
-    KeyIcon,
     UserCircleIcon,
-    ViewGridAddIcon,
 } from '@heroicons/react/outline'
 
 

@@ -19,9 +19,7 @@ const TotalParticipations = () => {
       <div className="p-3 flex flex-col">
         <div className="flex justify-between">
           <div className="flex flex-col">
-            <span className="text-2xl font-semibold">
-              Total Parrticipations
-            </span>
+            <span className="text-2xl font-semibold">Total Offers</span>
             <span>
               Detailed description of your participations with various broker
               firms

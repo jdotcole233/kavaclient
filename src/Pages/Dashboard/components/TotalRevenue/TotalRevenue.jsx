@@ -54,7 +54,7 @@ const TotalRevenue = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex justify-between">
             <div class="sm:hidden">
               <label for="tabs" class="sr-only">
                 Select a tab
@@ -109,6 +109,19 @@ const TotalRevenue = () => {
                 </span>
               </nav>
             </div>
+            <select
+              id="tabs"
+              name="tabs"
+              class="block focus:ring-green-500 outline-none border h-7 w-24  focus:border-green-500 border-gray-300 rounded-none"
+            >
+              <option>GHC</option>
+
+              <option>USD</option>
+
+              <option selected>EUR</option>
+
+              <option>GBP</option>
+            </select>
           </div>
         </div>
         <ResponsiveContainer height={350}>

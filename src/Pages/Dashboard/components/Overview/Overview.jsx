@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const Overview = () => {
   return (
     <Fragment>
-      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
         <div className="bg-white overflow-hidden shadow rounded-none">
           <div className="p-5">
             <div className="flex items-center">
@@ -26,11 +26,14 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Title
+                    Total Exposure
                   </dt>
-                  <dd>
+                  <dd className="grid grid-cols-2">
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
                       Gh₵ 30,659.45
+                    </div>
+                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
+                      USD 30,659.45
                     </div>
                   </dd>
                 </dl>
@@ -67,11 +70,11 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Title
+                    Total Claims Notified
                   </dt>
                   <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      Gh₵ 30,659.45
+                      14
                     </div>
                   </dd>
                 </dl>
@@ -108,93 +111,14 @@ const Overview = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Title
+                    Total Reserves
                   </dt>
-                  <dd>
+                  <dd className="grid grid-cols-2">
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
                       Gh₵ 30,659.45
                     </div>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div className="bg-cool-gray-50 px-5 py-3">
-            <div className="text-sm leading-5">
-              <button className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150">
-                View all
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white overflow-hidden shadow rounded-none">
-          <div className="p-5">
-            <div className="flex items-center">
-              <div className="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-full bg-red-100 text-red-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.3"
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-5 w-0 flex-1">
-                <dl>
-                  <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Title
-                  </dt>
-                  <dd>
                     <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      500
-                    </div>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div className="bg-cool-gray-50 px-5 py-3">
-            <div className="text-sm leading-5">
-              <button className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150">
-                View all
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white overflow-hidden shadow rounded-none">
-          <div className="p-5">
-            <div className="flex items-center">
-              <div className="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-full bg-purple-100 text-purple-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-5 w-0 flex-1">
-                <dl>
-                  <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Title
-                  </dt>
-                  <dd>
-                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      Gh₵ 3,000.00
+                      USD 30,659.45
                     </div>
                   </dd>
                 </dl>

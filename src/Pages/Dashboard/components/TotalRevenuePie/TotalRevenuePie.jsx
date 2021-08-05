@@ -91,7 +91,61 @@ const TotalRevenuePie = () => {
           Breakdown of the the total revenue into various brokers by percentage
         </span>
       </div>
-      <ResponsiveContainer width="100%" height={420}>
+      <div className="grid px-3 grid-cols-3">
+        <div>
+          <label htmlFor="" className="font-medium">
+            Year
+          </label>
+          <select
+            id="tabs"
+            name="tabs"
+            class="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
+          >
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="" className="font-medium">
+            Month
+          </label>
+          <select
+            id="tabs"
+            name="tabs"
+            class="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
+          >
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="" className="font-medium">
+            Currency
+          </label>
+          <select
+            id="tabs"
+            name="tabs"
+            class="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
+          >
+            <option>GHC</option>
+            <option>USD</option>
+            <option>EUR</option>
+            <option>GBP</option>
+          </select>
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={390}>
         <PieChart width={400} height={400}>
           <Pie
             activeIndex={activeIndex}

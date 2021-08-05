@@ -4,6 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
+import ComfyC from "../../assets/comCY.svg";
 
 const Sidebar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useLayoutProps();
@@ -14,11 +15,7 @@ const Sidebar = () => {
       <div className="hidden w-28 bg-green-700 h-full overflow-y-auto md:block">
         <div className="w-full h-full py-6 flex flex-col items-center">
           <div className="h-20 flex items-center">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
-              alt="Workflow"
-            />
+            <img className="h-8 w-auto" src={ComfyC} alt="Workflow" />
           </div>
           <div className="flex-1 mt-6 w-full flex flex-col    px-2 space-y-1">
             {navigation.map((item) => (
