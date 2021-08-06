@@ -84,7 +84,11 @@ const ExposureDetails = () => {
         </div>
       </div>
       <div className="flex flex-1 bg-gray-600 h-full">
-        <div className="grid grid-cols-1"></div>
+        <div className="grid gap-4 grid-cols-1 px-4 py-5">
+          <div className="bg-white p-3"></div>
+          <div className="bg-white p-3"></div>
+          <div className="bg-white p-3"></div>
+        </div>
       </div>
     </div>
   );
