@@ -86,10 +86,10 @@ const ExposureDetails = () => {
       <div className="flex  bg-gray-600 h-2/4 w-full">
         <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
           <div className="bg-white rounded-lg w-full p-3">
-            <div>
+            <div className="w-1/5 flex h-full items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-36 w-36"
+                className="h-24 w-16 text-gray-400 "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
