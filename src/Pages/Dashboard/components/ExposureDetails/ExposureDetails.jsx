@@ -25,6 +25,16 @@ const ExposureDetails = () => {
           <div className="">
             <select
               name=""
+              className="bg-transparent border w-24 mx-3 px-4 p-2 border-gray-600"
+              id=""
+            >
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+            </select>
+            <select
+              name=""
               className="bg-transparent border w-24 px-4 p-2 border-gray-600"
               id=""
             >
