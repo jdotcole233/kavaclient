@@ -1,9 +1,21 @@
 import React from "react";
+import {
+  BarChart,
+  Bar,
+  // Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { months } from "../../../../utils";
 
 const ExposureDetails = () => {
   return (
     <div className="h-full overflow-y-scroll">
-      <div className="h-2/4 w-full bg-gray-300">
+      <div className="h-2/4 w-full bg-gray-100">
         <div className="flex justify-between p-4">
           <div className="">
             <span className="text-3xl font-medium">
@@ -24,7 +36,43 @@ const ExposureDetails = () => {
           </div>
         </div>
 
-        <div className="h-96"></div>
+        <div className="h-96">
+          <ResponsiveContainer height={350}>
+            <BarChart
+              width={500}
+              height={350}
+              data={months}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis label="Offers" />
+              <Tooltip />
+              <Legend />
+              <Bar
+                dataKey="visalre"
+                name="Visal Reinsurance Broker"
+                fill="#73AB84"
+              />
+              <Bar
+                dataKey="kekre"
+                // label="Offers"
+                name="KEK Reinsurance Broker"
+                fill="#ADE1E5"
+              />
+              <Bar
+                dataKey="iriskre"
+                name="KEK Reinsurance Broker"
+                fill="#99D19C"
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );
