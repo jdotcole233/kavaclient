@@ -28,7 +28,7 @@ const ExposureDetails = () => {
               className="bg-transparent border w-24 px-4 p-2 border-gray-600"
               id=""
             >
-              <option value="USD">USD</option>
+              <option value="USD">2017</option>
               <option value="GHC">GHC</option>
               <option value="EUR">EUR</option>
               <option value="GBP">GBP</option>
@@ -54,11 +54,7 @@ const ExposureDetails = () => {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar
-                dataKey="usd"
-                name="Visal Reinsurance Broker"
-                fill="#73AB84"
-              />
+              <Bar dataKey="usd" name="USD" fill="#73AB84" />
               <Bar
                 dataKey="gbp"
                 // label="Offers"
@@ -66,7 +62,7 @@ const ExposureDetails = () => {
                 fill="#ADE1E5"
               />
               <Bar dataKey="eur" name="EUR" fill="#99D19C" />
-              <Bar dataKey="ghc" name="GHC" fill="#99D19C" />
+              <Bar dataKey="ghc" name="GHC" fill="#99D19E" />
             </BarChart>
           </ResponsiveContainer>
         </div>
