@@ -19,6 +19,13 @@ import {
   renderActiveShape,
 } from "../../../../utils";
 
+const data = [
+  { name: "USD", value: 400, fill: "#FF7F51" },
+  { name: "EUR", value: 300, fill: "#4F000B" },
+  { name: "GBP", value: 300, fill: "#FF9B54" },
+  { name: "GHC", value: 200, fill: "#CE4257" },
+];
+
 const ExposureDetails = () => {
   const [broker, setBroker] = useState("Visal Reinsurance Broker");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -212,7 +219,7 @@ const ExposureDetails = () => {
                   <Pie
                     activeIndex={activeIndex}
                     activeShape={renderActiveShape}
-                    data={[]}
+                    data={data}
                     cx="50%"
                     cy="50%"
                     innerRadius={60}
