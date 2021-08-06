@@ -40,7 +40,7 @@ const ExposureDetails = () => {
             </select>
             <select
               name=""
-              className="bg-transparent border w-24 px-4 p-2 border-gray-600"
+              className="bg-transparent border px-4 p-2 border-gray-600"
               id=""
             >
               <option value="2021">2021</option>
@@ -65,7 +65,7 @@ const ExposureDetails = () => {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey=" " />
+              <XAxis dataKey="month" />
               <YAxis />
               <Tooltip />
               <Legend />
