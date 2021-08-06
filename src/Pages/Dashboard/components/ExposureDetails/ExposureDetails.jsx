@@ -25,13 +25,18 @@ const ExposureDetails = () => {
           <div className="">
             <select
               name=""
-              className="bg-transparent border w-24 mx-3 px-4 p-2 border-gray-600"
+              className="bg-transparent border mx-3 px-4 p-2 border-gray-600"
               id=""
             >
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
-              <option value="2018">2018</option>
+              <option value="Visal Reinsurance Broker">
+                Visal Reinsurance Broker
+              </option>
+              <option value="KEK Reinsurance Broker">
+                KEK Reinsurance Broker
+              </option>
+              <option value="iRisk Reinsurance Broker">
+                iRisk Reinsurance Broker
+              </option>
             </select>
             <select
               name=""
