@@ -16,11 +16,12 @@ const ExposureDetails = () => {
   return (
     <div className="h-full overflow-y-scroll">
       <div className="h-2/4 w-full bg-gray-100">
+        <div className="p-4">
+          <span className="text-3xl font-medium">Total Exposure Breakdown</span>
+        </div>
         <div className="flex justify-between p-4">
           <div className="">
-            <span className="text-3xl font-medium">
-              Total Exposure Breakdown
-            </span>
+            <span>Monthly Breakdown</span>
           </div>
           <div className="">
             <select
