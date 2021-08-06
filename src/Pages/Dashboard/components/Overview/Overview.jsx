@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { SideSheet, Paragraph } from "evergreen-ui";
+import { SideSheet } from "evergreen-ui";
 import ExposureDetails from "../ExposureDetails/ExposureDetails";
 
 const Overview = () => {
