@@ -109,8 +109,8 @@ const ExposureDetails = () => {
               </div>
               <span className="text-lg font-medium">{broker}</span>
             </div>
-            <div className="w-2/5">
-              <div className="flex">
+            <div className="w-2/5 grid grid-rows-3">
+              <div className="flex flex-col">
                 <span className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -130,6 +130,7 @@ const ExposureDetails = () => {
                     Total Exposure ( USD )
                   </span>
                 </span>
+                <span className="ml-5">34,566</span>
               </div>
             </div>
             <div className="w-2/5"></div>
