@@ -109,6 +109,8 @@ const ExposureDetails = () => {
               </div>
               <span className="text-lg font-medium">{broker}</span>
             </div>
+            <div className="w-2/5"></div>
+            <div className="w-2/5"></div>
           </div>
         </div>
       </div>
