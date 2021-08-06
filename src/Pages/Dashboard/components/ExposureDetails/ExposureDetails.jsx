@@ -103,7 +103,7 @@ const ExposureDetails = () => {
                   />
                 </svg>
               </div>
-              <span>Visal Reinsurance Brokers</span>
+              <span className="text-xl">Visal Reinsurance Brokers</span>
             </div>
           </div>
           <div className="bg-white p-3"></div>
