@@ -83,6 +83,9 @@ const ExposureDetails = () => {
           </ResponsiveContainer>
         </div>
       </div>
+      <div className="flex flex-1 bg-gray-600 h-full">
+        <div className="grid grid-cols-1"></div>
+      </div>
     </div>
   );
 };
