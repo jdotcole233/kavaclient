@@ -188,14 +188,14 @@ export const monthsWithCurrency = [{
     "ghc": 3932
 }, {
     "id": 3,
-    "month": "Mar",
+    "month": "March",
     "usd": 58768,
     "eur": 58057,
     "gbp": 62028,
     "ghc": 48898
 }, {
     "id": 4,
-    "month": "Apr",
+    "month": "April",
     "usd": 38400,
     "eur": 51964,
     "gbp": 40360,
@@ -209,49 +209,49 @@ export const monthsWithCurrency = [{
     "ghc": 18545
 }, {
     "id": 6,
-    "month": "Jun",
+    "month": "June",
     "usd": 56350,
     "eur": 66036,
     "gbp": 60366,
     "ghc": 1951
 }, {
     "id": 7,
-    "month": "Jul",
+    "month": "July",
     "usd": 32793,
     "eur": 9608,
     "gbp": 51290,
     "ghc": 16665
 }, {
     "id": 8,
-    "month": "Aug",
+    "month": "August",
     "usd": 12769,
     "eur": 48723,
     "gbp": 67265,
     "ghc": 28026
 }, {
     "id": 9,
-    "month": "Sep",
+    "month": "September",
     "usd": 26475,
     "eur": 42488,
     "gbp": 2586,
     "ghc": 12197
 }, {
     "id": 10,
-    "month": "Oct",
+    "month": "October",
     "usd": 17874,
     "eur": 5021,
     "gbp": 4607,
     "ghc": 43007
 }, {
     "id": 11,
-    "month": "Nov",
+    "month": "November",
     "usd": 23262,
     "eur": 49599,
     "gbp": 67663,
     "ghc": 34900
 }, {
     "id": 12,
-    "month": "Dec",
+    "month": "December",
     "usd": 21586,
     "eur": 58631,
     "gbp": 67824,
