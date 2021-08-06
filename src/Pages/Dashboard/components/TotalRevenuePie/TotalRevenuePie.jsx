@@ -3,7 +3,7 @@ import { PieChart, Pie, ResponsiveContainer } from "recharts";
 import { renderActiveShape } from "../../../../utils";
 
 const data = [
-  { name: "Group A", value: 400, fill: "#FF7F51" },
+  { name: "Visal Reinsurance Broker", value: 400, fill: "#FF7F51" },
   { name: "Group B", value: 300, fill: "#4F000B" },
   { name: "Group C", value: 300, fill: "#FF9B54" },
   { name: "Group D", value: 200, fill: "#CE4257" },
