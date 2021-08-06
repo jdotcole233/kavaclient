@@ -16,10 +16,10 @@ import { PieChart, Pie } from "recharts";
 import { monthsWithCurrency, renderActiveShape } from "../../../../utils";
 
 const data = [
-  { name: "USD", value: 400, fill: "#8D918B" },
-  { name: "EUR", value: 300, fill: "#C76D7E" },
-  { name: "GBP", value: 300, fill: "#AD9B9A" },
-  { name: "GHC", value: 200, fill: "#E85D75" },
+  { name: "USD", value: 400, fill: "#EDD382" },
+  { name: "EUR", value: 300, fill: "#FC9E4F" },
+  { name: "GBP", value: 300, fill: "#FF521B" },
+  { name: "GHC", value: 200, fill: "#020122" },
 ];
 
 const ExposureDetails = () => {
@@ -84,15 +84,15 @@ const ExposureDetails = () => {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="usd" name="USD" fill="#8D918B" />
+              <Bar dataKey="usd" name="USD" fill="#EDD382" />
               <Bar
                 dataKey="gbp"
                 // label="Offers"
                 name="GBP"
-                fill="#AD9B9A"
+                fill="#FF521B"
               />
-              <Bar dataKey="eur" name="EUR" fill="#C76D7E" />
-              <Bar dataKey="ghc" name="GHC" fill="#E85D75" />
+              <Bar dataKey="eur" name="EUR" fill="#FC9E4F" />
+              <Bar dataKey="ghc" name="GHC" fill="#020122" />
             </BarChart>
           </ResponsiveContainer>
         </div>
