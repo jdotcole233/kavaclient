@@ -21,7 +21,7 @@ const ExposureDetails = () => {
         </div>
         <div className="flex justify-between p-4">
           <div className="">
-            <span>Monthly Breakdown</span>
+            <span className="font-thin text-3xl">Monthly Breakdown</span>
           </div>
           <div className="">
             <select
