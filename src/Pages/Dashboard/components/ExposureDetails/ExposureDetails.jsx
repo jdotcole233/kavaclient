@@ -215,7 +215,7 @@ const ExposureDetails = () => {
             </div>
             <div className="w-2/5">
               <ResponsiveContainer width="100%" height={390}>
-                <PieChart width={400} height={400}>
+                <PieChart height={400}>
                   <Pie
                     activeIndex={activeIndex}
                     activeShape={renderActiveShape}
