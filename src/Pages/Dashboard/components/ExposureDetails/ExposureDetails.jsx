@@ -84,8 +84,25 @@ const ExposureDetails = () => {
         </div>
       </div>
       <div className="flex  bg-gray-600 h-2/4 w-full">
-        <div className="grid gap-4 grid-cols-1 px-4 py-5">
-          <div className="bg-white rounded-lg w-full p-3"></div>
+        <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
+          <div className="bg-white rounded-lg w-full p-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-36 w-36"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+                />
+              </svg>
+            </div>
+          </div>
           <div className="bg-white p-3"></div>
           <div className="bg-white p-3"></div>
         </div>
