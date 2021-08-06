@@ -5,11 +5,15 @@ const ExposureDetails = () => {
     <div>
       <div className="h-96 w-full bg-gray-300">
         <div className="flex justify-between p-4">
-          <div className=""></div>
+          <div className="">
+            <span className="text-3xl font-medium">
+              Total Exposure Breakdown
+            </span>
+          </div>
           <div className="">
             <select
               name=""
-              className="bg-transparent border w-24 p-2 border-gray-600"
+              className="bg-transparent border w-24 px-4 border-gray-600"
               id=""
             >
               <option value="USD">USD</option>
