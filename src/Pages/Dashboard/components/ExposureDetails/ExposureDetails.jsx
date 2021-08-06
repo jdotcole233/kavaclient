@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   BarChart,
   Bar,
@@ -13,6 +14,7 @@ import {
 import { months, monthsWithCurrency } from "../../../../utils";
 
 const ExposureDetails = () => {
+  const [broker, setBroker] = useState("Visal Reinsurance Broker");
   return (
     <div className="h-full overflow-y-scroll">
       <div className="h-2/4 w-full bg-gray-100">
@@ -28,6 +30,8 @@ const ExposureDetails = () => {
               name=""
               className="bg-transparent border mx-3 px-4 p-2 border-gray-600"
               id=""
+              onChange={(e) => setBroker(e.target.value)}
+              value={broker}
             >
               <option value="Visal Reinsurance Broker">
                 Visal Reinsurance Broker
