@@ -83,9 +83,9 @@ const ExposureDetails = () => {
           </ResponsiveContainer>
         </div>
       </div>
-      <div className="flex flex-1 bg-gray-600 h-full">
+      <div className="flex  bg-gray-600 h-2/4 w-full">
         <div className="grid gap-4 grid-cols-1 px-4 py-5">
-          <div className="bg-white p-3"></div>
+          <div className="bg-white rounded-lg w-full p-3"></div>
           <div className="bg-white p-3"></div>
           <div className="bg-white p-3"></div>
         </div>
