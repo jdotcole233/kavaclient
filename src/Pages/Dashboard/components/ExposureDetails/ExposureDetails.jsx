@@ -130,7 +130,7 @@ const ExposureDetails = () => {
                     Total Exposure ( USD )
                   </span>
                 </span>
-                <span className="ml-5">34,566</span>
+                <span className="mx-16 font-bold text-2xl">34,566</span>
               </div>
             </div>
             <div className="w-2/5"></div>
