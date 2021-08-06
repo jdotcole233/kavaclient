@@ -13,17 +13,13 @@ import {
 } from "recharts";
 import { PieChart, Pie } from "recharts";
 
-import {
-  months,
-  monthsWithCurrency,
-  renderActiveShape,
-} from "../../../../utils";
+import { monthsWithCurrency, renderActiveShape } from "../../../../utils";
 
 const data = [
-  { name: "USD", value: 400, fill: "#FF7F51" },
-  { name: "EUR", value: 300, fill: "#4F000B" },
-  { name: "GBP", value: 300, fill: "#FF9B54" },
-  { name: "GHC", value: 200, fill: "#CE4257" },
+  { name: "USD", value: 400, fill: "#8D918B" },
+  { name: "EUR", value: 300, fill: "#C76D7E" },
+  { name: "GBP", value: 300, fill: "#AD9B9A" },
+  { name: "GHC", value: 200, fill: "#E85D75" },
 ];
 
 const ExposureDetails = () => {
