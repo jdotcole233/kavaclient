@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { SideSheet } from "evergreen-ui";
 import ExposureDetails from "../ExposureDetails/ExposureDetails";
+import TotalReserversDetails from "../TotalReserversDetails/TotalReserversDetails";
 
 const Overview = () => {
   const [showExposureDrawer, setShowExposureDrawer] = useState(false);
@@ -147,6 +148,14 @@ const Overview = () => {
         width={1200}
       >
         <ExposureDetails />
+      </SideSheet>
+
+      <SideSheet
+        isShown={showExposureDrawer}
+        onCloseComplete={() => setShowExposureDrawer(false)}
+        width={1200}
+      >
+        <TotalReserversDetails />
       </SideSheet>
     </Fragment>
   );
