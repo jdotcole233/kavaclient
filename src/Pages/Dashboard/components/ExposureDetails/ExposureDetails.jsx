@@ -50,26 +50,23 @@ const ExposureDetails = () => {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
+              <XAxis dataKey="month" />
               <YAxis />
               <Tooltip />
               <Legend />
               <Bar
-                dataKey="visalre"
+                dataKey="usd"
                 name="Visal Reinsurance Broker"
                 fill="#73AB84"
               />
               <Bar
-                dataKey="kekre"
+                dataKey="gbp"
                 // label="Offers"
-                name="KEK Reinsurance Broker"
+                name="GBP"
                 fill="#ADE1E5"
               />
-              <Bar
-                dataKey="iriskre"
-                name="KEK Reinsurance Broker"
-                fill="#99D19C"
-              />
+              <Bar dataKey="eur" name="EUR" fill="#99D19C" />
+              <Bar dataKey="ghc" name="GHC" fill="#99D19C" />
             </BarChart>
           </ResponsiveContainer>
         </div>
