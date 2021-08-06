@@ -89,7 +89,7 @@ const ExposureDetails = () => {
       </div>
       <div className="flex  bg-gray-600 h-2/4 w-full">
         <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
-          <div className="bg-white rounded-lg w-full p-3">
+          <div className="bg-white flex rounded-lg w-full p-3">
             <div className="w-1/5 flex flex-col h-full items-center justify-start">
               <div className="h-36 w-36 bg-green-100 flex justify-center items-center rounded-full">
                 <svg
@@ -109,7 +109,26 @@ const ExposureDetails = () => {
               </div>
               <span className="text-lg font-medium">{broker}</span>
             </div>
-            <div className="w-2/5"></div>
+            <div className="w-2/5">
+              <div>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-12 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
             <div className="w-2/5"></div>
           </div>
         </div>
