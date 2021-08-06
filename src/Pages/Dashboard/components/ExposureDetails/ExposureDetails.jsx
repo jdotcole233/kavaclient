@@ -51,7 +51,7 @@ const ExposureDetails = () => {
             >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
-              <YAxis label="Offers" />
+              <YAxis />
               <Tooltip />
               <Legend />
               <Bar
