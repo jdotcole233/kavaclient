@@ -174,14 +174,14 @@ export const years = [
 
 export const monthsWithCurrency = [{
     "id": 1,
-    "month": "Jan",
+    "month": "January",
     "usd": 40231,
     "eur": 64921,
     "gbp": 20376,
     "ghc": 33537
 }, {
     "id": 2,
-    "month": "Frb",
+    "month": "February",
     "usd": 57300,
     "eur": 22648,
     "gbp": 23424,
