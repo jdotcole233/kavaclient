@@ -28,10 +28,10 @@ const ExposureDetails = () => {
               className="bg-transparent border w-24 px-4 p-2 border-gray-600"
               id=""
             >
-              <option value="USD">2017</option>
-              <option value="GHC">GHC</option>
-              <option value="EUR">EUR</option>
-              <option value="GBP">GBP</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
             </select>
           </div>
         </div>
