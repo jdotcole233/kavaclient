@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { months } from "../../../../utils";
+import { months, monthsWithCurrency } from "../../../../utils";
 
 const ExposureDetails = () => {
   return (
@@ -41,7 +41,7 @@ const ExposureDetails = () => {
             <BarChart
               width={500}
               height={350}
-              data={months}
+              data={monthsWithCurrency}
               margin={{
                 top: 5,
                 right: 30,

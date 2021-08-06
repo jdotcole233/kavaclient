@@ -171,3 +171,89 @@ export const years = [
     },
 
 ];
+
+export const monthsWithCurrency = [{
+    "id": 1,
+    "month": "Jan",
+    "usd": 40231,
+    "eur": 64921,
+    "gbp": 20376,
+    "ghc": 33537
+}, {
+    "id": 2,
+    "month": "Frb",
+    "usd": 57300,
+    "eur": 22648,
+    "gbp": 23424,
+    "ghc": 3932
+}, {
+    "id": 3,
+    "month": "Mar",
+    "usd": 58768,
+    "eur": 58057,
+    "gbp": 62028,
+    "ghc": 48898
+}, {
+    "id": 4,
+    "month": "Apr",
+    "usd": 38400,
+    "eur": 51964,
+    "gbp": 40360,
+    "ghc": 25964
+}, {
+    "id": 5,
+    "month": "May",
+    "usd": 18090,
+    "eur": 28186,
+    "gbp": 65879,
+    "ghc": 18545
+}, {
+    "id": 6,
+    "month": "Jun",
+    "usd": 56350,
+    "eur": 66036,
+    "gbp": 60366,
+    "ghc": 1951
+}, {
+    "id": 7,
+    "month": "Jul",
+    "usd": 32793,
+    "eur": 9608,
+    "gbp": 51290,
+    "ghc": 16665
+}, {
+    "id": 8,
+    "month": "Aug",
+    "usd": 12769,
+    "eur": 48723,
+    "gbp": 67265,
+    "ghc": 28026
+}, {
+    "id": 9,
+    "month": "Sep",
+    "usd": 26475,
+    "eur": 42488,
+    "gbp": 2586,
+    "ghc": 12197
+}, {
+    "id": 10,
+    "month": "Oct",
+    "usd": 17874,
+    "eur": 5021,
+    "gbp": 4607,
+    "ghc": 43007
+}, {
+    "id": 11,
+    "month": "Nov",
+    "usd": 23262,
+    "eur": 49599,
+    "gbp": 67663,
+    "ghc": 34900
+}, {
+    "id": 12,
+    "month": "Dec",
+    "usd": 21586,
+    "eur": 58631,
+    "gbp": 67824,
+    "ghc": 33406
+}]
