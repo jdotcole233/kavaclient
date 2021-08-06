@@ -87,7 +87,7 @@ const ExposureDetails = () => {
         <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
           <div className="bg-white rounded-lg w-full p-3">
             <div className="w-1/5 flex flex-col h-full items-center justify-center">
-              <div className="h-3/4 w-3/4 bg-gray-200 flex justify-center items-center rounded-full">
+              <div className="h-36 w-3/4 bg-gray-200 flex justify-center items-center rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-16 w-16 text-gray-400 "
@@ -103,11 +103,11 @@ const ExposureDetails = () => {
                   />
                 </svg>
               </div>
-              <span className="text-xl">Visal Reinsurance Brokers</span>
+              <span className="text-lg font-medium">
+                Visal Reinsurance Brokers
+              </span>
             </div>
           </div>
-          <div className="bg-white p-3"></div>
-          <div className="bg-white p-3"></div>
         </div>
       </div>
     </div>
