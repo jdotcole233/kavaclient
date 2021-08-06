@@ -11,10 +11,17 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { months, monthsWithCurrency } from "../../../../utils";
+import { PieChart, Pie } from "recharts";
+
+import {
+  months,
+  monthsWithCurrency,
+  renderActiveShape,
+} from "../../../../utils";
 
 const ExposureDetails = () => {
   const [broker, setBroker] = useState("Visal Reinsurance Broker");
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className="h-full overflow-y-scroll">
       <div className="h-2/4 w-full bg-gray-100">
@@ -199,7 +206,24 @@ const ExposureDetails = () => {
                 <span className="mx-16 font-bold text-3xl">34,566</span>
               </div>
             </div>
-            <div className="w-2/5"></div>
+            <div className="w-2/5">
+              <ResponsiveContainer width="100%" height={390}>
+                <PieChart width={400} height={400}>
+                  <Pie
+                    activeIndex={activeIndex}
+                    activeShape={renderActiveShape}
+                    data={[]}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={60}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    dataKey="value"
+                    onMouseEnter={(_, index) => setActiveIndex(index)}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </div>
       </div>
