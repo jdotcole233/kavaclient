@@ -121,7 +121,10 @@ const TotalReserversDetails = () => {
             </div>
             <div className="w-2/5 px-4 grid gap-4 grid-rows-4">
               {data.map((curr, currId) => (
-                <div className="flex group  flex-row bg-gray-100 px-4 rounded-lg hover:bg-gray-300 cursor-pointer items-center">
+                <div
+                  key={currId}
+                  className="flex group  flex-row bg-gray-100 px-4 rounded-lg hover:bg-gray-300 cursor-pointer items-center"
+                >
                   <span className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
