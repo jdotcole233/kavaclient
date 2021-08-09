@@ -28,7 +28,7 @@ export const navigation = [
 ]
 
 export const userNavigation = [
-    { name: 'Your profile', href: '#' },
+    { name: 'Your profile', href: '/app/settings' },
     { name: 'Sign out', href: '#' },
 ]
 

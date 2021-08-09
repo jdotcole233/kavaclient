@@ -4,7 +4,7 @@ import { Menu, Transition } from "@headlessui/react";
 
 import { MenuAlt2Icon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useAdminProps } from "../Provider/AdminProvider";
 
 const Navbar = () => {
@@ -67,8 +67,8 @@ const Navbar = () => {
                         {userNavigation.map((item) => (
                           <Menu.Item key={item.name}>
                             {({ active }) => (
-                              <a
-                                href={item.href}
+                              <Link
+                                to={item.href}
                                 onClick={
                                   item.name === "Sign out"
                                     ? () => {
@@ -83,7 +83,7 @@ const Navbar = () => {
                                 )}
                               >
                                 {item.name}
-                              </a>
+                              </Link>
                             )}
                           </Menu.Item>
                         ))}
