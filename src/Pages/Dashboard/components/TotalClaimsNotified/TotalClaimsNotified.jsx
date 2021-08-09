@@ -21,7 +21,17 @@ const TotalClaimsNotified = () => {
           <span className="text-3xl font-medium">Total Claims Notified</span>
         </div>
         <div className="grid grid-cols-3 gap-3 px-4">
-          <div className="bg-gray-300 p-5"></div>
+          <div className="bg-gray-300 p-5">
+            <div>
+              <span className="text-2xl font-light">
+                Visal Reinsurance Broker
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div className="bg-gray-300 p-5"></div>
           <div className="bg-gray-300 p-5"></div>
         </div>
