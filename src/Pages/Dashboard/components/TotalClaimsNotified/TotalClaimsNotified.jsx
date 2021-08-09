@@ -16,6 +16,7 @@ const TotalClaimsNotified = () => {
   const [broker, setBroker] = useState("initialState");
   return (
     <div className="h-full overflow-y-scroll">
+      <div className="h-2/4"></div>
       <div className="h-2/4 w-full bg-gray-100">
         <div className="p-4">
           <span className="text-3xl font-medium">Total Claims Notified</span>
