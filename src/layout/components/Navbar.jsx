@@ -110,9 +110,10 @@ const Navbar = () => {
         isShown={showSignOutDialog}
         onCloseComplete={() => setShowSignOutDialog(false)}
         confirmLabel="Signout"
+        cancelLabel="Cancel"
       >
-        The corner dialog component is used for new feature announcements and
-        feedback requests from the user.
+        This action would stop every activity and lock you out of the account.
+        Do you want to proceed with this ?
       </CornerDialog>
     </Fragment>
   );
