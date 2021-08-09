@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.6667in" height="8in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10667 8000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="637" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Franklin Gothic Heavy">
+		<font-face-src>
+			<font-face-name name="Franklin Gothic Heavy"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="c" horiz-adv-x="523" d="M351 201l166 -14.1669c-7.83332,-58.1667 -32.1666,-105.5 -73,-142 -40.9998,-36.5 -95.1666,-54.8332 -163,-54.8332 -75.8335,0 -137.5,23.8334 -184.834,71.5002 -47.4998,47.6663 -71.1663,108.833 -71.1663,183.333 0,76.1665 23.5,138.833 70.6663,188.167 47.1669,49.3331 108.334,73.9998 183.667,73.9998 66.8334,0 121.167,-18.6667 163.333,-56 42.0002,-37.4998 66.1665,-84.6667 72.3336,-141.833l-171 -14.1669c-7.16692,52.6665 -27.1669,79.0001 -59.6665,79.0001 -21.0003,0 -36.3335,-9.50007 -45.8336,-28.5002 -9.66654,-18.9996 -14.4998,-51.9997 -14.4998,-99.1665 0,-40.4999 4.83327,-70.6668 14.4998,-90.1664 9.66654,-19.5001 26.3335,-29.1671 50.1669,-29.1671 34.9997,0 55.8331,24.6668 62.3331,74.0003z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Franklin Gothic Heavy";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .fil1 {fill:none}
+    .fil0 {fill:#FEFEFE}
+    .fnt0 {font-weight:normal;font-size:7922.45px;font-family:'Franklin Gothic Heavy'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2655976842896">
+   <g>
+    <path class="fil0" d="M1489 3713c222,1109 796,1322 1518,1302 153,-5 224,-11 378,7 978,115 2172,-60 3190,-135 284,-20 1153,-102 1372,-21 805,299 1554,1355 786,2739l-86 145c46,-140 65,-189 101,-332 290,-1144 -285,-1518 -900,-1471 -237,17 -474,14 -712,25 -1164,54 -2426,259 -3566,199 -298,-16 -461,-20 -741,-156 -738,-358 -1356,-945 -1340,-2302z"/>
+   </g>
+   <path class="fil1" d="M1489 3713c198,2749 3163,1729 6178,1682 677,-11 1794,635 980,2355"/>
+   <g transform="matrix(1.09221 0 0 1 -2849.02 827.264)">
+    <text x="5333" y="4000"  class="fil0 fnt0">c</text>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -4,7 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
-import ComfyC from "../../assets/comCY.svg";
+import ComfyC from "../../assets/comfi logo C (white).svg";
 
 const Sidebar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useLayoutProps();
