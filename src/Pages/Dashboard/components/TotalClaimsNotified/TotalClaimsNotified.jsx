@@ -27,11 +27,11 @@ const TotalClaimsNotified = () => {
                 Visal Reinsurance Broker
               </span>
             </div>
-            <div className="flex justify-between">
+            <div className="flex mt-5 justify-between">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-9 w-9 text-gray-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -44,7 +44,7 @@ const TotalClaimsNotified = () => {
                   />
                 </svg>
               </span>
-              <span></span>
+              <span className="font-poppins">14</span>
             </div>
           </div>
           <div className="bg-gray-300 p-5"></div>
