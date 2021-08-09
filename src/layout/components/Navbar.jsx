@@ -14,6 +14,12 @@ const Navbar = () => {
   const { user } = useAdminProps();
   const history = useHistory();
   const [showSignOutDialog, setShowSignOutDialog] = useState(false);
+
+  const signOut = () => {
+    localStorage.removeItem(TIP);
+    history.replace("/auth");
+  };
+
   return (
     <Fragment>
       <header className="w-full">
@@ -111,6 +117,7 @@ const Navbar = () => {
         onCloseComplete={() => setShowSignOutDialog(false)}
         confirmLabel="Signout"
         cancelLabel="Cancel"
+        onConfirm={signOut}
       >
         This action would stop every activity and lock you out of the account.
         Do you want to proceed with this ?
