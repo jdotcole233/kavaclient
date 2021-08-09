@@ -53,7 +53,7 @@ const Overview = () => {
                 onClick={() => setShowExposureDrawer(true)}
                 className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150"
               >
-                View all
+                View more
               </button>
             </div>
           </div>
@@ -97,7 +97,7 @@ const Overview = () => {
                 onClick={() => setShowTotalClaimsNotified(true)}
                 className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150"
               >
-                View all
+                View more
               </button>
             </div>
           </div>
@@ -144,7 +144,7 @@ const Overview = () => {
                 onClick={() => setShowTotalRerves(true)}
                 className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150"
               >
-                View all
+                View more
               </button>
             </div>
           </div>
