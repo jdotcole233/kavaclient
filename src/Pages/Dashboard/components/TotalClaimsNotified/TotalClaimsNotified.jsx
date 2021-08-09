@@ -47,8 +47,58 @@ const TotalClaimsNotified = () => {
               <span className="font-poppins text-3xl font-bold">14</span>
             </div>
           </div>
-          <div className="bg-gray-300 p-5"></div>
-          <div className="bg-gray-300 p-5"></div>
+          <div className="bg-gray-300 p-5">
+            <div>
+              <span className="text-2xl font-light">
+                KEK Reinsurance Broker
+              </span>
+            </div>
+            <div className="flex mt-5 items-center justify-between">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-9 w-9 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+                  />
+                </svg>
+              </span>
+              <span className="font-poppins text-3xl font-bold">14</span>
+            </div>
+          </div>
+          <div className="bg-gray-300 p-5">
+            <div>
+              <span className="text-2xl font-light">
+                iRisk Reinsurance Broker
+              </span>
+            </div>
+            <div className="flex mt-5 items-center justify-between">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-9 w-9 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+                  />
+                </svg>
+              </span>
+              <span className="font-poppins text-3xl font-bold">14</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="h-2/4 w-full bg-gray-100">
