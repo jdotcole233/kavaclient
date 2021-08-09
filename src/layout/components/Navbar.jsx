@@ -1,16 +1,19 @@
 import React, { Fragment } from "react";
 import { classNames, getUserInitials, TIP, userNavigation } from "../../utils";
 import { Menu, Transition } from "@headlessui/react";
+import { CornerDialog } from "evergreen-ui";
 
 import { MenuAlt2Icon } from "@heroicons/react/outline";
 import { useLayoutProps } from "../Provider/LayoutProvider";
 import { Link, useHistory } from "react-router-dom";
 import { useAdminProps } from "../Provider/AdminProvider";
+import { useState } from "react";
 
 const Navbar = () => {
   const { setMobileMenuOpen } = useLayoutProps();
   const { user } = useAdminProps();
   const history = useHistory();
+  const [showSignOutDialog, setShowSignOutDialog] = useState(false);
   return (
     <Fragment>
       <header className="w-full">
@@ -104,6 +107,15 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+
+      <CornerDialog
+        title="Welcome to this new feature"
+        isShown={showSignOutDialog}
+        onCloseComplete={() => setShowSignOutDialog(false)}
+      >
+        The corner dialog component is used for new feature announcements and
+        feedback requests from the user.
+      </CornerDialog>
     </Fragment>
   );
 };
