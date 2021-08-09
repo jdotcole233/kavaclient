@@ -20,8 +20,10 @@ const TotalClaimsNotified = () => {
         <div className="p-4">
           <span className="text-3xl font-medium">Total Claims Notified</span>
         </div>
-        <div className="grid grid-cols-3 ">
-          <div className="bg-gray-300 px-5"></div>
+        <div className="grid grid-cols-3 gap-3 px-4">
+          <div className="bg-gray-300 p-5"></div>
+          <div className="bg-gray-300 p-5"></div>
+          <div className="bg-gray-300 p-5"></div>
         </div>
       </div>
       <div className="h-2/4 w-full bg-gray-100">
