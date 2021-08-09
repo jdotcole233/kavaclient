@@ -97,9 +97,9 @@ const TotalReserversDetails = () => {
           </ResponsiveContainer>
         </div>
       </div>
-      <div className="flex  bg-gray-600 h-2/4 w-full">
+      <div className="flex  bg-gray-100 h-2/4 w-full">
         <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
-          <div className="bg-white flex rounded-lg w-full p-3">
+          <div className="bg-white flex rounded-none w-full p-3">
             <div className="w-1/5 flex flex-col h-full items-center justify-start">
               <div className="h-36 w-36 bg-green-100 flex justify-center items-center rounded-full">
                 <svg
