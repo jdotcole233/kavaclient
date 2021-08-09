@@ -20,7 +20,7 @@ const TotalClaimsNotified = () => {
         <div className="p-4">
           <span className="text-3xl font-medium">Total Claims Notified</span>
         </div>
-        <div className="grid grid-cols-3"></div>
+        <div className="grid grid-cols-3 "></div>
       </div>
       <div className="h-2/4 w-full bg-gray-100">
         <div className="flex justify-between p-4">
