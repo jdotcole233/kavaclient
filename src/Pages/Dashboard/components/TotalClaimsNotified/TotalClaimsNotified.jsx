@@ -16,11 +16,13 @@ const TotalClaimsNotified = () => {
   const [broker, setBroker] = useState("initialState");
   return (
     <div className="h-full overflow-y-scroll">
-      <div className="h-2/4"></div>
-      <div className="h-2/4 w-full bg-gray-100">
+      <div className="h-2/4">
         <div className="p-4">
           <span className="text-3xl font-medium">Total Claims Notified</span>
         </div>
+        <div className="grid grid-cols-3"></div>
+      </div>
+      <div className="h-2/4 w-full bg-gray-100">
         <div className="flex justify-between p-4">
           <div className="">
             <span className="font-thin text-3xl">Monthly Breakdown</span>
