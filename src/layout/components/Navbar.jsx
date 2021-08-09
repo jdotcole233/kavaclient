@@ -74,10 +74,7 @@ const Navbar = () => {
                                 to={item.href}
                                 onClick={
                                   item.name === "Sign out"
-                                    ? () => {
-                                        localStorage.removeItem(TIP);
-                                        history.replace("/auth");
-                                      }
+                                    ? () => setShowSignOutDialog(true)
                                     : () => {}
                                 }
                                 className={classNames(
@@ -109,9 +106,10 @@ const Navbar = () => {
       </header>
 
       <CornerDialog
-        title="Welcome to this new feature"
+        title="Are you sure you want to sign out ?"
         isShown={showSignOutDialog}
         onCloseComplete={() => setShowSignOutDialog(false)}
+        confirmLabel="Signout"
       >
         The corner dialog component is used for new feature announcements and
         feedback requests from the user.
