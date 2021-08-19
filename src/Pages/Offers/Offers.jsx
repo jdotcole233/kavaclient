@@ -61,11 +61,7 @@ const Offers = () => {
                 ))}
               </ul>
             </section>
-            <Pagination
-              size={data.data.data.length}
-              pageLimit={5}
-              dataLimit={data.data.data.length}
-            />
+            <Pagination size={100} pageLimit={5} dataLimit={10} />
           </Fragment>
         )}
         {isError && "Error"}

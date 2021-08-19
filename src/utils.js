@@ -272,7 +272,7 @@ export const renderActiveShape = (props) => {
         fill,
         payload,
         percent,
-        value,
+        // value,
     } = props;
     const sin = Math.sin(-RADIAN * midAngle);
     const cos = Math.cos(-RADIAN * midAngle);
