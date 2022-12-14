@@ -97,7 +97,7 @@ export const showOfferDate = (offer) => {
 export const TIP = "___tken"
 
 
-export const getUserInitials = user => `${user?.rep_first_name?.charAt(0)}${user?.rep_last_name?.charAt(0)}`
+export const getUserInitials = user => user ? `${user?.rep_first_name?.charAt(0)}${user?.rep_last_name?.charAt(0)}` : "NA"
 
 
 export const months = [

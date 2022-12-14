@@ -24,7 +24,7 @@ function Admin() {
       user: null,
       linked_to: [],
       accessToken: "",
-      locked: true,
+      locked: false,
     };
   }, []);
   const [activeTab, setActiveTab] = useState(linked_to[0] ?? "");
