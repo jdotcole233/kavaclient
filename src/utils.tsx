@@ -5,6 +5,7 @@ import {
   // PhotographIcon,
   // UserGroupIcon,
 } from "@heroicons/react/24/outline";
+import { Buffer } from "buffer";
 
 import {
   BellIcon,
@@ -18,6 +19,15 @@ import { BrokerTypes } from "./graphql/__generated__/globalTypes";
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+
+export const generateURlData = (data: any) => {
+  return Buffer.from(JSON.stringify(data)).toString("base64");
+};
+
+export const extractRegNumber = (details: any) => {
+  const _ = details.find((el: any) => el.keydetail === "Vehicle Reg No");
+  return _.value;
+};
 
 export const navigation = [
   { name: "Home", href: "/app", icon: HomeIcon, current: false },

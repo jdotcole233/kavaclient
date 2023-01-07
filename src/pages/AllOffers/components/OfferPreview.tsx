@@ -7,6 +7,8 @@ import { BASE_URL } from "../../../constants";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import _ from "lodash";
 import { setSelectedOffer } from "../../../features/offers";
+import DocumentWrapper from "../../../components/document-wrapper";
+import { generateURlData } from "../../../utils";
 
 const template = {
   //   "Policy number": "policy_number",
@@ -21,6 +23,7 @@ const template = {
 
 const Details = () => {
   const { selectedOffer, broker } = useAppSelector((state) => state.offers);
+  const { user } = useAppSelector((state) => state.auth);
   const dispatch = useAppDispatch();
   const [openCreditNote, setOpenCreditNote] = useState(false);
   return (
@@ -69,14 +72,14 @@ const Details = () => {
               />
             </dl>
           </div>
-          <div>
+          {/* <div>
             <h3 className="font-medium text-gray-900">Comment</h3>
             <div className="mt-2 flex items-center justify-between">
               <p className="text-sm text-gray-500 italic">
-                {/* {selectedOffer?.offer?} */}
+                {selectedOffer?.offer?}
               </p>
             </div>
-          </div>
+          </div> */}
           <div>
             <h3 className="font-medium text-gray-900">Your document</h3>
             <ul className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
@@ -109,7 +112,7 @@ const Details = () => {
                   >
                     view<span className="sr-only"> Closing Slip</span>
                   </button>
-                  <a
+                  {/* <a
                     // type="button"
                     href={`${BASE_URL}/download/${btoa(
                       JSON.stringify({
@@ -123,7 +126,7 @@ const Details = () => {
                     className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     download<span className="sr-only">Closing Slip</span>
-                  </a>
+                  </a> */}
                 </div>
               </li>
             </ul>
@@ -131,9 +134,14 @@ const Details = () => {
         </div>
       </aside>
 
-      {/* <DocumentWrapper show={openCreditNote} setShow={setOpenCreditNote}>
-        <ClosingSlip />
-      </DocumentWrapper> */}
+      <DocumentWrapper
+        show={openCreditNote}
+        setShow={setOpenCreditNote}
+        url={`${BASE_URL}/generateClosing/${generateURlData({
+          _id: selectedOffer?.offersoffer_id,
+          _id_me: user?.id,
+        })}`}
+      />
     </Fragment>
   );
 };

@@ -42,7 +42,9 @@ const Tabs = ({
             {tabs
               //   .filter((el) => linked_to?.includes(el.href))
               .map((el, key) => (
-                <option value={el.href}>{el.name}</option>
+                <option key={key} value={el.href}>
+                  {el.name}
+                </option>
               ))}
           </select>
         </div>

@@ -37,7 +37,7 @@ const Offer = ({ file }: OfferProps) => {
           </span>
           <span>Period: {showOfferDate(file?.offer_detail as any)}</span>
           <span>
-            Insured: {selectedOffer?.offer_detail?.insured_by}
+            Insured: {file?.offer_detail?.insured_by}
             <span className="font-semibold">
               {file?.offer?.insurance_company_name}
             </span>
