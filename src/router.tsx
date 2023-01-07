@@ -1,3 +1,4 @@
+import { Progress } from "@mantine/core";
 import { createBrowserRouter } from "react-router-dom";
 import Admin from "./layouts/Admin";
 import Auth from "./layouts/Auth";
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/app",
+    path: "app",
     element: <Admin />,
     children: [
       {

@@ -15,12 +15,19 @@ export interface FetchOffers_fetchOffers_offers_payments {
   paid_details: string | null;
 }
 
+export interface FetchOffers_fetchOffers_offers_offer_insurer {
+  __typename: "MockInsurerStruct";
+  insurer_company_name: string | null;
+  insurer_id: string | null;
+}
+
 export interface FetchOffers_fetchOffers_offers_offer {
   __typename: "MockOffer";
   offer_id: string | null;
   insurersinsurer_id: string | null;
   insurance_company_name: string | null;
   payment_status: MockPaymentStatus | null;
+  insurer: FetchOffers_fetchOffers_offers_offer_insurer | null;
 }
 
 export interface FetchOffers_fetchOffers_offers_offer_detail {

@@ -11,7 +11,9 @@ export const useOffers = (variables?: FetchOffersVariables) => {
     });
 
     return {
-        offers: data?.fetchOffers,
+        offers: data?.fetchOffers?.offers || [],
+        total_offers: data?.fetchOffers?.total_offers ?? 0,
+        total_shares: JSON.parse(data?.fetchOffers?.total_shares ?? "{}"),
         loading,
         fetchMore,
         networkStatus,

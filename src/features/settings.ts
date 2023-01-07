@@ -12,7 +12,9 @@ export const seetingsSlice = createSlice({
     name: "settings",
     initialState,
     reducers: {
-        setMobileMenuOpen: (state, payload: PayloadAction<boolean>) => { }
+        setMobileMenuOpen: (state, { payload }: PayloadAction<boolean>) => {
+            state.mobileMenuOpen = payload
+        }
     },
 });
 

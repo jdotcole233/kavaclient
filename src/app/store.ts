@@ -1,6 +1,7 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
 import settings from '../features/settings';
 import userSlice from '../features/users';
+import allOffers from '../features/offers';
 import localForage from "localforage";
 import {
   FLUSH,
@@ -21,7 +22,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   settings: settings,
-  auth: userSlice
+  auth: userSlice,
+  offers: allOffers
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

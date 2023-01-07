@@ -21,6 +21,10 @@ query FetchOffers($broker: BrokerTypes!) {
         insurersinsurer_id
         insurance_company_name
         payment_status
+        insurer {
+          insurer_company_name
+          insurer_id
+        }
       }
       offer_detail {
         offersoffer_id
