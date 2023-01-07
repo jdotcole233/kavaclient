@@ -1,5 +1,6 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import { store } from "../app/store";
 import { TOKEN_KEY } from "../constants";
 
 const URL =
@@ -20,7 +21,7 @@ const authLink = setContext((_, { headers }) => {
     return {
         headers: {
             ...headers,
-            // authorization: token ? token : "",
+            authorization: `Bearer ${store.getState().auth.access_token}`,
         },
     };
 });/*  */

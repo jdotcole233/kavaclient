@@ -1,11 +1,21 @@
 import React, { Fragment } from "react";
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { logout } from "../../features/users";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
 type Props = {};
 
 const Admin = (props: Props) => {
+  const { access_token } = useAppSelector((state) => state.auth);
+  const dispatch = useAppDispatch();
+  const signOut = () => {
+    dispatch(logout());
+  };
+
+  if (!access_token) return <Navigate to={"/"} />;
+
   return (
     <Fragment>
       {/* <AdminProvider value={{ company, user, accessToken, linked_to }}> */}

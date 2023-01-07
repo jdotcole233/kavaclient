@@ -6,13 +6,17 @@ import { userLogin } from "../../graphql/mutations/auth";
 import {
   Login,
   LoginVariables,
+  Login_login,
 } from "../../graphql/mutations/__generated__/Login";
 // import Comfi from "../../assets/comfi 4.svg";
 import { showNotification, updateNotification } from "@mantine/notifications";
 import { useNavigate } from "react-router-dom";
+import { useAppDispatch } from "../../app/hooks";
+import { authenticate } from "../../features/users";
 
 const LoginScreen = () => {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   const {
     register,
     formState: { errors },
@@ -32,6 +36,7 @@ const LoginScreen = () => {
     });
     login({ variables: data })
       .then((res) => {
+        dispatch(authenticate(res.data?.login as Login_login));
         navigate("/app", { replace: true });
         updateNotification({
           id: "login",

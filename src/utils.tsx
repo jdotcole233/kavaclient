@@ -13,6 +13,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { Sector } from "recharts";
 import _ from "lodash";
+import { BrokerTypes } from "./graphql/__generated__/globalTypes";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -43,9 +44,13 @@ export const userNavigation = [
 ];
 
 export const tabs = [
-  { name: "Visal Reinsurance Brokers", href: "visalre", current: true },
-  { name: "KEK Reinsurance Brokers", href: "kekre", current: false },
-  { name: "iRisk Reinsurance Brokers", href: "iriskre", current: false },
+  { name: "Visal Reinsurance Brokers", href: BrokerTypes.VISAL, current: true },
+  { name: "KEK Reinsurance Brokers", href: BrokerTypes.KEK, current: false },
+  {
+    name: "iRisk Reinsurance Brokers",
+    href: BrokerTypes.IRISK,
+    current: false,
+  },
 ];
 export const files = [
   {

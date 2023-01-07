@@ -1,7 +1,9 @@
 import { ApolloProvider } from "@apollo/client";
 import React, { ReactNode } from "react";
 import { Provider } from "react-redux";
-import { store } from "./app/store";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistor, store } from "./app/store";
+import Loader from "./components/Loader";
 import { client } from "./graphql/client";
 
 type Props = {
@@ -11,7 +13,9 @@ type Props = {
 const Root = ({ children }: Props) => {
   return (
     <Provider store={store}>
-      <ApolloProvider client={client}>{children}</ApolloProvider>
+      <PersistGate loading={<Loader page />} persistor={persistor}>
+        <ApolloProvider client={client}>{children}</ApolloProvider>
+      </PersistGate>
     </Provider>
   );
 };
