@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, SetStateAction, useState } from "react";
+import { useAppDispatch } from "../app/hooks";
+import { setActiveBroker, setSelectedOffer } from "../features/offers";
+import { BrokerTypes } from "../graphql/__generated__/globalTypes";
 import { classNames, tabs as _tabs } from "../utils";
 // import { useOfferProps } from "../Providers/OfferProvider";
 
@@ -24,6 +27,13 @@ const Tabs = ({
   tabs = _tabs,
 }: TabsProps) => {
   //   const { linked_to } = useAdminProps();
+  const dispatch = useAppDispatch();
+
+  const hanleBrokerSelect = (tab: BrokerTypes) => {
+    setActiveTab(tab);
+    dispatch(setActiveBroker(tab));
+  };
+
   return (
     <Fragment>
       <div className="mt-3 sm:mt-2">
@@ -36,7 +46,7 @@ const Tabs = ({
             name="tabs"
             className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md"
             defaultValue={0}
-            onChange={(e) => setActiveTab(e.target.value)}
+            onChange={(e) => hanleBrokerSelect(e.target.value as BrokerTypes)}
             value={activeTab}
           >
             {tabs
@@ -61,7 +71,7 @@ const Tabs = ({
                     key={tab.name}
                     // href={tab.href}
                     // aria-current={key === activeTab ? "page" : undefined}
-                    onClick={() => setActiveTab(tab.href)}
+                    onClick={() => hanleBrokerSelect(tab.href)}
                     className={classNames(
                       tab.href === activeTab
                         ? "border-green-500 text-green-600"

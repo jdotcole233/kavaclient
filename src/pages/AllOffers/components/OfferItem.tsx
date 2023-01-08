@@ -28,7 +28,7 @@ const Offer = ({ file }: OfferProps) => {
       >
         <div className="w-22">
           {/* <DocumentTextIcon className="h-11 w-11 text-green-600" /> */}
-          <img src={PDF} className="h-28 w-28" alt="" />
+          <img src={PDF} className="h-28 w-36" alt="" />
         </div>
         <div className="w-auto flex-1 items-start flex flex-col">
           <span className="font-semibold">

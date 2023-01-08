@@ -1,5 +1,6 @@
 import { SideSheet } from "evergreen-ui";
-import React, { SetStateAction, useState } from "react";
+import React, { SetStateAction, useEffect, useMemo, useState } from "react";
+import { useAppSelector } from "../app/hooks";
 import Loader from "./Loader";
 import Show from "./show";
 
@@ -12,7 +13,9 @@ type DocumentWrapperProps = {
 };
 
 const DocumentWrapper = ({ show, setShow, url }: DocumentWrapperProps) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const { access_token } = useAppSelector((state) => state.auth);
+  const [file, setFile] = useState<ReadableStream<Uint8Array> | null>(null);
   const handleOnLoadStart = () => {
     // alert("Start");
     setLoading(true);
@@ -20,6 +23,31 @@ const DocumentWrapper = ({ show, setShow, url }: DocumentWrapperProps) => {
   const onLoad = () => {
     setLoading(false);
   };
+
+  const fetchData = async () => {
+    const data = await fetch(url, {
+      headers: {
+        authorization: "Bearer " + access_token,
+        accept:"application/json"
+      },
+    })
+      .then((res) => {
+        // res.body;
+        setFile(res.body);
+        setLoading(false);
+        console.log(res.body);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
+    // set
+    return data;
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <SideSheet
@@ -33,7 +61,7 @@ const DocumentWrapper = ({ show, setShow, url }: DocumentWrapperProps) => {
       <Show if={!loading}>
         <div className="">
           <iframe
-            src={url}
+            srcDoc={file as any}
             onLoadStart={handleOnLoadStart}
             title="preview"
             onLoad={onLoad}

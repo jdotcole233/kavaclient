@@ -26,6 +26,6 @@ export const allOffers = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { setSelectedOffer } = allOffers.actions;
+export const { setSelectedOffer, setActiveBroker } = allOffers.actions;
 
 export default allOffers.reducer;

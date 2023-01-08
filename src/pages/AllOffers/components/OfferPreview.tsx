@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 import PDF from "../../../assets/pdf.png";
@@ -11,10 +11,16 @@ import { generateURlData } from "../../../utils";
 import numeral from "numeral";
 
 const Details = () => {
-  const { selectedOffer } = useAppSelector((state) => state.offers);
+  const { selectedOffer, broker } = useAppSelector((state) => state.offers);
   const { user } = useAppSelector((state) => state.auth);
   const dispatch = useAppDispatch();
   const [openCreditNote, setOpenCreditNote] = useState(false);
+  // console.log({
+  //   _id: selectedOffer?.offersoffer_id,
+  //   _id_me: user?.id,
+  //   broker: broker,
+  // });
+
   return (
     <Fragment>
       <aside className="w-full lg:w-1/3 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
@@ -181,7 +187,8 @@ const Details = () => {
         setShow={setOpenCreditNote}
         url={`${BASE_URL}/generateClosing/${generateURlData({
           _id: selectedOffer?.offersoffer_id,
-          _id_me: user?.id,
+          _id_me: selectedOffer?.reinsurer?.reinsurer_id,
+          broker: broker,
         })}`}
       />
     </Fragment>

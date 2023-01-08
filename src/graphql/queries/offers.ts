@@ -43,6 +43,12 @@ query FetchOffers($broker: BrokerTypes!) {
         nic_levy_amount
         commission
       }
+      reinsurer {
+        reinsurer_id
+        re_company_name
+        re_company_email
+        re_company_website
+      }
     }
   }
 }

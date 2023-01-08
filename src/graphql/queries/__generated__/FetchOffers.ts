@@ -51,6 +51,14 @@ export interface FetchOffers_fetchOffers_offers_offer_extra_charges {
   commission: number | null;
 }
 
+export interface FetchOffers_fetchOffers_offers_reinsurer {
+  __typename: "Reinsurer";
+  reinsurer_id: string | null;
+  re_company_name: string | null;
+  re_company_email: string | null;
+  re_company_website: string | null;
+}
+
 export interface FetchOffers_fetchOffers_offers {
   __typename: "MockOfferStruct";
   offersoffer_id: string | null;
@@ -62,6 +70,7 @@ export interface FetchOffers_fetchOffers_offers {
   offer: FetchOffers_fetchOffers_offers_offer | null;
   offer_detail: FetchOffers_fetchOffers_offers_offer_detail | null;
   offer_extra_charges: FetchOffers_fetchOffers_offers_offer_extra_charges | null;
+  reinsurer: FetchOffers_fetchOffers_offers_reinsurer | null;
 }
 
 export interface FetchOffers_fetchOffers {
