@@ -2,6 +2,7 @@
 import React, { Fragment, SetStateAction, useState } from "react";
 import { useAppDispatch } from "../app/hooks";
 import { setActiveBroker, setSelectedOffer } from "../features/offers";
+import { setSelectedTreaty } from "../features/treaty";
 import { BrokerTypes } from "../graphql/__generated__/globalTypes";
 import { classNames, tabs as _tabs } from "../utils";
 // import { useOfferProps } from "../Providers/OfferProvider";
@@ -32,6 +33,8 @@ const Tabs = ({
   const hanleBrokerSelect = (tab: BrokerTypes) => {
     setActiveTab(tab);
     dispatch(setActiveBroker(tab));
+    dispatch(setSelectedOffer(null));
+    dispatch(setSelectedTreaty(null));
   };
 
   return (

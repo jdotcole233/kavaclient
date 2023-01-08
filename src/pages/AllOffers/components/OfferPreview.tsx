@@ -3,12 +3,14 @@ import { Fragment, useEffect, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 import PDF from "../../../assets/pdf.png";
-import { BASE_URL } from "../../../constants";
+import { BASE_URL, urls } from "../../../constants";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setSelectedOffer } from "../../../features/offers";
 import DocumentWrapper from "../../../components/document-wrapper";
 import { generateURlData } from "../../../utils";
 import numeral from "numeral";
+import _ from "lodash";
+import { BrokerTypes } from "../../../graphql/__generated__/globalTypes";
 
 const Details = () => {
   const { selectedOffer, broker } = useAppSelector((state) => state.offers);
@@ -185,10 +187,12 @@ const Details = () => {
       <DocumentWrapper
         show={openCreditNote}
         setShow={setOpenCreditNote}
-        url={`${BASE_URL}/generateClosing/${generateURlData({
-          _id: selectedOffer?.offersoffer_id,
-          _id_me: selectedOffer?.reinsurer?.reinsurer_id,
-          broker: broker,
+        url={`${
+          urls[broker || BrokerTypes.KEK]
+        }/generate_closing_slip/${generateURlData({
+          offer_id: selectedOffer?.offersoffer_id,
+          reinsurer_id: selectedOffer?.reinsurer?.reinsurer_id,
+          // broker: broker,
         })}`}
       />
     </Fragment>
