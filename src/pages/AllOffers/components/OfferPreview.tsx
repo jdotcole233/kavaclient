@@ -8,6 +8,7 @@ import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setSelectedOffer } from "../../../features/offers";
 import DocumentWrapper from "../../../components/document-wrapper";
 import { generateURlData } from "../../../utils";
+import numeral from "numeral";
 
 const Details = () => {
   const { selectedOffer } = useAppSelector((state) => state.offers);
@@ -48,15 +49,21 @@ const Details = () => {
               />
               <ValueX
                 label="Commission"
-                value={selectedOffer?.offer_detail?.currency}
+                value={numeral(
+                  selectedOffer?.offer_extra_charges?.commission_amount
+                ).format("#,#.##")}
               />
               <ValueX
                 label="NIC"
-                value={selectedOffer?.offer_detail?.currency}
+                value={numeral(
+                  selectedOffer?.offer_extra_charges?.nic_levy_amount
+                ).format("#,#.##")}
               />
               <ValueX
                 label="WIthholding Tax"
-                value={selectedOffer?.offer_detail?.currency}
+                value={numeral(
+                  selectedOffer?.offer_extra_charges?.withholding_tax_amount
+                ).format("#,#.##")}
               />
             </dl>
           </div>
@@ -100,21 +107,68 @@ const Details = () => {
                   >
                     view<span className="sr-only"> Closing Slip</span>
                   </button>
-                  {/* <a
-                    // type="button"
-                    href={`${BASE_URL}/download/${btoa(
-                      JSON.stringify({
-                        broker: broker,
-                        // reinsurer_id: selectedOffer?.reinsurer_id,
-                        offer_id: selectedOffer?.offersoffer_id,
-                      })
-                    )}`}
-                    target="_blank"
+                </div>
+              </li>
+              <li className="py-3 flex justify-between items-center">
+                <div className="flex items-center">
+                  {/* <DocumentIcon className="h-6 w-6" /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 text-green-400"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                    />
+                  </svg>
+                  <p className="ml-4 text-sm font-medium text-gray-900">
+                    Payments
+                  </p>
+                </div>
+                <div>
+                  <button
+                    type="button"
                     // onClick={() => setOpenCreditNote(true)}
                     className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
-                    download<span className="sr-only">Closing Slip</span>
-                  </a> */}
+                    view<span className="sr-only">Payments</span>
+                  </button>
+                </div>
+              </li>
+              <li className="py-3 flex justify-between items-center">
+                <div className="flex items-center">
+                  {/* <DocumentIcon className="h-6 w-6" /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-green-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  <p className="ml-4 text-sm font-medium text-gray-900">
+                    Issue Guaranttee Note
+                  </p>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    // onClick={() => setOpenCreditNote(true)}
+                    className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  >
+                    view<span className="sr-only">Issue Guaranttee Note</span>
+                  </button>
                 </div>
               </li>
             </ul>

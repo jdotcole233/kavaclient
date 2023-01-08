@@ -1,4 +1,4 @@
-import { clsx, Pagination } from "@mantine/core";
+import { clsx, Pagination, ScrollArea } from "@mantine/core";
 import { Fragment, useState } from "react";
 import { useAppSelector } from "../../app/hooks";
 import Loader from "../../components/Loader";
@@ -32,7 +32,7 @@ const AllOffers = (props: Props) => {
         <Loader />
       </Show>
       <Show if={!loading}>
-        <Fragment>
+        <ScrollArea>
           <section className="mt-8 pb-16" aria-labelledby="gallery-heading">
             <h2 id="gallery-heading" className="sr-only">
               Recently viewed
@@ -50,7 +50,7 @@ const AllOffers = (props: Props) => {
             </ul>
           </section>
           <Pagination total={offers?.length} />
-        </Fragment>
+        </ScrollArea>
       </Show>
     </PageWrapper>
   );
