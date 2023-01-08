@@ -1,10 +1,9 @@
 import { Menu, Transition } from "@headlessui/react";
-import React, { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setMobileMenuOpen } from "../../../features/settings";
 import { classNames, getUserInitials, userNavigation } from "../../../utils";
-import { Dialog, Text } from "@mantine/core";
 import { CornerDialog } from "evergreen-ui";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
@@ -78,10 +77,12 @@ const Navbar = (props: Props) => {
                                     ? () => setShowSignOutDialog(true)
                                     : () => {}
                                 }
-                                className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
-                                )}
+                                className={({ isActive }) =>
+                                  classNames(
+                                    isActive ? "bg-gray-100" : "",
+                                    "block px-4 py-2 text-sm text-gray-700"
+                                  )
+                                }
                               >
                                 {item.name}
                               </NavLink>
@@ -111,6 +112,7 @@ const Navbar = (props: Props) => {
         isShown={showSignOutDialog}
         onCloseComplete={() => setShowSignOutDialog(false)}
         confirmLabel="Signout"
+        intent="danger"
         cancelLabel="Cancel"
         onConfirm={() => {}}
       >

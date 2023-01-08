@@ -33,6 +33,16 @@ query FetchOffers($broker: BrokerTypes!) {
         period_of_insurance_to
         currency
       }
+      offer_extra_charges {
+        commission_amount
+        withholding_tax
+        nic_levy
+        brokerage_amount
+        brokerage
+        withholding_tax_amount
+        nic_levy_amount
+        commission
+      }
     }
   }
 }

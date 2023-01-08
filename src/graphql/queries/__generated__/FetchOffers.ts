@@ -39,6 +39,18 @@ export interface FetchOffers_fetchOffers_offers_offer_detail {
   currency: string | null;
 }
 
+export interface FetchOffers_fetchOffers_offers_offer_extra_charges {
+  __typename: "MockOfferDeduction";
+  commission_amount: number | null;
+  withholding_tax: number | null;
+  nic_levy: number | null;
+  brokerage_amount: number | null;
+  brokerage: number | null;
+  withholding_tax_amount: number | null;
+  nic_levy_amount: number | null;
+  commission: number | null;
+}
+
 export interface FetchOffers_fetchOffers_offers {
   __typename: "MockOfferStruct";
   offersoffer_id: string | null;
@@ -49,6 +61,7 @@ export interface FetchOffers_fetchOffers_offers {
   payments: (FetchOffers_fetchOffers_offers_payments | null)[] | null;
   offer: FetchOffers_fetchOffers_offers_offer | null;
   offer_detail: FetchOffers_fetchOffers_offers_offer_detail | null;
+  offer_extra_charges: FetchOffers_fetchOffers_offers_offer_extra_charges | null;
 }
 
 export interface FetchOffers_fetchOffers {

@@ -1,28 +1,16 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 import PDF from "../../../assets/pdf.png";
 import { BASE_URL } from "../../../constants";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
-import _ from "lodash";
 import { setSelectedOffer } from "../../../features/offers";
 import DocumentWrapper from "../../../components/document-wrapper";
 import { generateURlData } from "../../../utils";
 
-const template = {
-  //   "Policy number": "policy_number",
-  Currency: "offer_detail.currency",
-  //   "Created by": "employee",
-  Reinsured: "insured_by",
-  Brokerage: "brokerage_amount",
-  Commission: "agreed_commission",
-  NIC: "nic_levy",
-  "WIthholding tax": "withholding_tax",
-};
-
 const Details = () => {
-  const { selectedOffer, broker } = useAppSelector((state) => state.offers);
+  const { selectedOffer } = useAppSelector((state) => state.offers);
   const { user } = useAppSelector((state) => state.auth);
   const dispatch = useAppDispatch();
   const [openCreditNote, setOpenCreditNote] = useState(false);
@@ -54,10 +42,10 @@ const Details = () => {
                 label="Reinsured"
                 value={selectedOffer?.offer_detail?.insured_by}
               />
-              {/* <ValueX
-                label="Brokerage"
-                value={selectedOffer?.offer}
-              /> */}
+              <ValueX
+                label="Participation Percentage"
+                value={`${selectedOffer?.offer_participant_percentage}%`}
+              />
               <ValueX
                 label="Commission"
                 value={selectedOffer?.offer_detail?.currency}
@@ -67,7 +55,7 @@ const Details = () => {
                 value={selectedOffer?.offer_detail?.currency}
               />
               <ValueX
-                label="WIthholding tax"
+                label="WIthholding Tax"
                 value={selectedOffer?.offer_detail?.currency}
               />
             </dl>

@@ -1,8 +1,8 @@
-import { Progress } from "@mantine/core";
 import { createBrowserRouter } from "react-router-dom";
 import Admin from "./layouts/Admin";
 import Auth from "./layouts/Auth";
 import AllOffers from "./pages/AllOffers";
+import AllTreaties from "./pages/AllTreaties/AllTreaties";
 import Dashboard from "./pages/Dashboard";
 import LoginScreen from "./pages/Login/Login";
 
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "offers",
         element: <AllOffers />,
+      },
+      {
+        path: "treaties",
+        element: <AllTreaties />,
       },
     ],
   },

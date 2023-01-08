@@ -1,12 +1,11 @@
-import { Fragment, useState } from "react";
-import { Outlet, Route } from "react-router-dom";
+import { Fragment } from "react";
+import { Outlet } from "react-router-dom";
 import SSL from "../../assets/ssl-big.png";
 
 // import Comfi from "../assets/comfi 4.svg";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Auth() {
-  const [company, setCompany] = useState(undefined);
   return (
     <Fragment>
       <div className="min-h-screen bg-white flex">

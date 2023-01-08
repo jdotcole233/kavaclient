@@ -3,21 +3,25 @@ import PDF from "../../../assets/pdf-icon.png";
 import { FetchOffers_fetchOffers_offers } from "../../../graphql/queries/__generated__/FetchOffers";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setSelectedOffer } from "../../../features/offers";
+import { FetchTreaties_fetchTreaties_treaties } from "../../../graphql/queries/__generated__/FetchTreaties";
+import { setSelectedTreaty } from "../../../features/treaty";
 
-type OfferProps = {
-  file: FetchOffers_fetchOffers_offers | null;
+type TreatyItemProps = {
+  file: FetchTreaties_fetchTreaties_treaties | null;
 };
 
-const Offer = ({ file }: OfferProps) => {
+const TreatyItem = ({ file }: TreatyItemProps) => {
   const dispatch = useAppDispatch();
-  const { selectedOffer } = useAppSelector((state) => state.offers);
-  const active = file?.offersoffer_id === selectedOffer?.offersoffer_id;
+  const { selectedTreaty } = useAppSelector((state) => state.treaty);
+  const active = file?.treaty_id === selectedTreaty?.treaty_id;
   return (
     <li
       onClick={() =>
-        dispatch(setSelectedOffer(file as FetchOffers_fetchOffers_offers))
+        dispatch(
+          setSelectedTreaty(file as FetchTreaties_fetchTreaties_treaties)
+        )
       }
-      key={file?.offersoffer_id}
+      key={file?.treaty_id}
       className="relative cursor-pointer"
     >
       <div
@@ -32,14 +36,14 @@ const Offer = ({ file }: OfferProps) => {
         </div>
         <div className="w-auto flex-1 items-start flex flex-col">
           <span className="font-semibold">
-            Cedant: {file?.offer?.insurer?.insurer_company_name}
+            Cedant: {file?.insurance_company_name}
           </span>
-          <span>Period: {showOfferDate(file?.offer_detail as any)}</span>
+          <span>Period: N/A</span>
           <span>
-            Insured: {file?.offer_detail?.insured_by}
+            {/* Insured: {file?.offer_detail?.insured_by}
             <span className="font-semibold">
               {file?.offer?.insurance_company_name}
-            </span>
+            </span> */}
           </span>
 
           <span className="text-gray-600 font-thin">
@@ -47,9 +51,9 @@ const Offer = ({ file }: OfferProps) => {
           </span>
           <span className="flex items-center">
             <span className="bg-green-200 my-1 mr-2 flex items-center justify-center text-green-500 rounded-full px-2 font-medium text-sm">
-              {file?.offer_participant_percentage}%
+              {file?.treaty_participation_percentage}%
             </span>
-            <span>Share: {toMoney(file?.offer_amount)}</span>
+            {/* <span>Share: {toMoney(file?.layer_limit?.)}</span> */}
           </span>
         </div>
         {/* <div className="w-20 flex"></div> */}
@@ -58,4 +62,4 @@ const Offer = ({ file }: OfferProps) => {
   );
 };
 
-export default Offer;
+export default TreatyItem;

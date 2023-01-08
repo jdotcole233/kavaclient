@@ -4,7 +4,7 @@ import { BrokerTypes } from "../graphql/__generated__/globalTypes";
 
 export type AllOffersState = {
     selectedOffer: FetchOffers_fetchOffers_offers | null
-    broker: string | null
+    broker: BrokerTypes | null
 }
 
 const initialState: AllOffersState = {

@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "dashboard",
-        "offers"
+        "offers",
+        "treaties"
     ]
 }
