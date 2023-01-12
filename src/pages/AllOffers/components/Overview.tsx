@@ -1,12 +1,20 @@
 import React from "react";
 
-type Props = {};
+type StatsProp = {
+  name: string;
+  value: any;
+};
+
+type Props = {
+  stats: StatsProp[];
+};
 const stats = [
-  { name: "Total Subscribers", stat: "71,897" },
-  { name: "Avg. Open Rate", stat: "58.16%" },
-  { name: "Avg. Click Rate", stat: "24.57%" },
+  { name: "Total Subscribers", stat: "" },
+  { name: "Avg. Open Rate", stat: "" },
+  { name: "Avg. Click Rate", stat: "" },
+  { name: "Avg. Click Rate", stat: "" },
 ];
-const Overview = (props: Props) => {
+const Overview = ({ stats }: Props) => {
   return (
     <div>
       <h3 className="text-lg font-medium leading-6 text-gray-900">
@@ -22,7 +30,7 @@ const Overview = (props: Props) => {
               {item.name}
             </dt>
             <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">
-              {item.stat}
+              {item.value}
             </dd>
           </div>
         ))}

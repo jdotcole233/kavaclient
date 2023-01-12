@@ -12,8 +12,8 @@ export const useTreaties = (variables?: FetchTreatiesVariables) => {
 
     return {
         treaties: data?.fetchTreaties?.treaties || [],
-        total_shares: data?.fetchTreaties?.total_shares,
         total_treaties: data?.fetchTreaties?.total_treaties,
+        total_shares: JSON.parse(data?.fetchTreaties?.total_shares ?? "{}"),
         loading,
         error,
         networkStatus,

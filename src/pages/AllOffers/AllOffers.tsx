@@ -17,12 +17,27 @@ const AllOffers = (props: Props) => {
   const [year, setYear] = useState("second");
   const [activeTab, setActiveTab] = useState<BrokerTypes>(BrokerTypes.VISAL);
   const { selectedOffer } = useAppSelector((state) => state.offers);
-  const { offers, loading } = useOffers({ broker: activeTab });
+  const { offers, loading, total_offers, total_shares } = useOffers({
+    broker: activeTab,
+  });
 
   return (
     <PageWrapper>
-      <PageHeader title="AllOffers" />
-      <Overview />
+      <PageHeader title="Offers" />
+      <Overview
+        stats={[
+          {
+            name: "Total Offers",
+            value: total_offers ?? 0,
+          },
+          ...(total_shares
+            ? Object.keys(total_shares).map((e) => ({
+                name: `Total ${e}`,
+                value: `${total_shares[e]}`,
+              }))
+            : []),
+        ]}
+      />
       <Tabs
         year={year}
         setYear={setYear}
