@@ -7,11 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Buffer } from "buffer";
 
-import {
-  BellIcon,
-  FaceSmileIcon,
-  UserCircleIcon,
-} from "@heroicons/react/20/solid";
+import { BellIcon, UserCircleIcon } from "@heroicons/react/20/solid";
 import { Sector } from "recharts";
 import _ from "lodash";
 import { BrokerTypes } from "./graphql/__generated__/globalTypes";

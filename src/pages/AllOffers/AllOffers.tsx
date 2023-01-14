@@ -1,5 +1,5 @@
 import { clsx, Pagination, ScrollArea } from "@mantine/core";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { useAppSelector } from "../../app/hooks";
 import Loader from "../../components/Loader";
 import PageHeader from "../../components/page-header";

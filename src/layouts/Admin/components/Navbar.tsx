@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../../app/hooks";
+import { useAppDispatch } from "../../../app/hooks";
 import { setMobileMenuOpen } from "../../../features/settings";
 import { classNames, getUserInitials, userNavigation } from "../../../utils";
 import { CornerDialog } from "evergreen-ui";
@@ -12,7 +12,6 @@ type Props = {};
 const Navbar = (props: Props) => {
   const [showSignOutDialog, setShowSignOutDialog] = useState(false);
   const dispatch = useAppDispatch();
-  const { user } = useAppSelector((state) => state.auth);
 
   return (
     <Fragment>

@@ -1,20 +1,18 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 import PDF from "../../../assets/pdf.png";
-import { BASE_URL, urls } from "../../../constants";
+import { urls } from "../../../constants";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setSelectedOffer } from "../../../features/offers";
 import DocumentWrapper from "../../../components/document-wrapper";
 import { generateURlData } from "../../../utils";
 import numeral from "numeral";
-import _ from "lodash";
 import { BrokerTypes } from "../../../graphql/__generated__/globalTypes";
 
 const Details = () => {
   const { selectedOffer, broker } = useAppSelector((state) => state.offers);
-  const { user } = useAppSelector((state) => state.auth);
   const dispatch = useAppDispatch();
   const [openCreditNote, setOpenCreditNote] = useState(false);
   // console.log({

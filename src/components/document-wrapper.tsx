@@ -1,9 +1,6 @@
 import { LoadingOverlay } from "@mantine/core";
 import { SideSheet } from "evergreen-ui";
-import React, { SetStateAction, useEffect, useMemo, useState } from "react";
-import { useAppSelector } from "../app/hooks";
-import Loader from "./Loader";
-import Show from "./show";
+import React, { SetStateAction, useState } from "react";
 
 type DocumentWrapperProps = {
   show: boolean;

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment, SetStateAction, useState } from "react";
+import React, { Fragment, SetStateAction } from "react";
 import { useAppDispatch } from "../app/hooks";
 import { setActiveBroker, setSelectedOffer } from "../features/offers";
 import { setSelectedTreaty } from "../features/treaty";

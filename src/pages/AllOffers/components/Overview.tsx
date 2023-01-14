@@ -8,12 +8,12 @@ type StatsProp = {
 type Props = {
   stats: StatsProp[];
 };
-const stats = [
-  { name: "Total Subscribers", stat: "" },
-  { name: "Avg. Open Rate", stat: "" },
-  { name: "Avg. Click Rate", stat: "" },
-  { name: "Avg. Click Rate", stat: "" },
-];
+// const stats = [
+//   { name: "Total Subscribers", stat: "" },
+//   { name: "Avg. Open Rate", stat: "" },
+//   { name: "Avg. Click Rate", stat: "" },
+//   { name: "Avg. Click Rate", stat: "" },
+// ];
 const Overview = ({ stats }: Props) => {
   return (
     <div>
