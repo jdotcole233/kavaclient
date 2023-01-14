@@ -1,8 +1,6 @@
-import { classNames, showOfferDate, toMoney } from "../../../utils";
+import { classNames } from "../../../utils";
 import PDF from "../../../assets/pdf-icon.png";
-import { FetchOffers_fetchOffers_offers } from "../../../graphql/queries/__generated__/FetchOffers";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
-import { setSelectedOffer } from "../../../features/offers";
 import { FetchTreaties_fetchTreaties_treaties } from "../../../graphql/queries/__generated__/FetchTreaties";
 import { setSelectedTreaty } from "../../../features/treaty";
 

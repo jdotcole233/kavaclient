@@ -1,17 +1,19 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import { logout } from "../../features/users";
-import Details from "../../pages/AllOffers/components/OfferPreview";
+import { useAppSelector } from "../../app/hooks";
+import OfferDetails from "../../pages/AllOffers/components/OfferPreview";
+import TreatyPreview from "../../pages/AllTreaties/components/TreatyPreview";
 import Navbar from "./components/Navbar";
+import Show from "../../components/show";
 import Sidebar from "./components/Sidebar";
+import _ from "lodash";
 
 type Props = {};
 
 const Admin = (props: Props) => {
   const { access_token } = useAppSelector((state) => state.auth);
   const { selectedOffer } = useAppSelector((state) => state.offers);
-  const dispatch = useAppDispatch();
+  const { selectedTreaty } = useAppSelector((state) => state.treaty);
   const { pathname } = useLocation();
 
   if (!access_token) return <Navigate to={"/"} />;
@@ -28,7 +30,14 @@ const Admin = (props: Props) => {
           <div className="flex-1 flex items-stretch overflow-hidden">
             <Outlet />
             {/* Details sidebar */}
-            {selectedOffer && pathname === "/app/offers" && <Details />}
+            <Show if={!_.isEmpty(selectedOffer) && pathname === "/app/offers"}>
+              <OfferDetails />
+            </Show>
+            <Show
+              if={!_.isEmpty(selectedTreaty) && pathname === "/app/treaties"}
+            >
+              <TreatyPreview />
+            </Show>
           </div>
 
           {/* <!-- This example requires Tailwind CSS v2.0+ --> */}

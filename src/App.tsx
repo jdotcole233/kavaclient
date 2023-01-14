@@ -4,7 +4,7 @@ import router from "./router";
 
 type Props = {};
 
-function App({}: Props) {
+function App(props: Props) {
   return (
     <Root>
       <RouterProvider router={router} />
