@@ -1,6 +1,7 @@
 import { clsx, Pagination } from "@mantine/core";
 import { Fragment, useState } from "react";
 import { useAppSelector } from "../../app/hooks";
+import EmptyPlaceholder from "../../components/empty-placeholder";
 import Loader from "../../components/Loader";
 import PageHeader from "../../components/page-header";
 import PageWrapper from "../../components/page-wrapper";
@@ -44,9 +45,11 @@ const AllTreaties = (props: Props) => {
       <Show if={!loading}>
         <Fragment>
           <section className="mt-8 pb-16" aria-labelledby="gallery-heading">
-            <h2 id="gallery-heading" className="sr-only">
-              Recently viewed
-            </h2>
+            <Show if={treaties.length < 1}>
+              <EmptyPlaceholder
+                message={`No treaties found for ${activeTab}`}
+              />
+            </Show>
             <ul
               className={clsx(
                 selectedTreaty

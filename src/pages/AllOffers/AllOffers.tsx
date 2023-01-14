@@ -1,6 +1,7 @@
 import { clsx, Pagination, ScrollArea } from "@mantine/core";
 import { useState } from "react";
 import { useAppSelector } from "../../app/hooks";
+import EmptyPlaceholder from "../../components/empty-placeholder";
 import Loader from "../../components/Loader";
 import PageHeader from "../../components/page-header";
 import PageWrapper from "../../components/page-wrapper";
@@ -51,9 +52,9 @@ const AllOffers = (props: Props) => {
       <Show if={!loading}>
         <ScrollArea>
           <section className="mt-8 pb-16" aria-labelledby="gallery-heading">
-            <h2 id="gallery-heading" className="sr-only">
-              Recently viewed
-            </h2>
+            <Show if={offers.length < 1}>
+              <EmptyPlaceholder message={`No offers found for ${activeTab}`} />
+            </Show>
             <ul
               className={clsx(
                 selectedOffer

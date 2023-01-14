@@ -9,6 +9,7 @@ import LoginScreen from "./pages/Login/Login";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
+import Activities from "./pages/Activities";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
           {
             path: "notifications",
             element: <Notifications />,
+          },
+          {
+            path: "activities",
+            element: <Activities />,
           },
         ],
       },

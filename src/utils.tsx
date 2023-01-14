@@ -4,10 +4,11 @@ import {
   FolderIcon,
   // PhotographIcon,
   // UserGroupIcon,
+  BookmarkIcon,
 } from "@heroicons/react/24/outline";
 import { Buffer } from "buffer";
 
-import { BellIcon, UserCircleIcon } from "@heroicons/react/20/solid";
+import { UserCircleIcon } from "@heroicons/react/20/solid";
 import { Sector } from "recharts";
 import _ from "lodash";
 import { BrokerTypes } from "./graphql/__generated__/globalTypes";
@@ -128,9 +129,9 @@ export const subNavigation = [
   },
   // { name: 'Password', href: '#', icon: KeyIcon, current: false },
   {
-    name: "Notifications",
-    href: "/app/settings/notifications",
-    icon: BellIcon,
+    name: "Activities",
+    href: "/app/settings/activities",
+    icon: BookmarkIcon,
     current: false,
   },
 ];
