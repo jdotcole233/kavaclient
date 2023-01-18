@@ -12,7 +12,7 @@ type DocumentWrapperProps = {
 
 const DocumentWrapper = ({ show, setShow, url }: DocumentWrapperProps) => {
   const [loading, setLoading] = useState(true);
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
   const onLoad = () => {
     setLoading(false);
   };
