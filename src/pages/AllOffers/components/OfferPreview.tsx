@@ -10,9 +10,12 @@ import DocumentWrapper from "../../../components/document-wrapper";
 import { generateURlData } from "../../../utils";
 import numeral from "numeral";
 import { BrokerTypes } from "../../../graphql/__generated__/globalTypes";
+import { Modal } from "@mantine/core";
+import OfferPayments from "./OfferPayments";
 
 const Details = () => {
   const { selectedOffer, broker } = useAppSelector((state) => state.offers);
+  const [openPayments, setOpenPayments] = useState(false);
   const dispatch = useAppDispatch();
   const [openCreditNote, setOpenCreditNote] = useState(false);
   // console.log({
@@ -23,7 +26,7 @@ const Details = () => {
 
   return (
     <Fragment>
-      <aside className="w-full lg:w-1/3 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
+      <aside className="w-screen lg:w-1/3 bg-white p-8 border-l border-gray-200 overflow-y-auto lg:block">
         <div className="pb-16 space-y-6">
           <div className="w-full flex justify-end ">
             <div className="bg-red-600 flex items-center justify-center rounded-full h-9 w-9">
@@ -47,6 +50,10 @@ const Details = () => {
               />
               <ValueX
                 label="Reinsured"
+                value={selectedOffer?.offer?.insurer?.insurer_company_name}
+              />
+              <ValueX
+                label="Insured"
                 value={selectedOffer?.offer_detail?.insured_by}
               />
               <ValueX
@@ -139,7 +146,7 @@ const Details = () => {
                 <div>
                   <button
                     type="button"
-                    // onClick={() => setOpenCreditNote(true)}
+                    onClick={() => setOpenPayments(true)}
                     className="ml-6 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     view<span className="sr-only">Payments</span>
@@ -181,6 +188,16 @@ const Details = () => {
           </div>
         </div>
       </aside>
+
+      <Modal
+        opened={openPayments}
+        onClose={() => setOpenPayments(false)}
+        title="Payments"
+        centered
+        size={1200}
+      >
+        <OfferPayments payments={selectedOffer?.payments} />
+      </Modal>
 
       <DocumentWrapper
         show={openCreditNote}

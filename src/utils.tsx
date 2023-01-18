@@ -27,7 +27,7 @@ export const extractRegNumber = (details: any) => {
 };
 
 export const navigation = [
-  { name: "Home", href: "/app", icon: HomeIcon, current: false },
+  { name: "Home", href: "/app/", icon: HomeIcon, current: false },
   {
     name: "All Offers",
     href: "/app/offers",
@@ -166,6 +166,7 @@ export const months = [
     name: "Jan",
     visalre: 4000,
     kekre: 2400,
+    iriskre:  300,
     amt: 2400,
   },
   {

@@ -21,8 +21,7 @@ const TotalParticipations = () => {
           <div className="flex flex-col">
             <span className="text-2xl font-semibold">Total Offers</span>
             <span>
-              Detailed description of your participations with various broker
-              firms
+              Breakdown of offers received from various brokers
             </span>
           </div>
           <div className="flex">
@@ -79,7 +78,7 @@ const TotalParticipations = () => {
             name="KEK Reinsurance Broker"
             fill="#ADE1E5"
           />
-          <Bar dataKey="iriskre" name="KEK Reinsurance Broker" fill="#99D19C" />
+          <Bar dataKey="iriskre" name="Irisk Reinsurance Broker" fill="#99D19C" />
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -112,7 +112,7 @@ const TotalRevenue = () => {
             <select
               id="tabs"
               name="tabs"
-              className="block focus:ring-green-500 outline-none border h-7 w-24  focus:border-green-500 border-gray-300 rounded-none"
+              className="block focus:ring-green-500 outline-none border h-11 w-24  focus:border-green-500 border-gray-300 rounded-none"
             >
               <option>GHC</option>
 

@@ -13,11 +13,11 @@ const Dashboard = (props: Props) => {
     <PageWrapper>
       <PageHeader title="Dashboard" />
       <Overview />
-      <div className="flex mb-2 ">
-        <div className="w-2/3 h-auto">
+      <div className="flex mb-2 flex-col md:flex-row ">
+        <div className="lg:w-2/3 h-auto">
           <TotalRevenue />
         </div>
-        <div className="w-1/3 ml-3">
+        <div className="lg:w-1/3 ml-3">
           <TotalRevenuePie />
         </div>
       </div>

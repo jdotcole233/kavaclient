@@ -1,7 +1,7 @@
 import { LoadingOverlay } from "@mantine/core";
 import { SideSheet } from "evergreen-ui";
 import React, { SetStateAction, useState } from "react";
-
+import { useWindowSize } from "react-use";
 type DocumentWrapperProps = {
   show: boolean;
   setShow: React.Dispatch<SetStateAction<boolean>>;
@@ -12,13 +12,14 @@ type DocumentWrapperProps = {
 
 const DocumentWrapper = ({ show, setShow, url }: DocumentWrapperProps) => {
   const [loading, setLoading] = useState(true);
+  const { width, height } = useWindowSize();
   const onLoad = () => {
     setLoading(false);
   };
 
   return (
     <SideSheet
-      width={800}
+      width={width < 1242 ? width * 0.8 : width * 0.4}
       isShown={show}
       shouldCloseOnOverlayClick={false}
       onCloseComplete={() => setShow(false)}
