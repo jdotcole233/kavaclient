@@ -3,12 +3,38 @@ import {
   QuestionMarkCircleIcon,
 } from "@heroicons/react/20/solid";
 import React, { Fragment } from "react";
+import { useForm } from "react-hook-form";
 import { useAppSelector } from "../../app/hooks";
 
 type Props = {};
 
 const Profile = (props: Props) => {
   const { user } = useAppSelector((state) => state.auth);
+  const { register } = useForm<any>({
+    defaultValues: {
+      first_name:
+        user?.clientable?.__typename === "Reinsurer_representative"
+          ? user?.clientable?.rep_first_name
+          : user?.clientable?.assoc_first_name,
+      last_name:
+        user?.clientable?.__typename === "Reinsurer_representative"
+          ? user?.clientable?.rep_last_name
+          : user?.clientable?.assoc_last_name,
+      email:
+        user?.clientable?.__typename === "Reinsurer_representative"
+          ? user?.clientable?.rep_email
+          : user?.clientable?.assoc_email,
+      primary_phone:
+        user?.clientable?.__typename === "Reinsurer_representative"
+          ? user?.clientable?.rep_primary_phonenumber
+          : user?.clientable?.assoc_primary_phonenumber,
+      secondary_phone:
+        user?.clientable?.__typename === "Reinsurer_representative"
+          ? user?.clientable?.rep_secondary_phonenumber
+          : user?.clientable?.assoc_secondary_phonenumber,
+      position: user?.clientable?.position,
+    },
+  });
   return (
     <Fragment>
       {/* <code>{JSON.stringify(user)}</code> */}
@@ -18,7 +44,13 @@ const Profile = (props: Props) => {
         </div>
         <div className="w-full flex flex-col">
           <span className="text-green-800 font-medium text-3xl">
-            {user?.clientable?.__typename}
+            {user?.clientable?.__typename === "Reinsurer_representative"
+              ? user?.clientable?.rep_first_name +
+                " " +
+                user?.clientable?.rep_last_name
+              : user?.clientable?.assoc_first_name +
+                " " +
+                user?.clientable?.assoc_last_name}
           </span>
           <div className="flex flex-col">
             <span className="mr-7 flex flex-row">
@@ -86,10 +118,9 @@ const Profile = (props: Props) => {
                   </label>
                   <input
                     type="text"
-                    name="first-name"
+                    {...register("first_name", { required: "Required" })}
                     id="first-name"
                     readOnly
-                    defaultValue={user?.email}
                     autoComplete="cc-given-name"
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
                   />
@@ -104,10 +135,9 @@ const Profile = (props: Props) => {
                   </label>
                   <input
                     type="text"
-                    name="last-name"
+                    {...register("last_name", { required: "Required" })}
                     id="last-name"
                     readOnly
-                    defaultValue={user?.clientable?.position ?? ""}
                     autoComplete="cc-family-name"
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
                   />
@@ -122,10 +152,9 @@ const Profile = (props: Props) => {
                   </label>
                   <input
                     type="text"
-                    name="email-address"
+                    {...register("email", { required: "Required" })}
                     id="email-address"
                     readOnly
-                    defaultValue={user?.clientable?.position ?? ""}
                     autoComplete="email"
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
                   />
@@ -140,13 +169,12 @@ const Profile = (props: Props) => {
                   </label>
                   <input
                     type="text"
-                    name="expiration-date"
+                    {...register("primary_phone", { required: "Required" })}
                     id="expiration-date"
                     autoComplete="cc-exp"
                     readOnly
-                    defaultValue={user?.clientable?.position ?? ""}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
-                    placeholder="MM / YY"
+                    placeholder=""
                   />
                 </div>
 
@@ -163,10 +191,9 @@ const Profile = (props: Props) => {
                   </label>
                   <input
                     type="text"
-                    name="security-code"
+                    {...register("secondary_phone", { required: "Required" })}
                     id="security-code"
                     readOnly
-                    defaultValue={user?.email ?? "NA"}
                     autoComplete="cc-csc"
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
                   />
@@ -181,9 +208,8 @@ const Profile = (props: Props) => {
                   </label>
                   <select
                     id="country"
-                    name="country"
+                    {...register("position", { required: "Required" })}
                     autoComplete="country"
-                    defaultValue={user?.email}
                     className="mt-1 block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
                   >
                     <option value="Underwriter">Underwriter</option>
