@@ -24,7 +24,7 @@ const AllOffers = (props: Props) => {
 
   return (
     <PageWrapper>
-      <PageHeader title="Offers" />
+      <PageHeader title="Facultative Offers" />
       <Overview
         stats={[
           {
