@@ -2,7 +2,7 @@ import PageHeader from "../../components/page-header";
 import PageWrapper from "../../components/page-wrapper";
 import Overview from "./components/Overview";
 import ProfileSection from "./sections/ProfileSection";
-import TotalParticipations from "./sections/TotalParticipations";
+// import TotalParticipations from "./sections/TotalParticipations";
 import TotalRevenue from "./sections/TotalRevenue";
 import TotalRevenuePie from "./sections/TotalRevenuePie";
 
@@ -23,7 +23,7 @@ const Dashboard = (props: Props) => {
           {/* <DashboardStats /> */}
         </div>
       </div>
-      <TotalParticipations />
+      {/* <TotalParticipations /> */}
     </PageWrapper>
   );
 };
