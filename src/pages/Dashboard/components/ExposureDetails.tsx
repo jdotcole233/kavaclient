@@ -1,31 +1,8 @@
 import { DocumentIcon } from "@heroicons/react/24/outline";
-import React from "react";
 import { useState } from "react";
-import {
-  BarChart,
-  Bar,
-  // Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
-import { PieChart, Pie } from "recharts";
-
-import { monthsWithCurrency, renderActiveShape } from "../../../utils";
-
-const data = [
-  { name: "USD", value: 400, fill: "#EDD382" },
-  { name: "EUR", value: 300, fill: "#FC9E4F" },
-  { name: "GBP", value: 300, fill: "#FF521B" },
-  { name: "GHC", value: 200, fill: "#020122" },
-];
 
 const ExposureDetails = () => {
   const [broker, setBroker] = useState("Visal Reinsurance Broker");
-  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className="h-full overflow-y-scroll">
       <div className="h-2/4 w-full bg-gray-100">
@@ -131,13 +108,10 @@ const ExposureDetails = () => {
                         </td>
 
                         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                          <a
-                            href="#"
-                            className="text-indigo-600 hover:text-indigo-900"
-                          >
+                          <button className="text-indigo-600 hover:text-indigo-900">
                             Edit
                             <span className="sr-only">, Lindsay Walton</span>
-                          </a>
+                          </button>
                         </td>
                       </tr>
 

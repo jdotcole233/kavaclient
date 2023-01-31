@@ -1,27 +1,20 @@
 import {
   BadgeDelta,
-  ButtonInline,
   Card,
-  DeltaType,
   DonutChart,
   Flex,
-  Footer,
   Toggle,
   ToggleItem,
   Bold,
   Divider,
-  Icon,
   List,
   ListItem,
-  Metric,
   Text,
   Title,
-  Color,
 } from "@tremor/react";
 
 import {
   ChartPieIcon,
-  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 
 import { useState } from "react";

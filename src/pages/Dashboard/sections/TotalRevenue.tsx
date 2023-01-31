@@ -6,10 +6,8 @@ import {
   Toggle,
   ToggleItem,
 } from "@tremor/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  AreaChart,
-  Area,
   // Cell,
   XAxis,
   YAxis,
@@ -20,7 +18,7 @@ import {
   BarChart,
   Bar,
 } from "recharts";
-import { classNames, months, years } from "../../../utils";
+import { months, years } from "../../../utils";
 
 const TotalRevenue = () => {
   const [tab, setTab] = useState("month");
