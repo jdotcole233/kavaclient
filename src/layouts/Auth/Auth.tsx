@@ -11,8 +11,8 @@ function Auth() {
     <Fragment>
       <div className="min-h-screen bg-white flex">
         <div className="hidden lg:block bg-white  relative w-0 flex-1 ">
-          <BackgroundImage
-            src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
+          <div
+            // src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
             className=" h-full w-full bg-green-300 flex flex-col items-center"
           >
             <img
@@ -32,7 +32,7 @@ function Auth() {
                 Send an email to info@comfytechnology.tech
               </h4>
             </div>
-          </BackgroundImage>
+          </div>
           {/* <img
             className="absolute inset-0 h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
