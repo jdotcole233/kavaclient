@@ -20,6 +20,7 @@ const Dashboard = (props: Props) => {
         </div>
         <div className="lg:w-1/3 ml-3">
           <TotalRevenuePie />
+          {/* <DashboardStats /> */}
         </div>
       </div>
       <TotalParticipations />

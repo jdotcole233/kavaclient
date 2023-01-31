@@ -1,3 +1,4 @@
+import { DocumentIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { useState } from "react";
 import {
@@ -65,105 +66,86 @@ const ExposureDetails = () => {
             </select>
           </div>
         </div>
+        <div className="p-4">
+          <div className="mt-8 flex flex-col">
+            <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                  <table className="min-w-full divide-y divide-gray-300">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        <th
+                          scope="col"
+                          className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                        >
+                          Insured
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                        >
+                          Class OF Business / Cedant
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                        >
+                          Status
+                        </th>
 
-        <div className="h-96">
-          <ResponsiveContainer height={350}>
-            <BarChart
-              width={500}
-              height={350}
-              data={monthsWithCurrency}
-              margin={{
-                top: 5,
-                right: 30,
-                left: 20,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Bar dataKey="usd" name="USD" fill="#EDD382" />
-              <Bar
-                dataKey="gbp"
-                // label="Offers"
-                name="GBP"
-                fill="#FF521B"
-              />
-              <Bar dataKey="eur" name="EUR" fill="#FC9E4F" />
-              <Bar dataKey="ghc" name="GHC" fill="#020122" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
-      <div className="flex  bg-gray-100 h-2/4 w-full">
-        <div className="grid gap-4 grid-cols-1 w-full px-4 py-5">
-          <div className="bg-white flex rounded-none w-full p-3">
-            <div className="w-1/5 flex flex-col h-full items-center justify-start">
-              <div className="h-36 w-36 bg-green-100 flex justify-center items-center rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-16 w-16 text-green-400 "
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                  />
-                </svg>
-              </div>
-              <span className="text-lg font-medium">{broker}</span>
-            </div>
-            <div className="w-2/5 px-4 grid gap-4 grid-rows-4">
-              {data.map((curr, currId) => (
-                <div className="flex group  flex-row bg-gray-100 px-4 rounded-lg hover:bg-gray-300 cursor-pointer items-center">
-                  <span className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-12 w-12 group-hover:text-white text-gray-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                    <span className="text-2xl group-hover:text-white font-medium text-gray-400 mx-2">
-                      {curr.name}
-                    </span>
-                  </span>
-                  <span className="mx-16 font-bold group-hover:text-white text-3xl">
-                    {curr.value}
-                  </span>
+                        <th
+                          scope="col"
+                          className="relative py-3.5 pl-3 pr-4 sm:pr-6"
+                        >
+                          <span className="sr-only">Edit</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200 bg-white">
+                      <tr>
+                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+                          <div className="flex items-center">
+                            <div className="h-10 w-10 flex-shrink-0">
+                              <DocumentIcon className="h-10 w-10 rounded-full" />
+                            </div>
+                            <div className="ml-4">
+                              <div className="font-medium text-gray-900">
+                                Lindsay Walton
+                              </div>
+                              <div className="text-gray-500">
+                                lindsay.walton@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <div className="text-gray-900">
+                            Front-end Developer
+                          </div>
+                          <div className="text-gray-500">Optimization</div>
+                        </td>
+                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                            Active
+                          </span>
+                        </td>
+
+                        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                          <a
+                            href="#"
+                            className="text-indigo-600 hover:text-indigo-900"
+                          >
+                            Edit
+                            <span className="sr-only">, Lindsay Walton</span>
+                          </a>
+                        </td>
+                      </tr>
+
+                      {/* <!-- More people... --> */}
+                    </tbody>
+                  </table>
                 </div>
-              ))}
-            </div>
-            <div className="w-2/5">
-              <ResponsiveContainer width="100%" height={390}>
-                <PieChart height={400}>
-                  <Pie
-                    activeIndex={activeIndex}
-                    activeShape={renderActiveShape}
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={80}
-                    fill="#8884d8"
-                    dataKey="value"
-                    onMouseEnter={(_, index) => setActiveIndex(index)}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
+              </div>
             </div>
           </div>
         </div>

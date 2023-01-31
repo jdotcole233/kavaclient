@@ -1,96 +1,98 @@
-import React, { useState } from "react";
-import { PieChart, Pie, ResponsiveContainer } from "recharts";
-import { renderActiveShape } from "../../../utils";
+import {
+  BadgeDelta,
+  ButtonInline,
+  Card,
+  DeltaType,
+  DonutChart,
+  Flex,
+  Footer,
+  Toggle,
+  ToggleItem,
+  Bold,
+  Divider,
+  Icon,
+  List,
+  ListItem,
+  Metric,
+  Text,
+  Title,
+  Color,
+} from "@tremor/react";
 
-const data = [
-  { name: "Visal Reinsurance Broker", value: 400, fill: "#FF7F51" },
-  { name: "Group B", value: 300, fill: "#4F000B" },
-  { name: "Group C", value: 300, fill: "#FF9B54" },
-  { name: "Group D", value: 200, fill: "#CE4257" },
-];
+import {
+  ChartPieIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/outline";
 
-const TotalRevenuePie = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+import { useState } from "react";
+import { Bars3Icon } from "@heroicons/react/20/solid";
+import { stocks } from "../../../utils";
+
+export const valueFormatter = (number: number) =>
+  `$ ${Intl.NumberFormat("us").format(number).toString()}`;
+
+export default function TotalRevenuePie() {
+  const [selectedView, setSelectedView] = useState("chart");
   return (
-    <div className="bg-white h-auto mt-4 shadow-md p-3">
-      <div className="p-3 flex flex-col">
-        <span className="text-2xl font-medium">Total Revenue overall</span>
-        <span>
-          Breakdown of the the total revenue into various brokers by percentage
-        </span>
-      </div>
-      <div className="grid px-3 grid-cols-3">
-        <div>
-          <label htmlFor="" className="font-medium">
-            Year
-          </label>
-          <select
-            id="tabs"
-            name="tabs"
-            className="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
+    <div className=" h-auto mt-4">
+      <Card maxWidth="max-w-md">
+        <Flex
+          spaceX="space-x-8"
+          justifyContent="justify-between"
+          alignItems="items-center"
+        >
+          <Title>Total Revenue Per Class of Bus.</Title>
+          <Toggle
+            defaultValue="chart"
+            color="gray"
+            handleSelect={(value) => setSelectedView(value)}
           >
-            <option>2019</option>
-            <option>2020</option>
-            <option>2021</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="" className="font-medium">
-            Month
-          </label>
-          <select
-            id="tabs"
-            name="tabs"
-            className="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
-          >
-            <option>Jan</option>
-            <option>Feb</option>
-            <option>Mar</option>
-            <option>Apr</option>
-            <option>May</option>
-            <option>Jun</option>
-            <option>Jul</option>
-            <option>Aug</option>
-            <option>Sep</option>
-            <option>Oct</option>
-            <option>Nov</option>
-            <option>Dec</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="" className="font-medium">
-            Currency
-          </label>
-          <select
-            id="tabs"
-            name="tabs"
-            className="block w-full focus:ring-green-500 border  focus:border-green-500 border-gray-300 rounded-none"
-          >
-            <option>GHC</option>
-            <option>USD</option>
-            <option>EUR</option>
-            <option>GBP</option>
-          </select>
-        </div>
-      </div>
-      <ResponsiveContainer width="100%" height={390}>
-        <PieChart width={400} height={400}>
-          <Pie
-            activeIndex={activeIndex}
-            activeShape={renderActiveShape}
-            data={data}
-            cx="50%"
-            cy="50%"
-            innerRadius={60}
-            outerRadius={80}
-            fill="#8884d8"
-            dataKey="value"
-            onMouseEnter={(_, index) => setActiveIndex(index)}
+            <ToggleItem value="chart" icon={ChartPieIcon} />
+            <ToggleItem value="list" icon={Bars3Icon} />
+          </Toggle>
+        </Flex>
+        <Divider />
+        <Text marginTop="mt-8">
+          <Bold>Asset Allocation</Bold>
+        </Text>
+        <Text>1 Asset class • 5 Holdings</Text>
+        {selectedView === "chart" ? (
+          <DonutChart
+            data={stocks}
+            showAnimation={false}
+            category="value"
+            dataKey="name"
+            valueFormatter={valueFormatter}
+            marginTop="mt-6"
           />
-        </PieChart>
-      </ResponsiveContainer>
+        ) : (
+          <>
+            <Flex marginTop="mt-8" justifyContent="justify-between">
+              <Text truncate={true}>
+                <Bold>Stocks</Bold>
+              </Text>
+              <Text>Since transaction</Text>
+            </Flex>
+            <List marginTop="mt-4">
+              {stocks.map((stock) => (
+                <ListItem key={stock.name}>
+                  <Text>{stock.name}</Text>
+                  <Flex justifyContent="justify-end" spaceX="space-x-2">
+                    <Text>
+                      $ {Intl.NumberFormat("us").format(stock.value).toString()}
+                    </Text>
+                    <BadgeDelta
+                      deltaType={stock.deltaType}
+                      text={stock.performance}
+                      size="xs"
+                    />
+                  </Flex>
+                </ListItem>
+              ))}
+            </List>
+          </>
+        )}
+      </Card>
     </div>
   );
-};
-
-export default TotalRevenuePie;
+}

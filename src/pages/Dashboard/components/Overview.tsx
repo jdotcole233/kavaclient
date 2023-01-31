@@ -1,5 +1,8 @@
+import { DonutChart, SelectBox, Title, SelectBoxItem } from "@tremor/react";
 import { SideSheet } from "evergreen-ui";
 import React, { Fragment, useState } from "react";
+import { stocks } from "../../../utils";
+import { valueFormatter } from "../sections/TotalRevenuePie";
 import ExposureDetails from "./ExposureDetails";
 import TotalClaimsNotified from "./TotalClaimsNotified";
 import TotalReserversDetails from "./TotalReserversDetails";
@@ -12,7 +15,7 @@ const Overview = (props: Props) => {
   const [showTotalClaimsNotified, setShowTotalClaimsNotified] = useState(false);
   return (
     <Fragment>
-      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 items-start">
         <div className="bg-white overflow-hidden shadow rounded-none">
           <div className="p-5">
             <div className="flex items-center">
@@ -34,20 +37,33 @@ const Overview = (props: Props) => {
               </div>
               <div className="ml-5 w-0 flex-1">
                 <dl>
-                  <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total Exposure
-                  </dt>
-                  <dd className="grid grid-cols-2">
-                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      Gh₵ 30,659.45
-                    </div>
-                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      USD 30,659.45
-                    </div>
-                  </dd>
+                  <Title>Current total exposure</Title>
+                  <p className="text-gray-400">Top 5 classes of business</p>
                 </dl>
               </div>
+              <SelectBox
+                defaultValue={undefined}
+                value={"USD"}
+                onValueChange={undefined}
+                placeholder="Select..."
+                icon={undefined}
+                maxWidth="max-w-0"
+                marginTop="mt-0"
+              >
+                <SelectBoxItem value={"2019"} text="2019" />
+                <SelectBoxItem value={"2020"} text="2020" />
+                <SelectBoxItem value={"2021"} text="2021" />
+                <SelectBoxItem value={"2022"} text="2022" />
+              </SelectBox>
             </div>
+            <DonutChart
+              data={stocks}
+              showAnimation={false}
+              category="value"
+              dataKey="name"
+              valueFormatter={valueFormatter}
+              marginTop="mt-6"
+            />
           </div>
           <div className="bg-cool-gray-50 px-5 py-3">
             <div className="text-sm leading-5">
@@ -92,6 +108,15 @@ const Overview = (props: Props) => {
                 </dl>
               </div>
             </div>
+            <DonutChart
+              data={stocks}
+              showAnimation={false}
+              category="value"
+              variant="pie"
+              dataKey="name"
+              valueFormatter={valueFormatter}
+              marginTop="mt-6"
+            />
           </div>
           <div className="bg-cool-gray-50 px-5 py-3">
             <div className="text-sm leading-5">

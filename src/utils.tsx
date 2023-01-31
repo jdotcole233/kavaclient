@@ -12,6 +12,7 @@ import { UserCircleIcon } from "@heroicons/react/20/solid";
 import { Sector } from "recharts";
 import _ from "lodash";
 import { BrokerTypes } from "./graphql/__generated__/globalTypes";
+import { DeltaType } from "@tremor/react";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -166,7 +167,7 @@ export const months = [
     name: "Jan",
     visalre: 4000,
     kekre: 2400,
-    iriskre:  300,
+    iriskre: 300,
     amt: 2400,
   },
   {
@@ -405,3 +406,46 @@ export const renderActiveShape = (props: any) => {
     </g>
   );
 };
+
+export const valueFormatter = (number: number) =>
+  `$ ${Intl.NumberFormat("us").format(number).toString()}`;
+
+interface StockData {
+  name: string;
+  value: number;
+  performance: string;
+  deltaType: DeltaType;
+}
+
+export const stocks: StockData[] = [
+  {
+    name: "Off Running AG",
+    value: 10456,
+    performance: "6.1%",
+    deltaType: "increase",
+  },
+  {
+    name: "Not Normal Inc.",
+    value: 5789,
+    performance: "1.2%",
+    deltaType: "moderateDecrease",
+  },
+  {
+    name: "Logibling Inc.",
+    value: 4367,
+    performance: "2.3%",
+    deltaType: "moderateIncrease",
+  },
+  {
+    name: "Raindrop Inc.",
+    value: 3421,
+    performance: "0.5%",
+    deltaType: "moderateDecrease",
+  },
+  {
+    name: "Mwatch Group",
+    value: 1432,
+    performance: "3.4%",
+    deltaType: "decrease",
+  },
+];
