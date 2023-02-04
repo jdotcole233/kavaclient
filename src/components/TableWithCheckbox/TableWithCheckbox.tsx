@@ -94,7 +94,7 @@ const TableWithCheckbox = ({
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
               <div className="relative overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg bg-white">
                 <div className="flex items-center justify-center">
-                  <PageLoader text="Fetching data. A moment" />
+                  <PageLoader card text="Fetching data. A moment" />
                 </div>
               </div>
             </div>
