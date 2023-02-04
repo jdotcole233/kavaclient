@@ -5,6 +5,6 @@ export const BASE_URL = "https://managekava.comfybroker.com"
 
 export const urls = {
     [BrokerTypes.IRISK]: "https://manage.iriskre.com",
-    [BrokerTypes.VISAL]: "https://manage.kekrebrokerapp.com",
+    [BrokerTypes.VISAL]: "https://manage.visalreinsurance.com",
     [BrokerTypes.KEK]: "https://manage.kekrebrokerapp.com",
 };

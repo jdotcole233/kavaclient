@@ -3,9 +3,10 @@ import { clsx, Loader as Load } from "@mantine/core";
 
 type Props = {
   page?: boolean;
+  text?: string;
 };
 
-const Loader = ({ page }: Props) => {
+const Loader = ({ page, text }: Props) => {
   return (
     <div
       className={clsx(
@@ -14,6 +15,7 @@ const Loader = ({ page }: Props) => {
       )}
     >
       <Load color={"green"} />
+      {text}
     </div>
   );
 };
