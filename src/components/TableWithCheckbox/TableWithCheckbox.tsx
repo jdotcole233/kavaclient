@@ -69,7 +69,7 @@ const TableWithCheckbox = ({
     if (checkbox.current) {
       checkbox.current.indeterminate = isIndeterminate;
     }
-  }, [selected]);
+  }, [selected, data.length]);
 
   function toggleAll() {
     setSelected(checked || indeterminate ? [] : data);
@@ -84,7 +84,7 @@ const TableWithCheckbox = ({
       return searchInput.current.value !== undefined;
     }
     return false;
-  }, [searchInput.current]);
+  }, []);
 
   return (
     <div>
