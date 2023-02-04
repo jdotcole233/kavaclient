@@ -1,4 +1,4 @@
-import { BackgroundImage } from "@mantine/core";
+// import { BackgroundImage } from "@mantine/core";
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import SSL from "../../assets/ssl-big.png";
