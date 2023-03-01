@@ -46,11 +46,11 @@ const Profile = (props: Props) => {
           <span className="text-green-800 font-medium text-3xl">
             {user?.clientable?.__typename === "Reinsurer_representative"
               ? user?.clientable?.rep_first_name +
-                " " +
-                user?.clientable?.rep_last_name
+              " " +
+              user?.clientable?.rep_last_name
               : user?.clientable?.assoc_first_name +
-                " " +
-                user?.clientable?.assoc_last_name}
+              " " +
+              user?.clientable?.assoc_last_name}
           </span>
           <div className="flex flex-col">
             <span className="mr-7 flex flex-row">
@@ -90,6 +90,31 @@ const Profile = (props: Props) => {
           </div>
         </div>
       </section>
+
+      <div className="overflow-hidden bg-white shadow sm:rounded-lg">
+        <div className="px-4 py-5 sm:px-6">
+          <h3 className="text-base font-semibold leading-6 text-gray-900">Company Information</h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
+        </div>
+        <div className="border-t border-gray-200 px-4 py-5 sm:p-0">
+          <dl className="sm:divide-y sm:divide-gray-200">
+            <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+              <dt className="text-sm font-medium text-gray-500">Company name</dt>
+              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{user?.clientable?.__typename === "Reinsurer_representative" ? user?.clientable?.reinsurer?.re_company_name : ""}</dd>
+            </div>
+            <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+              <dt className="text-sm font-medium text-gray-500">Company email</dt>
+              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{user?.clientable?.__typename === "Reinsurer_representative" ? user?.clientable?.reinsurer?.re_company_email : ""}</dd>
+            </div>
+            <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+              <dt className="text-sm font-medium text-gray-500">Company website</dt>
+              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{user?.clientable?.__typename === "Reinsurer_representative" ? user?.clientable?.reinsurer?.re_company_website : ""}</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+
       <section aria-labelledby="payment-details-heading">
         <form action="#" method="POST">
           <div className="shadow sm:rounded-md sm:overflow-hidden">

@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "dashboard",
         "offers",
-        "treaties"
+        "treaties",
+        "profile"
     ]
 }
