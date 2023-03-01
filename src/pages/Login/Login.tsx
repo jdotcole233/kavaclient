@@ -25,7 +25,6 @@ const LoginScreen = () => {
   const [login, { loading }] = useMutation<Login, LoginVariables>(userLogin);
 
   const onSubmit: SubmitHandler<LoginVariables> = (data) => {
-    console.log(data);
     showNotification({
       id: "login",
       loading: true,
@@ -73,10 +72,10 @@ const LoginScreen = () => {
           <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
             {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
 
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+            {/* <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  {/* <!-- Heroicon name: solid/exclamation --> */}
+
                   <svg
                     className="h-5 w-5 text-yellow-400"
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +101,7 @@ const LoginScreen = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div>
               <div className="flex justify-between">

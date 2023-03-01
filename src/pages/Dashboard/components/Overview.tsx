@@ -1,6 +1,6 @@
 import { DonutChart, SelectBox, Title, SelectBoxItem } from "@tremor/react";
 import { SideSheet } from "evergreen-ui";
-import React, { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import { stocks } from "../../../utils";
 import { valueFormatter } from "../sections/TotalRevenuePie";
 import ExposureDetails from "./ExposureDetails";
@@ -15,7 +15,7 @@ const Overview = (props: Props) => {
   const [showTotalClaimsNotified, setShowTotalClaimsNotified] = useState(false);
   return (
     <Fragment>
-      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 items-start">
+      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-2 items-start">
         <div className="bg-white overflow-hidden shadow rounded-none">
           <div className="p-5">
             <div className="flex items-center">
@@ -50,10 +50,10 @@ const Overview = (props: Props) => {
                 maxWidth="max-w-0"
                 marginTop="mt-0"
               >
-                <SelectBoxItem value={"2019"} text="2019" />
-                <SelectBoxItem value={"2020"} text="2020" />
-                <SelectBoxItem value={"2021"} text="2021" />
-                <SelectBoxItem value={"2022"} text="2022" />
+                <SelectBoxItem value={"GHS"} text="GHS" />
+                <SelectBoxItem value={"USD"} text="USD" />
+                <SelectBoxItem value={"EUR"} text="EUR" />
+                <SelectBoxItem value={"GBP"} text="GBP" />
               </SelectBox>
             </div>
             <DonutChart
@@ -129,53 +129,7 @@ const Overview = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="bg-white overflow-hidden shadow rounded-none">
-          <div className="p-5">
-            <div className="flex items-center">
-              <div className="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-full bg-yellow-100 text-yellow-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-                  />
-                </svg>
-              </div>
-              <div className="ml-5 w-0 flex-1">
-                <dl>
-                  <dt className="text-sm leading-5 font-light text-cool-gray-900 truncate">
-                    Total Reserves
-                  </dt>
-                  <dd className="grid grid-cols-2">
-                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      Gh₵ 30,659.45
-                    </div>
-                    <div className="text-lg leading-7 font-medium text-cool-gray-900">
-                      USD 30,659.45
-                    </div>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div className="bg-cool-gray-50 px-5 py-3">
-            <div className="text-sm leading-5">
-              <button
-                onClick={() => setShowTotalRerves(true)}
-                className="font-medium text-purple-600 hover:text-purple-900 focus:outline-none transition ease-in-out duration-150"
-              >
-                View more
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <SideSheet

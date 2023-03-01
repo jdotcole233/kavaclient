@@ -19,31 +19,37 @@ const TotalClaimsNotified = () => {
                           scope="col"
                           className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
                         >
-                          Business
+                          Class of business
                         </th>
                         <th
                           scope="col"
                           className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                         >
-                          Sum Insured
+                          Insured
                         </th>
                         <th
                           scope="col"
                           className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                         >
-                          Fac. Sum Insured
+                          Reinsured
                         </th>
                         <th
                           scope="col"
                           className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                         >
-                          Role
+                          Participation %
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                        >
+                          Share of claim
                         </th>
                         <th
                           scope="col"
                           className="relative py-3.5 pl-3 pr-4 sm:pr-6"
                         >
-                          <span className="sr-only">Edit</span>
+                          Actions
                         </th>
                       </tr>
                     </thead>
@@ -78,10 +84,12 @@ const TotalClaimsNotified = () => {
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           Member
                         </td>
-                        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          Member
+                        </td>
+                        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-center text-sm font-medium sm:pr-6">
                           <button className="text-indigo-600 hover:text-indigo-900">
-                            Edit
-                            <span className="sr-only">, Lindsay Walton</span>
+                          Claim debit note
                           </button>
                         </td>
                       </tr>

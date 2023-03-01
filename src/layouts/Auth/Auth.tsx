@@ -13,11 +13,11 @@ function Auth() {
         <div className="hidden lg:block bg-white  relative w-0 flex-1 ">
           <div
             // src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
-            className=" h-full w-full bg-green-300 flex flex-col items-center"
+            className=" h-full w-full  flex flex-col items-center"
           >
             <img
               src={require("../../assets/logo.png")}
-              className="w-1/2 bg-yellow-50 rounded-b-full"
+              className="w-1/2 rounded-b-full"
               alt=""
             />
             <div className="space-y-11 w-full flex flex-col items-center h-full p-5">
