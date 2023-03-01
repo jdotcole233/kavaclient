@@ -34,9 +34,10 @@ const AllOffers = (props: Props) => {
           },
           ...(total_shares
             ? Object.keys(total_shares).map((e) => ({
-                name: `Total ${e}`,
-                value: `${total_shares[e]}`,
-              }))
+              name: `Total ${e}`,
+              value: `${total_shares[e]}`,
+              description: "Premium"
+            }))
             : []),
         ]}
       />
@@ -45,7 +46,7 @@ const AllOffers = (props: Props) => {
         setYear={setYear}
         setActiveTab={setActiveTab}
         activeTab={activeTab}
-        // tabs={[]}
+      // tabs={[]}
       />
       <Show if={loading}>
         <Loader />
@@ -82,7 +83,7 @@ const AllOffers = (props: Props) => {
                           {offer?.offer_detail?.period_of_insurance_from}
                         </div>
                         <div className="text-red-500">
-                          {offer?.offer_detail?.period_of_insurance_from}
+                          {offer?.offer_detail?.period_of_insurance_to}
                         </div>
                       </div>
                     </div>

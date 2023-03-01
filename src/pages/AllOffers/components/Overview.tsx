@@ -2,6 +2,7 @@ import React from "react";
 
 type StatsProp = {
   name: string;
+  description?: string;
   value: any;
 };
 
@@ -29,6 +30,9 @@ const Overview = ({ stats }: Props) => {
             <dt className="truncate text-sm font-medium text-gray-500">
               {item.name}
             </dt>
+            <p className="truncate text-sm font-medium text-gray-300">
+              {item.description}
+            </p>
             <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">
               {item.value}
             </dd>

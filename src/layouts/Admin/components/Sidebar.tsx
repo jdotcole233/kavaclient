@@ -28,7 +28,7 @@ const Sidebar = (props: Props) => {
                     isActive
                       ? "bg-green-800 text-white"
                       : "text-indigo-100 hover:bg-green-800 hover:text-white",
-                    "group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium"
+                    "group w-full p-3 rounded-md flex flex-col items-center justify-center text-xs font-medium"
                   )
                 }
               >
@@ -39,11 +39,11 @@ const Sidebar = (props: Props) => {
                         isActive
                           ? "text-white"
                           : "text-green-300 group-hover:text-white",
-                        "h-6 w-6"
+                        "h-6 w-6 "
                       )}
                       aria-hidden="true"
                     />
-                    <span className="mt-2">{item.name}</span>
+                    <span className="mt-2 text-center">{item.name}</span>
                   </>
                 )}
               </NavLink>

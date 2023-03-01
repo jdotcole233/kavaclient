@@ -30,7 +30,7 @@ export const extractRegNumber = (details: any) => {
 export const navigation = [
   { name: "Home", href: "/app/", icon: HomeIcon, current: false },
   {
-    name: "All Offers",
+    name: "All Fac. Offers",
     href: "/app/offers",
     icon: FolderIcon,
     current: false,
